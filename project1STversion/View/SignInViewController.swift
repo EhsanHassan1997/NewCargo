@@ -138,7 +138,7 @@ class SignInViewController: UIViewController {
     func IsVailidEmail(emailID :String )-> Bool{
         let EmailRegEx = "[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\\.[A-Za-z]{2,}"
         let EmailTest = NSPredicate(format: "SELF MATCHES %@", EmailRegEx)
-        return EmailTest.evaluate(with: emailID)
+        return EmailTest.evaluate(with: emailID)//
         
     }
     
