@@ -22,6 +22,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -58,8 +59,7 @@ class SignInViewController: UIViewController {
     
         let email = emailTextField.text
         let password = passwordTextField.text
-        ApiMethods.LoginUser(Email: email!, Password: password!) { (tokeN) in
-            UserDefaults.standard.set(tokeN, forKey: "token")
+        
             
 
 //        let email = emailTextField.text
@@ -69,7 +69,7 @@ class SignInViewController: UIViewController {
 
         
 //        errorMessageLabel.text = "/knjkdjhbjkhbkf"
-        }
+        
         if (password == "" && email == "") {
             
             errorMessageLabel.text = "Fill Empty Space"
@@ -95,28 +95,28 @@ class SignInViewController: UIViewController {
                 
                 errorMessageLabel.text = ""
                 
-                //            GetUserByEmail.UderData(email: email!) { (user) in
-                
-                if (email == user.email){
+                ApiMethods.LoginUser(Email: email!, Password: password!) { (tokeN) in
+                    UserDefaults.standard.set(tokeN, forKey: "token")
+                    UserDefaults.standard.set(true, forKey: "Logged")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "home")as! TransportHomeViewController
+                    self.present(vc, animated: true, completion: nil)
                     
-                    if password == user.password{
-                        
-//                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "home")as! TransportHomeViewController
-//                        self.navigationController?.present(vc, animated: true, completion: nil)
-
-                        performSegue(withIdentifier: "home", sender: Any?.self)
-                    }else {
-                        
-                        errorMessageLabel.text = "Your password don't match this email"
-                        
-                    }
-                    
-                }else{
-                    
-                    errorMessageLabel.text = "This email not found"
+//                    self.performSegue(withIdentifier: "home", sender: nil)
                     
                 }
+                        
+//                    }else {
+//
+//                        errorMessageLabel.text = "Your password don't match this email"
+//
+//                    }
                 
+//                }else{
+//
+//                    errorMessageLabel.text = "This email not found"
+//
+//                }
+//
                 
                 //            }
                 

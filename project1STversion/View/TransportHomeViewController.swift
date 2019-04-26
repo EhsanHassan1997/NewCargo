@@ -17,14 +17,10 @@ class TransportHomeViewController: UIViewController , CLLocationManagerDelegate 
     
     var locationManager = CLLocationManager()
     
-    @IBOutlet weak var hideMenuButton: UIButton!
-    @IBOutlet weak var sideMenuView: UIView!
+//    @IBOutlet weak var hideMenuButton: UIButton!
+//    @IBOutlet weak var sideMenuView: UIView!
     
-    override func viewWillAppear(_ animated: Bool) {
-        sideMenuView.isHidden = true
-        hideMenuButton.isHidden = true
-        ////
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,19 +42,13 @@ class TransportHomeViewController: UIViewController , CLLocationManagerDelegate 
         print("notification button is clicked")
     }
     @IBAction func MenuAction(_ sender: UIButton) {
-        
-        sideMenuView.isHidden = false
-        hideMenuButton.isHidden = false
-        
-        
+        let TransportMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "transportMenu") as! TransportMenuViewController
+        self.addChild(TransportMenu)
+        TransportMenu.view.frame = self.view.frame
+        self.view.addSubview(TransportMenu.view)
+        TransportMenu.didMove(toParent: self)
     }
     
-    @IBAction func HideMenuAction(_ sender: UIButton) {
-        
-        sideMenuView.isHidden = true
-        hideMenuButton.isHidden = true
-        
-    }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let latitude = locations.last?.coordinate.latitude
         let longitude = locations.last?.coordinate.longitude
