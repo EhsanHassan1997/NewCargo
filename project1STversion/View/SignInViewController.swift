@@ -70,63 +70,63 @@ class SignInViewController: UIViewController {
         
 //        errorMessageLabel.text = "/knjkdjhbjkhbkf"
         }
-        if (password == "" && email == "") {
-            
-            errorMessageLabel.text = "Fill Empty Space"
-            
-        }else if password == "" {
-            if IsVailidEmail(emailID: email!){
-                
-                errorMessageLabel.text = "Please Enter password"
-                
-            }else{
-                
-                errorMessageLabel.text = "Enter valid data"
-                
-            }
-            
-        }else if email == "" {
-            
-            errorMessageLabel.text = "Please Enter Email"
-        
-        }else {
-         
-            if IsVailidEmail(emailID: email!){
-                
-                errorMessageLabel.text = ""
-                
-                //            GetUserByEmail.UderData(email: email!) { (user) in
-                
-                if (email == user.email){
-                    
-                    if password == user.password{
-                        
-//                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "home")as! TransportHomeViewController
-//                        self.navigationController?.present(vc, animated: true, completion: nil)
-
-                        performSegue(withIdentifier: "home", sender: Any?.self)
-                    }else {
-                        
-                        errorMessageLabel.text = "Your password don't match this email"
-                        
-                    }
-                    
-                }else{
-                    
-                    errorMessageLabel.text = "This email not found"
-                    
-                }
-                
-                
-                //            }
-                
-            }else{
-                
-                errorMessageLabel.text = "Enter valid data"
-                
-            }
-                
-        }
+//        if (password == "" && email == "") {
+//            
+//            errorMessageLabel.text = "Fill Empty Space"
+//            
+//        }else if password == "" {
+//            if IsVailidEmail(emailID: email!){
+//                
+//                errorMessageLabel.text = "Please Enter password"
+//                
+//            }else{
+//                
+//                errorMessageLabel.text = "Enter valid data"
+//                
+//            }
+//            
+//        }else if email == "" {
+//            
+//            errorMessageLabel.text = "Please Enter Email"
+//        
+//        }else {
+//         
+//            if IsVailidEmail(emailID: email!){
+//                
+//                errorMessageLabel.text = ""
+//                
+//                //            GetUserByEmail.UderData(email: email!) { (user) in
+//                
+//                if (email == user.email){
+//                    
+//                    if password == user.password{
+//                        
+////                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "home")as! TransportHomeViewController
+////                        self.navigationController?.present(vc, animated: true, completion: nil)
+//
+//                        performSegue(withIdentifier: "home", sender: Any?.self)
+//                    }else {
+//                        
+//                        errorMessageLabel.text = "Your password don't match this email"
+//                        
+//                    }
+//                    
+//                }else{
+//                    
+//                    errorMessageLabel.text = "This email not found"
+//                    
+//                }
+//                
+//                
+//                //            }
+//                
+//            }else{
+//                
+//                errorMessageLabel.text = "Enter valid data"
+//                
+//            }
+//                
+//        }
         
     }
     
