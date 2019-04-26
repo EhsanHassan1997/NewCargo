@@ -10,7 +10,7 @@ import UIKit
 import LGButton
 import Kingfisher
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     @IBOutlet weak var companyNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
@@ -22,7 +22,33 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        profileImageView.layer.cornerRadius = profileImageView.bounds.width / 2
+        profileImageView.clipsToBounds = true
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let Image = info[.originalImage] as? UIImage {
+             profileImageView.image = Image
+            profileImageView.layer.cornerRadius = profileImageView.bounds.width / 2
+            profileImageView.clipsToBounds = true
+        }
+        picker.dismiss(animated: true, completion: nil)
+
+    }
+    
+    @IBAction func AddImageAction(_ sender: UIButton) {
+        let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        
+        self.present(picker, animated: true, completion: nil)
     }
     
     @IBAction func nextAction(_ sender: LGButton) {
