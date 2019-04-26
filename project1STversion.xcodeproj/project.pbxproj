@@ -28,6 +28,8 @@
 		C4CB9261223D28B30020172C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB9260223D28B30020172C /* User.swift */; };
 		C4CB9264223D41BC0020172C /* TransportHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB9263223D41BC0020172C /* TransportHomeViewController.swift */; };
 		C4CB9266223D429D0020172C /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB9265223D429D0020172C /* VerifyEmailViewController.swift */; };
+		C4E8371A2273321600FDDE95 /* ApiMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E837182273321600FDDE95 /* ApiMethods.swift */; };
+		C4E8371B2273321600FDDE95 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E837192273321600FDDE95 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		C4CB9260223D28B30020172C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C4CB9263223D41BC0020172C /* TransportHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportHomeViewController.swift; sourceTree = "<group>"; };
 		C4CB9265223D429D0020172C /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
+		C4E837182273321600FDDE95 /* ApiMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiMethods.swift; path = "../../../../Project/project1STversion/project1STversion/Api Helper/ApiMethods.swift"; sourceTree = "<group>"; };
+		C4E837192273321600FDDE95 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "../../../../Project/project1STversion/project1STversion/Api Helper/Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		C431C7822200B3C4001AEDB8 /* project1STversion */ = {
 			isa = PBXGroup;
 			children = (
+				C4E83717227331A800FDDE95 /* Api Helper */,
 				C402DDBB225FC1B80099D103 /* Database */,
 				C454D85C22455D49001856ED /* Controller */,
 				C454D85B22455D39001856ED /* View */,
@@ -155,6 +160,15 @@
 				C4CB925E223D27BF0020172C /* GetUserByEmail.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4E83717227331A800FDDE95 /* Api Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C4E837182273321600FDDE95 /* ApiMethods.swift */,
+				C4E837192273321600FDDE95 /* Constants.swift */,
+			);
+			path = "Api Helper";
 			sourceTree = "<group>";
 		};
 		F02E447CB318898A6B688C5D /* Frameworks */ = {
@@ -325,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4CB9261223D28B30020172C /* User.swift in Sources */,
+				C4E8371A2273321600FDDE95 /* ApiMethods.swift in Sources */,
 				C4CB9264223D41BC0020172C /* TransportHomeViewController.swift in Sources */,
 				C402DDBD225FC2300099D103 /* Database.swift in Sources */,
 				C4BB07F222493EB5008C0671 /* ConfirmNewPasswordViewController.swift in Sources */,
@@ -340,6 +355,7 @@
 				C4CB925F223D27BF0020172C /* GetUserByEmail.swift in Sources */,
 				C402DDBA225FACB80099D103 /* ShowRequestViewController.swift in Sources */,
 				C4C265242260B40900C0211F /* SecondRegisterViewController.swift in Sources */,
+				C4E8371B2273321600FDDE95 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
