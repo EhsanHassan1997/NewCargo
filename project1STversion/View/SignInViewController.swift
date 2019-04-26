@@ -58,12 +58,18 @@ class SignInViewController: UIViewController {
     
         let email = emailTextField.text
         let password = passwordTextField.text
-        user.email = "ehsanhassan2015@gmail.com"
-        user.password = "1997son28son1"
+        ApiMethods.LoginUser(Email: email!, Password: password!) { (tokeN) in
+            UserDefaults.standard.set(tokeN, forKey: "token")
+            
+
+//        let email = emailTextField.text
+//        let password = passwordTextField.text
+//        user.email = "ehsanhassan2015@gmail.com"
+//        user.password = "1997son28son1"
 
         
 //        errorMessageLabel.text = "/knjkdjhbjkhbkf"
-        
+        }
         if (password == "" && email == "") {
             
             errorMessageLabel.text = "Fill Empty Space"
