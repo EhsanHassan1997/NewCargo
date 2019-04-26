@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (4.8.1)
+  - DLRadioButton (1.4.12)
+  - GoogleMaps (3.0.2):
+    - GoogleMaps/Maps (= 3.0.2)
+  - GoogleMaps/Base (3.0.2)
+  - GoogleMaps/Maps (3.0.2):
+    - GoogleMaps/Base
+  - GooglePlaces (3.0.2):
+    - GoogleMaps/Base (= 3.0.2)
+  - IQKeyboardManager (6.2.0)
+  - Kingfisher (4.10.1)
+  - LGButton (1.1.4)
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DLRadioButton (~> 1.4)
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManager
+  - Kingfisher
+  - LGButton
+  - SQLite.swift
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DLRadioButton
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManager
+    - Kingfisher
+    - LGButton
+    - SQLite.swift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  GoogleMaps: 941cd655e009b4d8e42df19a3d749bc3fccec973
+  GooglePlaces: c086e0055dc5f0177d7c9d65fc77a1734f9a4825
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  LGButton: a2fab54642121da2bee2e5f16bfbb57a8c05c788
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: dedc840c5ac87d02db3d57ba613446c3fee74416
+
+COCOAPODS: 1.5.3
