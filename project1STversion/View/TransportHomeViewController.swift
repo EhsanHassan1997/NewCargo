@@ -23,6 +23,7 @@ class TransportHomeViewController: UIViewController , CLLocationManagerDelegate 
     override func viewWillAppear(_ animated: Bool) {
         sideMenuView.isHidden = true
         hideMenuButton.isHidden = true
+        ////
     }
     
     override func viewDidLoad() {
