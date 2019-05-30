@@ -395,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7h-pv-sfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6559" y="3287"/>
+            <point key="canvasLocation" x="-6938" y="3170"/>
         </scene>
         <!--Transport Home-->
         <scene sceneID="1V3-pA-dJ1">
@@ -3589,7 +3589,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeU-M8-J9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5516" y="3287"/>
+            <point key="canvasLocation" x="-6073" y="3170"/>
         </scene>
         <!--Profile-->
         <scene sceneID="eG1-sA-bkF">
@@ -4082,6 +4082,45 @@ pay 5% of the shipment price.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xk-Cp-brm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-12340" y="718"/>
+        </scene>
+        <!--SelectPayment-->
+        <scene sceneID="DoH-fX-PGa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Hz-M3-u2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="1dx-kp-hqT" userLabel="SelectPayment" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QQT-E9-9CH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAd-fK-0nJ">
+                                <rect key="frame" x="0.0" y="-2.5" width="375" height="53"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQd-4K-qL4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ZQd-4K-qL4" firstAttribute="centerY" secondItem="dAd-fK-0nJ" secondAttribute="centerY" id="DTU-2Y-FIe"/>
+                                    <constraint firstItem="ZQd-4K-qL4" firstAttribute="height" secondItem="dAd-fK-0nJ" secondAttribute="height" id="Trm-F2-Quy"/>
+                                    <constraint firstItem="ZQd-4K-qL4" firstAttribute="width" secondItem="dAd-fK-0nJ" secondAttribute="width" id="efa-jl-XaC"/>
+                                    <constraint firstItem="ZQd-4K-qL4" firstAttribute="centerX" secondItem="dAd-fK-0nJ" secondAttribute="centerX" id="mRs-wJ-12t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dAd-fK-0nJ" firstAttribute="height" secondItem="QQT-E9-9CH" secondAttribute="height" multiplier="0.08" id="38A-um-Z50"/>
+                            <constraint firstItem="dAd-fK-0nJ" firstAttribute="centerY" secondItem="TaX-X3-b3W" secondAttribute="centerY" multiplier="0.07" id="L8G-JV-Wii"/>
+                            <constraint firstItem="dAd-fK-0nJ" firstAttribute="width" secondItem="QQT-E9-9CH" secondAttribute="width" id="Q4A-vd-0aM"/>
+                            <constraint firstItem="dAd-fK-0nJ" firstAttribute="centerX" secondItem="TaX-X3-b3W" secondAttribute="centerX" id="bi2-q0-O4f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TaX-X3-b3W"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-6073" y="3847"/>
         </scene>
         <!--transportMenu-->
         <scene sceneID="MPw-0e-37F">
