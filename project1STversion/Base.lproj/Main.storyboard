@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3GK-gq-bg1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cYB-8g-B6R">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -395,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7h-pv-sfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6938" y="3170"/>
+            <point key="canvasLocation" x="-470" y="6124"/>
         </scene>
         <!--Transport Home-->
         <scene sceneID="1V3-pA-dJ1">
@@ -496,7 +496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vu8-Ec-2gW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5968.8000000000002" y="4582.7586206896558"/>
+            <point key="canvasLocation" x="-11458" y="6122"/>
         </scene>
         <!--ImportVc-->
         <scene sceneID="7Ci-Mz-xg3">
@@ -1040,7 +1040,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="85k-yu-fge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10242" y="4583"/>
+            <point key="canvasLocation" x="-12202" y="5357"/>
         </scene>
         <!--DetailOfContruct-->
         <scene sceneID="tMl-tl-Sg9">
@@ -1682,7 +1682,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KN-j1-6fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7847" y="3287"/>
+            <point key="canvasLocation" x="-1322" y="6237"/>
         </scene>
         <!--AddNewDriver-->
         <scene sceneID="alP-J6-Og1">
@@ -1954,7 +1954,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3eR-xx-6IA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7847" y="-383"/>
+            <point key="canvasLocation" x="-7639" y="6122"/>
         </scene>
         <!--CurrentShipment-->
         <scene sceneID="hjo-2l-75R">
@@ -2241,7 +2241,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFs-m1-iq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11222" y="1749"/>
+            <point key="canvasLocation" x="-3662" y="6124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lzy-si-dA3">
@@ -2481,7 +2481,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BgK-eE-JaN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9498" y="5319"/>
+            <point key="canvasLocation" x="-10674" y="3797"/>
         </scene>
         <!--SecondRegister-->
         <scene sceneID="GuO-4Z-qdO">
@@ -2689,7 +2689,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbB-CP-nFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9498" y="4583"/>
+            <point key="canvasLocation" x="-11458" y="5357"/>
         </scene>
         <!--Book Transport-->
         <scene sceneID="fLM-q6-K2p">
@@ -3269,7 +3269,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPS-JL-qma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7753" y="6195"/>
+            <point key="canvasLocation" x="-9954" y="6997"/>
         </scene>
         <!--Imp-ExpNotification-->
         <scene sceneID="6fp-HB-AsV">
@@ -3351,7 +3351,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nl-3H-e15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6938.3999999999996" y="6201.9490254872571"/>
+            <point key="canvasLocation" x="-8402" y="6996"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cqc-fj-bvg">
@@ -3496,7 +3496,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6d-vM-L0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6072.8000000000002" y="6194.7526236881567"/>
+            <point key="canvasLocation" x="-11455" y="7830"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6aB-0V-uAL">
@@ -3673,7 +3673,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MQ-c9-0Rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5169" y="6048"/>
+            <point key="canvasLocation" x="-9167" y="6997"/>
         </scene>
         <!--selectDriverVC-->
         <scene sceneID="T9C-FS-1y4">
@@ -3881,7 +3881,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeU-M8-J9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6073" y="3170"/>
+            <point key="canvasLocation" x="446" y="6124"/>
         </scene>
         <!--Profile-->
         <scene sceneID="eG1-sA-bkF">
@@ -4163,7 +4163,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9H-HA-f66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13164" y="1575"/>
+            <point key="canvasLocation" x="-9954" y="6123"/>
         </scene>
         <!--viewEmail-->
         <scene sceneID="yaD-pR-ZbM">
@@ -4373,7 +4373,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xk-Cp-brm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12340" y="718"/>
+            <point key="canvasLocation" x="-12202" y="8867"/>
         </scene>
         <!--transportMenu-->
         <scene sceneID="MPw-0e-37F">
@@ -4884,7 +4884,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5i-x3-FfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5260" y="4582.7586206896558"/>
+            <point key="canvasLocation" x="-10674" y="6122"/>
         </scene>
         <!--transportHistory-->
         <scene sceneID="tnL-WV-pJ7">
@@ -5282,7 +5282,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZc-Pq-JtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9442" y="1666"/>
+            <point key="canvasLocation" x="-2906" y="6124"/>
         </scene>
         <!--transportNotification-->
         <scene sceneID="GxV-ng-01Z">
@@ -5375,7 +5375,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xM0-gF-dEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8644" y="3171"/>
+            <point key="canvasLocation" x="-2119" y="6125"/>
         </scene>
         <!--ViewPhone-->
         <scene sceneID="rTH-qd-LMh">
@@ -5583,7 +5583,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvY-cs-V31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11066" y="717"/>
+            <point key="canvasLocation" x="-9167" y="6123"/>
         </scene>
         <!--ViewAddress-->
         <scene sceneID="XS7-y4-cI7">
@@ -5790,7 +5790,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pkq-57-7Ej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9442" y="717"/>
+            <point key="canvasLocation" x="-11438" y="8866"/>
         </scene>
         <!--viewDriver-->
         <scene sceneID="CGv-2P-j4k">
@@ -6070,7 +6070,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5i-wL-lYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7847" y="717"/>
+            <point key="canvasLocation" x="-8402" y="6123"/>
         </scene>
         <!--AddNewTruck-->
         <scene sceneID="w0J-44-p1k">
@@ -6511,7 +6511,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qX-QD-zJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6559" y="-382"/>
+            <point key="canvasLocation" x="-6140" y="6122"/>
         </scene>
         <!--ViewTruck-->
         <scene sceneID="tJK-C4-b0E">
@@ -6758,7 +6758,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIa-Bk-cXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6559" y="717"/>
+            <point key="canvasLocation" x="-6879" y="6123"/>
         </scene>
         <!--verifyEmailVC-->
         <scene sceneID="P9A-1J-NOD">
@@ -6888,7 +6888,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8td-fO-aO7" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11066" y="5319"/>
+            <point key="canvasLocation" x="-12202" y="3798"/>
         </scene>
         <!--enterCodeVC-->
         <scene sceneID="1fw-KL-u5w">
@@ -7049,7 +7049,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68M-tc-Fp5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10242" y="5319"/>
+            <point key="canvasLocation" x="-11455" y="3797"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uCP-bs-ESo">
@@ -7067,7 +7067,7 @@ pay 5% of the shipment price.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MF0-xp-ufC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12340" y="3287"/>
+            <point key="canvasLocation" x="-12202" y="6122"/>
         </scene>
         <!--import-ExportMenu-->
         <scene sceneID="dfN-xE-5pF">
@@ -7557,7 +7557,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9h-l7-Jha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7847" y="7076"/>
+            <point key="canvasLocation" x="-10674" y="6998"/>
         </scene>
         <!--SecondRegister-->
         <scene sceneID="ZVX-bw-26l">
@@ -7734,7 +7734,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CU3-70-IAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8713" y="4583"/>
+            <point key="canvasLocation" x="-10674" y="5357"/>
         </scene>
         <!--Driver_follow_Bath-->
         <scene sceneID="brJ-dS-J3f">
@@ -7827,7 +7827,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kH7-K2-ROz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4382" y="6047"/>
+            <point key="canvasLocation" x="-9167" y="7829"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="E99-eo-K1v">
@@ -8027,7 +8027,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iu3-N4-R4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8435" y="3842"/>
+            <point key="canvasLocation" x="-4430" y="6124"/>
         </scene>
         <!--DriverNotification-->
         <scene sceneID="NNq-ET-ew8">
@@ -8053,10 +8053,10 @@ pay 5% of the shipment price.</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wn9-Hs-slo">
-                                                    <rect key="frame" x="16.5" y="16.5" width="79" height="72"/>
+                                                    <rect key="frame" x="15" y="16.5" width="71.5" height="72"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2R2-2W-LEZ">
-                                                    <rect key="frame" x="102.5" y="8.5" width="298.5" height="26.5"/>
+                                                    <rect key="frame" x="93" y="8.5" width="270" height="26.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Your Truck plateform number: 12-rk">
                                                             <attributes>
@@ -8069,7 +8069,7 @@ pay 5% of the shipment price.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zQ-Ck-peC" customClass="LGButton" customModule="LGButton">
-                                                    <rect key="frame" x="104" y="53" width="16" height="16"/>
+                                                    <rect key="frame" x="93.5" y="53" width="16" height="16"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="16" id="71Z-4A-j2I"/>
@@ -8092,7 +8092,7 @@ pay 5% of the shipment price.</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5m-Bs-1u9" customClass="LGButton" customModule="LGButton">
-                                                    <rect key="frame" x="104" y="105.5" width="16" height="16"/>
+                                                    <rect key="frame" x="93.5" y="105.5" width="16" height="16"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="5gO-uv-4Wu"/>
@@ -8115,7 +8115,7 @@ pay 5% of the shipment price.</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9V-S3-Ko2">
-                                                    <rect key="frame" x="111" y="69" width="2" height="39"/>
+                                                    <rect key="frame" x="100.5" y="69" width="2" height="39"/>
                                                     <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="2" id="E6e-Wr-Igm"/>
@@ -8123,7 +8123,7 @@ pay 5% of the shipment price.</string>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbK-BC-Tqh">
-                                                    <rect key="frame" x="125" y="52.5" width="93" height="17.5"/>
+                                                    <rect key="frame" x="113" y="52.5" width="84.5" height="17.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Pickup ">
                                                             <attributes>
@@ -8151,13 +8151,13 @@ pay 5% of the shipment price.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="259 rue Saint-Martin 75003 Giza " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnk-Zd-C7V" userLabel="259 rue Saint-Martin 75003 Giza">
-                                                    <rect key="frame" x="124.5" y="64.5" width="186.5" height="17.5"/>
+                                                    <rect key="frame" x="113" y="64.5" width="168.5" height="17.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                     <color key="textColor" red="0.016100568700000002" green="0.27182167769999999" blue="0.41313129659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z0-77-T5D">
-                                                    <rect key="frame" x="125" y="104.5" width="93" height="17.5"/>
+                                                    <rect key="frame" x="113" y="104.5" width="84.5" height="17.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Destination:">
                                                             <attributes>
@@ -8170,51 +8170,51 @@ pay 5% of the shipment price.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212 airport of cairo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNr-t4-Vtb">
-                                                    <rect key="frame" x="124.5" y="116" width="186.5" height="17.5"/>
+                                                    <rect key="frame" x="113" y="116" width="168.5" height="17.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                     <color key="textColor" red="0.016100568700000002" green="0.27182167769999999" blue="0.41313129659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartDateIcon" translatesAutoresizingMaskIntoConstraints="NO" id="KlL-KJ-06a">
-                                                    <rect key="frame" x="20" y="149.5" width="16" height="16"/>
+                                                    <rect key="frame" x="17.5" y="149.5" width="16" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="U0m-SR-8KP"/>
                                                         <constraint firstAttribute="width" constant="16" id="v4r-tw-qRO"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd8-dO-LRd">
-                                                    <rect key="frame" x="38" y="149.5" width="75" height="16"/>
+                                                    <rect key="frame" x="34.5" y="149.5" width="67.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.12722" green="0.32784999999999997" blue="0.50934000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/3/2001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ4-Iz-xcs">
-                                                    <rect key="frame" x="106" y="149.5" width="75" height="16"/>
+                                                    <rect key="frame" x="96" y="149.5" width="67.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.12722" green="0.32784999999999997" blue="0.50934000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EndDateIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yVX-W5-FtC">
-                                                    <rect key="frame" x="188" y="149.5" width="16" height="16"/>
+                                                    <rect key="frame" x="169" y="149.5" width="16" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="16" id="8TO-XY-UiM"/>
                                                         <constraint firstAttribute="height" constant="16" id="lgr-OG-6A6"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/3/2001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoJ-IG-6Zj">
-                                                    <rect key="frame" x="267.5" y="149.5" width="75" height="16"/>
+                                                    <rect key="frame" x="242" y="149.5" width="67.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.12722" green="0.32784999999999997" blue="0.50934000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2W-sR-Hvr">
-                                                    <rect key="frame" x="206.5" y="149.5" width="75" height="16"/>
+                                                    <rect key="frame" x="187" y="149.5" width="67.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.12722" green="0.32784999999999997" blue="0.50934000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNo-rR-ml4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="174.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="337.5" height="174.5"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -8296,7 +8296,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMd-pK-OH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9855" y="3842"/>
+            <point key="canvasLocation" x="-9954" y="7829"/>
         </scene>
         <!--SelectPayment-->
         <scene sceneID="3wL-GP-6WO">
@@ -8332,10 +8332,10 @@ pay 5% of the shipment price.</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nh7-I2-f5w">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="161.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dXi-bR-AMR">
-                                                            <rect key="frame" x="243" y="40.5" width="93.5" height="80.5"/>
+                                                            <rect key="frame" x="220.5" y="40.5" width="84" height="80.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOv-Vu-Eb2">
                                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="40.5"/>
@@ -8352,10 +8352,10 @@ pay 5% of the shipment price.</string>
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yz5-pY-NWi">
-                                                            <rect key="frame" x="176" y="40.5" width="62" height="80.5"/>
+                                                            <rect key="frame" x="159.5" y="40.5" width="56" height="80.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgw-EI-Mu6" userLabel="number">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="40.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="56" height="40.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" red="0.015686274510000001" green="0.33725490200000002" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -8369,7 +8369,7 @@ pay 5% of the shipment price.</string>
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z1X-ok-ayX">
-                                                            <rect key="frame" x="20.5" y="40.5" width="124.5" height="80.5"/>
+                                                            <rect key="frame" x="19" y="40.5" width="112.5" height="80.5"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -8428,7 +8428,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7S0-i2-V3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9139" y="3842"/>
+            <point key="canvasLocation" x="-5330" y="6124"/>
         </scene>
     </scenes>
     <resources>
