@@ -16,7 +16,7 @@
         
         pod 'Alamofire'
         
-         pod 'IQKeyboardManager'
+         pod 'IQKeyboardManagerSwift'
          
          pod 'Kingfisher'
          

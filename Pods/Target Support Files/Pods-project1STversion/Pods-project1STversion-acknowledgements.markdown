@@ -55,7 +55,7 @@ Copyright 2018 Google
 
 Copyright 2018 Google
 
-## IQKeyboardManager
+## IQKeyboardManagerSwift
 
 MIT License
 
