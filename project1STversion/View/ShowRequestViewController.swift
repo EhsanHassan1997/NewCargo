@@ -41,6 +41,10 @@ class ShowRequestViewController: UIViewController {
     }
     
     @IBAction func IgnoreActoin(_ sender: LGButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransportNotificationViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        print("notification button is clicked")
+        
     }
     /*
     // MARK: - Navigation

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B3FF8886344D0FF96E18A797058BAEB0"
-               BlueprintName = "SwiftyJSON"
+               BlueprintIdentifier = "EB97C5A49BA679795D27B84CF739AC03"
+               BlueprintName = "GooglePlacesSearchController"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftyJSON.framework">
+               BuildableName = "GooglePlacesSearchController.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

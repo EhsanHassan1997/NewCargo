@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
-import IQKeyboardManager
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let apiKey = "AIzaSyB7kcLWMSUcrIwIwzgccwXzoljlyp0qeHI"
         
-        IQKeyboardManager.shared().isEnabled = true
+        IQKeyboardManager.shared.enable = true
         
         //ehsan
         GMSServices.provideAPIKey(apiKey)

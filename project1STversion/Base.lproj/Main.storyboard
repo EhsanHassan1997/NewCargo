@@ -1034,11 +1034,11 @@
             </objects>
             <point key="canvasLocation" x="-12202" y="5357"/>
         </scene>
-        <!--DetailOfContruct-->
+        <!--RequestDetail-->
         <scene sceneID="tMl-tl-Sg9">
             <objects>
-                <viewController id="vjt-v6-IwJ" userLabel="DetailOfContruct" customClass="ShowRequestViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="igg-z8-8MJ">
+                <viewController id="vjt-v6-IwJ" userLabel="RequestDetail" customClass="ShowRequestViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="RequestDetail" id="igg-z8-8MJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="924"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

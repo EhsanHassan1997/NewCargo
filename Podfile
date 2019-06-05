@@ -25,5 +25,8 @@
          pod 'GoogleMaps'
          
          pod 'GooglePlaces'
+        
+         pod 'GooglePlacesSearchController'
+             
 
 end
