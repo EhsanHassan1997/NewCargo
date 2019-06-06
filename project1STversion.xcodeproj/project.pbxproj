@@ -25,6 +25,7 @@
 		C431C7892200B3C4001AEDB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C431C7872200B3C4001AEDB8 /* Main.storyboard */; };
 		C431C78B2200B3C5001AEDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C431C78A2200B3C5001AEDB8 /* Assets.xcassets */; };
 		C431C78E2200B3C5001AEDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C431C78C2200B3C5001AEDB8 /* LaunchScreen.storyboard */; };
+		C447F60222A92C300083420A /* RequestDetaile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447F60122A92C300083420A /* RequestDetaile.swift */; };
 		C49B09D9225DFD6100E3C771 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B09D8225DFD6100E3C771 /* Company.swift */; };
 		C4BB07F222493EB5008C0671 /* ConfirmNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB07F122493EB5008C0671 /* ConfirmNewPasswordViewController.swift */; };
 		C4C265222260B3CE00C0211F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C265212260B3CE00C0211F /* RegisterViewController.swift */; };
@@ -59,6 +60,7 @@
 		C431C78A2200B3C5001AEDB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C431C78D2200B3C5001AEDB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C431C78F2200B3C5001AEDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C447F60122A92C300083420A /* RequestDetaile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetaile.swift; sourceTree = "<group>"; };
 		C49B09D8225DFD6100E3C771 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		C4BB07F122493EB5008C0671 /* ConfirmNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmNewPasswordViewController.swift; sourceTree = "<group>"; };
 		C4C265212260B3CE00C0211F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				C4CB9260223D28B30020172C /* User.swift */,
 				C49B09D8225DFD6100E3C771 /* Company.swift */,
+				C447F60122A92C300083420A /* RequestDetaile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				C4CB9266223D429D0020172C /* VerifyEmailViewController.swift in Sources */,
 				C4CB925F223D27BF0020172C /* GetUserByEmail.swift in Sources */,
 				C402DDBA225FACB80099D103 /* ShowRequestViewController.swift in Sources */,
+				C447F60222A92C300083420A /* RequestDetaile.swift in Sources */,
 				1802CEF622A81300000193B7 /* ImportExportHomeViewController.swift in Sources */,
 				C4C265242260B40900C0211F /* SecondRegisterViewController.swift in Sources */,
 				18EAA2E8227336940054919D /* Constants.swift in Sources */,
