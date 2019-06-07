@@ -10,8 +10,7 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class ImportExportHomeViewController: UIViewController
-//, CLLocationManagerDelegate
+class ImportExportHomeViewController: UIViewController, CLLocationManagerDelegate
 {
 
     @IBOutlet weak var MapView: GMSMapView!
@@ -27,15 +26,14 @@ class ImportExportHomeViewController: UIViewController
         
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
         
-//        locationManager.delegate = self
-//        locationManager.requestWhenInUseAuthorization()
-//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager.startUpdatingLocation()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
         // Do any additional setup after loading the view.
     }
     
     @IBAction func NotificationAction(_ sender: UIButton) {
-        
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ImportExportNotification") as! ImportExportNotificationViewController
         self.navigationController?.pushViewController(vc, animated: true)
         print("notification button is clicked")
@@ -43,11 +41,11 @@ class ImportExportHomeViewController: UIViewController
     }
     
     @IBAction func MenuAction(_ sender: UIButton) {
-        let TransportMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "importExportMenu") as! ImportExportMenuViewController
-        self.addChild(TransportMenu)
-        TransportMenu.view.frame = self.view.frame
-        self.view.addSubview(TransportMenu.view)
-        TransportMenu.didMove(toParent: self)
+        let ImportExportMenu = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "importExportMenu") as! ImportExportMenuViewController
+        self.addChild(ImportExportMenu)
+        ImportExportMenu.view.frame = self.view.frame
+        self.view.addSubview(ImportExportMenu.view)
+        ImportExportMenu.didMove(toParent: self)
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let latitude = locations.last?.coordinate.latitude

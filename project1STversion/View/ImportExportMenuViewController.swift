@@ -16,7 +16,7 @@ class ImportExportMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         
         MenuView.transform = CGAffineTransform(translationX: MenuView.center.x - view.bounds.width, y: 0.5)
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
@@ -57,9 +57,8 @@ class ImportExportMenuViewController: UIViewController {
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
             self.MenuView.transform = CGAffineTransform(translationX: self.MenuView.center.x - 2 * self.view.bounds.width, y: 0.5)
         }) { (success) in
-            
+            self.view.removeFromSuperview()
         }
-        _ = navigationController?.popViewController(animated: true)
     }
     
     /*
