@@ -32,4 +32,17 @@ class ApiMethods {
             }
         }
     }
+    class func TransportRequestDetails(requestId : Int , Request:@escaping (_ requestDetaile: RequestDetaile)->Void){
+        let Url = URL(string: RequestDetailsUrl)!
+        Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON{ (request) in
+            switch (request.result){
+            case .success(let value):
+                let json = JSON(value)
+                print(json)
+                if let request = json["request"].
+                
+                
+        }
+        
+    }
 }

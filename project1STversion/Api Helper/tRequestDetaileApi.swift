@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 class tRequestDetaileApi {
-    
+    class func tRequestDetaileApi(
     
     
     
