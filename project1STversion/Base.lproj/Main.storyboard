@@ -3501,7 +3501,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6d-vM-L0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11439" y="7829"/>
+            <point key="canvasLocation" x="-11458" y="8024"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6aB-0V-uAL">
@@ -7890,7 +7890,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kH7-K2-ROz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9167" y="7828"/>
+            <point key="canvasLocation" x="-9167" y="8024"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="E99-eo-K1v">
@@ -8359,7 +8359,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMd-pK-OH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9954" y="8024"/>
+            <point key="canvasLocation" x="-9967" y="8024"/>
         </scene>
         <!--SelectPayment-->
         <scene sceneID="3wL-GP-6WO">
@@ -8630,7 +8630,7 @@ pay 5% of the shipment price.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Eu-4L-rKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12202" y="7829"/>
+            <point key="canvasLocation" x="-12202" y="8024"/>
         </scene>
     </scenes>
     <resources>
