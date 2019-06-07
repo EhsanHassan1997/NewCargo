@@ -17,20 +17,25 @@ class TransportNotificationViewController: UIViewController,UITableViewDelegate,
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return 1
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell : TransportNotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TransportNotificationCell", for: indexPath) as! TransportNotificationTableViewCell
         cell.firstLabel.text = "you have request from"
         cell.secondLabel.text = "Ehsan Company for Import & Export"
         cell.imExCompanyLogoImageView.layer.cornerRadius = cell.imExCompanyLogoImageView.bounds.width / 2
         cell.imExCompanyLogoImageView.clipsToBounds = true
         return cell
+        
     }
     
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))

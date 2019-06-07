@@ -16,8 +16,6 @@ class ApiMethods {
         var prametars = [
             "email" : Email ,
             "password" : Password,
-            
-            
         ]
         Alamofire.request(Url, method: .post, parameters: prametars, encoding: JSONEncoding.default, headers: nil).responseJSON { (request) in
             switch (request.result){

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1un-fv-fbC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c4d-AS-Jbi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1047,7 +1047,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWS-Te-rU6" userLabel="ImageAndName">
                                                         <rect key="frame" x="19" y="26" width="337.5" height="112"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgback" translatesAutoresizingMaskIntoConstraints="NO" id="7Hm-vh-vHq" userLabel="profileImageI">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Hm-vh-vHq" userLabel="profileImageI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="111.5" height="112"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="7Hm-vh-vHq" secondAttribute="height" multiplier="1:1" id="i9H-7z-2oo"/>
@@ -1391,7 +1391,7 @@
                                                                 <rect key="frame" x="0.0" y="27.5" width="281" height="41.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1409,8 +1409,14 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElI-kY-eEs">
                                                         <rect key="frame" x="37.5" y="685" width="300" height="43"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CheckedBox" translatesAutoresizingMaskIntoConstraints="NO" id="Tnj-Cr-aqV">
-                                                                <rect key="frame" x="3" y="5" width="24" height="24"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM7-Sw-XCY">
+                                                                <rect key="frame" x="3" y="9.5" width="24" height="24"/>
+                                                                <connections>
+                                                                    <action selector="TermsConditions:" destination="vjt-v6-IwJ" eventType="touchUpInside" id="KoL-G3-za9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="Tnj-Cr-aqV">
+                                                                <rect key="frame" x="3" y="9.5" width="24" height="24"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Tnj-Cr-aqV" secondAttribute="height" multiplier="1:1" id="6kM-g9-gq2"/>
                                                                 </constraints>
@@ -1434,10 +1440,19 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
+                                                            <constraint firstItem="MM7-Sw-XCY" firstAttribute="centerY" secondItem="Tnj-Cr-aqV" secondAttribute="centerY" id="Box-2t-BOO"/>
                                                             <constraint firstItem="Tnj-Cr-aqV" firstAttribute="centerY" secondItem="ElI-kY-eEs" secondAttribute="centerY" id="EHO-ge-xGF"/>
+                                                            <constraint firstItem="MM7-Sw-XCY" firstAttribute="centerX" secondItem="Tnj-Cr-aqV" secondAttribute="centerX" id="GFw-xs-Tgv"/>
                                                             <constraint firstItem="Tnj-Cr-aqV" firstAttribute="centerX" secondItem="ElI-kY-eEs" secondAttribute="centerX" multiplier="0.1" id="L8I-v5-lIK"/>
                                                             <constraint firstItem="Tnj-Cr-aqV" firstAttribute="width" secondItem="ElI-kY-eEs" secondAttribute="width" multiplier="0.08" id="al8-GZ-GsX"/>
+                                                            <constraint firstItem="MM7-Sw-XCY" firstAttribute="height" secondItem="Tnj-Cr-aqV" secondAttribute="height" id="lHM-oL-BZ1"/>
+                                                            <constraint firstItem="MM7-Sw-XCY" firstAttribute="width" secondItem="Tnj-Cr-aqV" secondAttribute="width" id="x27-T2-BNB"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLv-SP-rBs">
                                                         <rect key="frame" x="52.5" y="791.5" width="270" height="51.5"/>
@@ -1457,6 +1472,7 @@
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
+                                                                            <constraint firstAttribute="width" constant="125" id="5Dw-pk-9M7"/>
                                                                             <constraint firstItem="c20-qZ-OSg" firstAttribute="centerX" secondItem="8vd-14-iyM" secondAttribute="centerX" id="E8o-qJ-uDM"/>
                                                                             <constraint firstItem="c20-qZ-OSg" firstAttribute="centerY" secondItem="8vd-14-iyM" secondAttribute="centerY" id="Huq-Zm-1hp"/>
                                                                         </constraints>
@@ -1473,7 +1489,7 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="AcceptAction:" destination="vjt-v6-IwJ" eventType="touchUpInside" id="Tol-gJ-OlG"/>
+                                                                            <action selector="AcceptingAction:" destination="vjt-v6-IwJ" eventType="touchUpInside" id="DYo-gI-JxL"/>
                                                                         </connections>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L29-V6-uc0" userLabel="ignoreBD" customClass="LGButton" customModule="LGButton">
@@ -1647,10 +1663,10 @@ pay 5% of the shipment price.</string>
                     <size key="freeformSize" width="375" height="924"/>
                     <connections>
                         <outlet property="AcceptButton" destination="8vd-14-iyM" id="qcL-Aq-Fhe"/>
-                        <outlet property="AcceptConditionButton" destination="Tnj-Cr-aqV" id="6oi-Ej-iHx"/>
                         <outlet property="CargoType" destination="3oS-pz-r8q" id="pqH-J7-TQX"/>
                         <outlet property="DestinationLocation" destination="3Y3-Q2-ch3" id="gwV-Fk-Utc"/>
                         <outlet property="EndDate" destination="xa3-Ar-qgc" id="4WY-Pf-S1G"/>
+                        <outlet property="EnterPriceLable" destination="G1W-CR-3gd" id="EeV-t4-rI0"/>
                         <outlet property="HeightOfCargo" destination="Q3z-SP-fhF" id="9b4-eo-ogR"/>
                         <outlet property="IgnoreButton" destination="L29-V6-uc0" id="VcT-xD-FKr"/>
                         <outlet property="ImportExportLogoImage" destination="7Hm-vh-vHq" id="xl3-KG-6vE"/>
@@ -1663,6 +1679,7 @@ pay 5% of the shipment price.</string>
                         <outlet property="VolumeOfCargo" destination="hv6-Sv-UfV" id="nh1-yq-HPJ"/>
                         <outlet property="WeightOfCargo" destination="pXr-Hx-OCV" id="3WJ-UU-vgS"/>
                         <outlet property="WidthOfCargo" destination="xR1-FS-ves" id="EVf-gf-IO1"/>
+                        <outlet property="imageTerms" destination="Tnj-Cr-aqV" id="Ppw-i7-iIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KN-j1-6fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2681,21 +2698,21 @@ pay 5% of the shipment price.</string>
             <objects>
                 <viewController title="bookTransport" id="ieI-Hf-AQa" userLabel="Book Transport" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F36-v5-rZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKQ-1E-b7e" userLabel="barV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="33.5"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="47.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnM-fD-q0O">
-                                        <rect key="frame" x="37.5" y="3.5" width="300" height="26.5"/>
+                                        <rect key="frame" x="37.5" y="5" width="300" height="38"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-iZ-xgI" userLabel="menu">
-                                                <rect key="frame" x="0.0" y="0.0" width="24" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="38"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28l-iZ-l5f" userLabel="notification">
-                                                <rect key="frame" x="276" y="0.0" width="24" height="26.5"/>
+                                                <rect key="frame" x="276" y="0.0" width="24" height="38"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                         </subviews>
@@ -2721,7 +2738,7 @@ pay 5% of the shipment price.</string>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYs-IO-bh5">
-                                <rect key="frame" x="0.0" y="53.5" width="375" height="613.5"/>
+                                <rect key="frame" x="0.0" y="67.5" width="375" height="882.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5t-Uk-orf">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
@@ -2743,7 +2760,7 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sCb-Xu-1rG" userLabel="cargoTypeTF">
-                                                                <rect key="frame" x="0.0" y="11" width="300" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -2759,7 +2776,7 @@ pay 5% of the shipment price.</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ3-ZB-Jlo" userLabel="cargoTypeB">
-                                                                <rect key="frame" x="270" y="16" width="24" height="24"/>
+                                                                <rect key="frame" x="270" y="16.5" width="24" height="23.5"/>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                         </subviews>
@@ -2781,7 +2798,7 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="55" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-0U-Zu9" userLabel="quantityTF">
-                                                                <rect key="frame" x="0.0" y="11" width="300" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -2804,19 +2821,19 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="110" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tHN-QH-7eG" userLabel="wieghtTF">
-                                                                <rect key="frame" x="0.0" y="11" width="195" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="195" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Wp-FN-9AR" userLabel="wieghtMeasureTF">
-                                                                <rect key="frame" x="210" y="11" width="90" height="34"/>
+                                                                <rect key="frame" x="210" y="11.5" width="90" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJw-6v-9N9" userLabel="wieghtMeasureB">
-                                                                <rect key="frame" x="270" y="16" width="24" height="24"/>
+                                                                <rect key="frame" x="270" y="16.5" width="24" height="23.5"/>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wieght" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7v-cz-h2j">
@@ -2841,19 +2858,19 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="165" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLs-u4-neQ" userLabel="lengthTF">
-                                                                <rect key="frame" x="0.0" y="11" width="195" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="195" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uUl-Kg-nOO" userLabel="lengthMeasureTF">
-                                                                <rect key="frame" x="210" y="11" width="90" height="34"/>
+                                                                <rect key="frame" x="210" y="11.5" width="90" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrw-B6-086" userLabel="lengthMeasureB">
-                                                                <rect key="frame" x="270" y="16" width="24" height="24"/>
+                                                                <rect key="frame" x="270" y="16.5" width="24" height="23.5"/>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmn-WI-jNO">
@@ -2876,19 +2893,19 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="220" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="swy-0G-Pf9" userLabel="hieghtTF">
-                                                                <rect key="frame" x="0.0" y="11" width="195" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="195" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FFi-A9-ioU" userLabel="hieghtMeasureTF">
-                                                                <rect key="frame" x="210" y="11" width="90" height="34"/>
+                                                                <rect key="frame" x="210" y="11.5" width="90" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK1-v3-pPJ" userLabel="hieghtMeasureB">
-                                                                <rect key="frame" x="270" y="16" width="24" height="24"/>
+                                                                <rect key="frame" x="270" y="16.5" width="24" height="23.5"/>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hieght" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-zL-nm8">
@@ -2911,19 +2928,19 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="275" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MmS-5g-QqT" userLabel="widthTF">
-                                                                <rect key="frame" x="0.0" y="11" width="195" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="195" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E8K-Ik-gDJ" userLabel="widthMeasureTF">
-                                                                <rect key="frame" x="210" y="11" width="90" height="34"/>
+                                                                <rect key="frame" x="210" y="11.5" width="90" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TX9-2t-kTR" userLabel="widthMeasureB">
-                                                                <rect key="frame" x="270" y="16" width="24" height="24"/>
+                                                                <rect key="frame" x="270" y="16.5" width="24" height="23.5"/>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzT-3E-Ml2">
@@ -2946,13 +2963,13 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="330" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7GH-Z8-5Rj" userLabel="pickUpLocationTF">
-                                                                <rect key="frame" x="0.0" y="11" width="300" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peu-Cj-8WY" userLabel="pickUpLocationB">
-                                                                <rect key="frame" x="270" y="16" width="24" height="24"/>
+                                                                <rect key="frame" x="270" y="16.5" width="24" height="23.5"/>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Up Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfS-NA-WBX">
@@ -2974,13 +2991,13 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="385" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7w-WL-q9h" userLabel="destinationTF">
-                                                                <rect key="frame" x="0.0" y="11" width="300" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSy-TS-h8S" userLabel="destinationB">
-                                                                <rect key="frame" x="270" y="16" width="24" height="24"/>
+                                                                <rect key="frame" x="270" y="16.5" width="24" height="23.5"/>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-Cy-A7e">
@@ -3002,13 +3019,13 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="440" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bc8-dg-haw" userLabel="startDateTF">
-                                                                <rect key="frame" x="0.0" y="11" width="300" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sw-Gn-gFV">
-                                                                <rect key="frame" x="270" y="16" width="24" height="24"/>
+                                                                <rect key="frame" x="270" y="16.5" width="24" height="23.5"/>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuY-RF-V8B">
@@ -3030,13 +3047,13 @@ pay 5% of the shipment price.</string>
                                                         <rect key="frame" x="0.0" y="495" width="300" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0wT-B6-jSk" userLabel="endDateTF">
-                                                                <rect key="frame" x="0.0" y="11" width="300" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UZ-mK-QFI">
-                                                                <rect key="frame" x="270" y="16" width="24" height="24"/>
+                                                                <rect key="frame" x="270" y="16.5" width="24" height="23.5"/>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAS-EG-y1y">
@@ -3251,10 +3268,11 @@ pay 5% of the shipment price.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w83-0T-SAq"/>
                     </view>
+                    <size key="freeformSize" width="375" height="950"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPS-JL-qma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9954" y="6996"/>
+            <point key="canvasLocation" x="-9966" y="7124"/>
         </scene>
         <!--Imp-ExpNotification-->
         <scene sceneID="6fp-HB-AsV">
@@ -8340,7 +8358,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMd-pK-OH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9954" y="7828"/>
+            <point key="canvasLocation" x="-9954" y="8024"/>
         </scene>
         <!--SelectPayment-->
         <scene sceneID="3wL-GP-6WO">
@@ -8621,15 +8639,14 @@ pay 5% of the shipment price.</string>
         <image name="Add2" width="47" height="47"/>
         <image name="BackGroundImg" width="750" height="1334"/>
         <image name="Background" width="750" height="1334"/>
-        <image name="CheckedBox" width="28" height="27"/>
         <image name="EndDateIcon" width="24" height="24"/>
         <image name="History" width="42" height="40"/>
         <image name="Logout" width="46" height="46"/>
         <image name="MeueIcon" width="48" height="35"/>
         <image name="NotificationIcon" width="39" height="47"/>
         <image name="StartDateIcon" width="24" height="24"/>
+        <image name="Unchecked" width="28" height="27"/>
         <image name="appLogo" width="198" height="251"/>
-        <image name="bgback" width="350" height="700"/>
         <image name="bookTransport" width="40" height="40"/>
         <image name="circleSelect" width="39" height="39"/>
         <image name="circleSelected" width="39" height="39"/>

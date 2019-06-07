@@ -56,12 +56,12 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
         let myColor = UIColor.orange
         if (addressTextField.text == "" || phoneTextField.text == "" || emailTextField.text == "" || companyNameTextField.text == ""){
             errorMessageLable.text = "fill empty space "
-            
+
             if (companyNameTextField.text == ""){
                 companyNameTextField.layer.borderWidth =  2
                 companyNameTextField.layer.cornerRadius = 7
                 companyNameTextField.layer.borderColor = myColor.cgColor
-                
+
             }else{
                 companyNameTextField.layer.borderWidth =  0
             }
@@ -69,16 +69,16 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
                 emailTextField.layer.borderWidth =  2
                 emailTextField.layer.cornerRadius = 7
                 emailTextField.layer.borderColor = myColor.cgColor
-                
+
             }else{
                 emailTextField.layer.borderWidth =  0
-                
+
             }
             if(phoneTextField.text == "" ){
                 phoneTextField.layer.borderWidth =  2
                 phoneTextField.layer.cornerRadius = 7
                 phoneTextField.layer.borderColor = myColor.cgColor
-                
+
             }else{
                 phoneTextField.layer.borderWidth =  0
             }
@@ -86,11 +86,11 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
                 addressTextField.layer.borderWidth =  2
                 addressTextField.layer.cornerRadius = 7
                 addressTextField.layer.borderColor = myColor.cgColor
-                
+
             }else{
                 addressTextField.layer.borderWidth =  0
-                
-                
+
+
             }
         }else{
             if (IsVailidEmail(emailID: emailTextField.text!)){
@@ -100,15 +100,15 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
                 company.Phone = phoneTextField.text
                 company.Address = addressTextField.text
                 performSegue(withIdentifier: "secondRegister", sender: company)
-            
+
 //        company.image = profileImageView
             }else{
                 errorMessageLable.text = "Enter valid data"
 
             }
-            
+
         }
-        
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

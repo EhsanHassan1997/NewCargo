@@ -9,5 +9,10 @@
 import Foundation
 let ServerUrl = "http://52.59.231.58/"
 let MainUrl = ServerUrl + "api/"
+
+// user login
 let UserLoginUrl = MainUrl + "user/login"
+
+//request details
+let RequestDetailsUrl = ServerUrl + "request/store"
 
