@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c4d-AS-Jbi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c4d-AS-Jbi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -744,7 +744,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="td0-iQ-HSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4490" y="-2014"/>
+            <point key="canvasLocation" x="-10674" y="8866"/>
         </scene>
         <!--TransportRegister-->
         <scene sceneID="DsC-Ni-1Tr">
@@ -3154,14 +3154,15 @@ pay 5% of the shipment price.</string>
                                                     <constraint firstItem="MmS-5g-QqT" firstAttribute="centerX" secondItem="tHN-QH-7eG" secondAttribute="centerX" id="zrp-yY-xIq"/>
                                                 </constraints>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-c2-M5g">
-                                                <rect key="frame" x="37.5" y="724.5" width="169" height="27"/>
-                                                <state key="normal">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-c2-M5g">
+                                                <rect key="frame" x="37.5" y="724.5" width="187.5" height="27"/>
+                                                <state key="normal" image="CheckTerms">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="TERMS &amp; CONDITION">
+                                                        <fragment content=" ACCEPT TERMS &amp; CONDITION">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <font key="NSFont" size="15" name="LucidaGrande"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -3225,7 +3226,7 @@ pay 5% of the shipment price.</string>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="pFe-c2-M5g" firstAttribute="height" secondItem="P5t-Uk-orf" secondAttribute="height" multiplier="0.03" id="30K-9K-9ng"/>
-                                            <constraint firstItem="pFe-c2-M5g" firstAttribute="width" secondItem="P5t-Uk-orf" secondAttribute="width" multiplier="0.45" id="8Uo-bJ-efP"/>
+                                            <constraint firstItem="pFe-c2-M5g" firstAttribute="width" secondItem="P5t-Uk-orf" secondAttribute="width" multiplier="0.5" id="8Uo-bJ-efP"/>
                                             <constraint firstItem="xas-XN-O1U" firstAttribute="centerY" secondItem="P5t-Uk-orf" secondAttribute="centerY" id="96s-69-FBO"/>
                                             <constraint firstAttribute="height" constant="900" id="IB2-Ak-MlU"/>
                                             <constraint firstItem="xas-XN-O1U" firstAttribute="height" secondItem="P5t-Uk-orf" secondAttribute="height" multiplier="0.6" id="IT9-hn-LK4"/>
@@ -7084,31 +7085,31 @@ pay 5% of the shipment price.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzc-9Z-IcQ">
-                                <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="300" height="647"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="gn7-Xr-5b9">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="647"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iF-Sg-U1t">
-                                        <rect key="frame" x="15" y="0.0" width="270" height="133.5"/>
+                                        <rect key="frame" x="15" y="0.0" width="270" height="129.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile image" translatesAutoresizingMaskIntoConstraints="NO" id="oYK-f4-VHr">
-                                                <rect key="frame" x="20.5" y="39.5" width="81" height="81"/>
+                                                <rect key="frame" x="20.5" y="37" width="81" height="81"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="oYK-f4-VHr" secondAttribute="height" multiplier="1:1" id="ua7-QA-7Pe"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-vV-92U">
-                                                <rect key="frame" x="128.5" y="51.5" width="121.5" height="57"/>
+                                                <rect key="frame" x="128.5" y="49.5" width="121.5" height="56.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tyv-90-3fV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="37"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="36.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ILB-zQ-tgB" userLabel="Rate">
-                                                        <rect key="frame" x="12" y="40" width="97" height="17"/>
+                                                        <rect key="frame" x="12" y="39.5" width="97" height="17"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="9xy-Ho-GOn">
                                                                 <rect key="frame" x="0.0" y="0.0" width="18.5" height="17"/>
@@ -7141,7 +7142,7 @@ pay 5% of the shipment price.</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d36-EN-gQa">
-                                                <rect key="frame" x="0.0" y="0.0" width="270" height="133.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="129.5"/>
                                                 <connections>
                                                     <action selector="ProfileAction:" destination="gjB-yh-YsN" eventType="touchUpInside" id="mwe-lo-vSS"/>
                                                 </connections>
@@ -7163,25 +7164,25 @@ pay 5% of the shipment price.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ek5-3G-pR6">
-                                        <rect key="frame" x="15" y="133.5" width="270" height="533.5"/>
+                                        <rect key="frame" x="15" y="129.5" width="270" height="517.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tl6-4w-ey3">
-                                                <rect key="frame" x="0.0" y="26.5" width="270" height="480.5"/>
+                                                <rect key="frame" x="0.0" y="26" width="270" height="465.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XO-NQ-38A">
-                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="68.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="66.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05g-kQ-1P1">
-                                                                <rect key="frame" x="27" y="19" width="216" height="31"/>
+                                                                <rect key="frame" x="27" y="18" width="216" height="30"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookTransport" translatesAutoresizingMaskIntoConstraints="NO" id="eRQ-RE-5Eu">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="eRQ-RE-5Eu" secondAttribute="height" multiplier="1:1" id="qff-mc-ngc"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGA-8o-9Rb">
-                                                                        <rect key="frame" x="43" y="0.0" width="173" height="31"/>
+                                                                        <rect key="frame" x="43" y="0.0" width="173" height="30"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Book Transport">
                                                                                 <attributes>
@@ -7206,7 +7207,7 @@ pay 5% of the shipment price.</string>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkv-Eb-vhO">
-                                                                <rect key="frame" x="27" y="19" width="216" height="31"/>
+                                                                <rect key="frame" x="27" y="18" width="216" height="30"/>
                                                                 <connections>
                                                                     <action selector="BookTransportAction:" destination="gjB-yh-YsN" eventType="touchUpInside" id="sOa-Ud-qST"/>
                                                                 </connections>
@@ -7225,16 +7226,16 @@ pay 5% of the shipment price.</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0z0-4d-Sln">
-                                                        <rect key="frame" x="0.0" y="68.5" width="270" height="69"/>
+                                                        <rect key="frame" x="0.0" y="66.5" width="270" height="66.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCV-td-9Yz">
-                                                                <rect key="frame" x="27" y="19" width="216" height="31"/>
+                                                                <rect key="frame" x="27" y="18" width="216" height="30"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment" translatesAutoresizingMaskIntoConstraints="NO" id="tOr-dL-O3t">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xbt-Br-EjS">
-                                                                        <rect key="frame" x="43" y="0.0" width="173" height="31"/>
+                                                                        <rect key="frame" x="43" y="0.0" width="173" height="30"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Payment">
@@ -7248,7 +7249,7 @@ pay 5% of the shipment price.</string>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW4-RT-Xoq">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
                                                                         <connections>
                                                                             <action selector="PaymentAction:" destination="gjB-yh-YsN" eventType="touchUpInside" id="caW-5r-NRL"/>
                                                                         </connections>
@@ -7271,16 +7272,16 @@ pay 5% of the shipment price.</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rq9-Ph-0fx">
-                                                        <rect key="frame" x="0.0" y="137.5" width="270" height="68.5"/>
+                                                        <rect key="frame" x="0.0" y="133" width="270" height="66.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K34-jO-sZe">
-                                                                <rect key="frame" x="27" y="18.5" width="216" height="31"/>
+                                                                <rect key="frame" x="27" y="18" width="216" height="30"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="currentShipment" translatesAutoresizingMaskIntoConstraints="NO" id="vu4-X4-c5o">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GgN-lO-OXi">
-                                                                        <rect key="frame" x="43" y="0.0" width="173" height="31"/>
+                                                                        <rect key="frame" x="43" y="0.0" width="173" height="30"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Current Shipment">
@@ -7294,7 +7295,7 @@ pay 5% of the shipment price.</string>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5f-Pg-L0h">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
                                                                         <connections>
                                                                             <action selector="CurrentShipmentAction:" destination="gjB-yh-YsN" eventType="touchUpInside" id="oMS-YM-izC"/>
                                                                         </connections>
@@ -7317,16 +7318,16 @@ pay 5% of the shipment price.</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3b-VL-yjn">
-                                                        <rect key="frame" x="0.0" y="206" width="270" height="68.5"/>
+                                                        <rect key="frame" x="0.0" y="199.5" width="270" height="66.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWH-WE-t7Y">
-                                                                <rect key="frame" x="27" y="19" width="216" height="30.5"/>
+                                                                <rect key="frame" x="27" y="18" width="216" height="30"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="History" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-FM-F4D">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="31" height="30.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eX1-Gf-lqY">
-                                                                        <rect key="frame" x="43" y="0.0" width="173" height="30.5"/>
+                                                                        <rect key="frame" x="43" y="0.0" width="173" height="30"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="History of shipment">
@@ -7340,7 +7341,7 @@ pay 5% of the shipment price.</string>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-dy-Ip5">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="30.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
                                                                         <connections>
                                                                             <action selector="HistoryOfShipmentAction:" destination="gjB-yh-YsN" eventType="touchUpInside" id="inc-yK-1bV"/>
                                                                         </connections>
@@ -7363,16 +7364,16 @@ pay 5% of the shipment price.</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEX-Vk-Pqi">
-                                                        <rect key="frame" x="0.0" y="274.5" width="270" height="68.5"/>
+                                                        <rect key="frame" x="0.0" y="266" width="270" height="66.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tg8-uj-czq">
-                                                                <rect key="frame" x="27" y="19" width="216" height="30.5"/>
+                                                                <rect key="frame" x="27" y="18.5" width="216" height="29.5"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logout" translatesAutoresizingMaskIntoConstraints="NO" id="3a6-Ph-hxZ">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="31" height="30.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="29.5"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qnV-AE-OeB">
-                                                                        <rect key="frame" x="43" y="0.0" width="173" height="30.5"/>
+                                                                        <rect key="frame" x="43" y="0.0" width="173" height="29.5"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Logout">
@@ -7386,7 +7387,7 @@ pay 5% of the shipment price.</string>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQh-CO-ive">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="30.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="29.5"/>
                                                                         <connections>
                                                                             <action selector="LogoutAction:" destination="gjB-yh-YsN" eventType="touchUpInside" id="Hg1-j3-9G1"/>
                                                                         </connections>
@@ -7409,16 +7410,16 @@ pay 5% of the shipment price.</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HK0-Pe-LeJ">
-                                                        <rect key="frame" x="0.0" y="343" width="270" height="68.5"/>
+                                                        <rect key="frame" x="0.0" y="332.5" width="270" height="66.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rff-1C-Jd8">
-                                                                <rect key="frame" x="27" y="19" width="216" height="31"/>
+                                                                <rect key="frame" x="27" y="18.5" width="216" height="30"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactUS" translatesAutoresizingMaskIntoConstraints="NO" id="U1Z-to-Rvr">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-SP-FGd">
-                                                                        <rect key="frame" x="43" y="0.0" width="173" height="31"/>
+                                                                        <rect key="frame" x="43" y="0.0" width="173" height="30"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Contact">
@@ -7432,7 +7433,7 @@ pay 5% of the shipment price.</string>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbw-Qx-1Bs">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
                                                                         <connections>
                                                                             <action selector="ContactUsAction:" destination="gjB-yh-YsN" eventType="touchUpInside" id="cv0-4f-a6p"/>
                                                                         </connections>
@@ -7455,16 +7456,16 @@ pay 5% of the shipment price.</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r69-5B-oMq">
-                                                        <rect key="frame" x="0.0" y="411.5" width="270" height="69"/>
+                                                        <rect key="frame" x="0.0" y="399" width="270" height="66.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dez-Ra-vYP">
-                                                                <rect key="frame" x="27" y="19" width="216" height="31"/>
+                                                                <rect key="frame" x="27" y="18.5" width="216" height="30"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="UF9-C0-AqO">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pzb-yU-q5r">
-                                                                        <rect key="frame" x="43" y="0.0" width="173" height="31"/>
+                                                                        <rect key="frame" x="43" y="0.0" width="173" height="30"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Help">
@@ -7478,7 +7479,7 @@ pay 5% of the shipment price.</string>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMc-1k-Dnk">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <connections>
                                                                             <action selector="HelpAction:" destination="gjB-yh-YsN" eventType="touchUpInside" id="U2n-sc-zKz"/>
@@ -7599,13 +7600,13 @@ pay 5% of the shipment price.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bzc-9Z-IcQ" firstAttribute="height" secondItem="AW0-04-co0" secondAttribute="height" id="3DQ-w9-Of6"/>
+                            <constraint firstItem="bzc-9Z-IcQ" firstAttribute="height" secondItem="8fC-My-qb1" secondAttribute="height" id="3DQ-w9-Of6"/>
                             <constraint firstItem="8fC-My-qb1" firstAttribute="trailing" secondItem="i7V-af-bAd" secondAttribute="trailing" id="3d0-RU-11U"/>
                             <constraint firstItem="i7V-af-bAd" firstAttribute="centerY" secondItem="AW0-04-co0" secondAttribute="centerY" id="5EX-qc-sWU"/>
                             <constraint firstItem="i7V-af-bAd" firstAttribute="width" secondItem="AW0-04-co0" secondAttribute="width" multiplier="0.2" id="EbF-2e-is7"/>
                             <constraint firstItem="i7V-af-bAd" firstAttribute="height" secondItem="AW0-04-co0" secondAttribute="height" id="L3o-YA-jk7"/>
                             <constraint firstItem="bzc-9Z-IcQ" firstAttribute="width" secondItem="AW0-04-co0" secondAttribute="width" multiplier="0.8" id="gCC-wW-ecM"/>
-                            <constraint firstItem="bzc-9Z-IcQ" firstAttribute="centerY" secondItem="AW0-04-co0" secondAttribute="centerY" id="mnh-aM-5l2"/>
+                            <constraint firstItem="bzc-9Z-IcQ" firstAttribute="centerY" secondItem="8fC-My-qb1" secondAttribute="centerY" id="mnh-aM-5l2"/>
                             <constraint firstItem="bzc-9Z-IcQ" firstAttribute="leading" secondItem="8fC-My-qb1" secondAttribute="leading" id="osw-UG-pVL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8fC-My-qb1"/>
@@ -8639,6 +8640,7 @@ pay 5% of the shipment price.</string>
         <image name="Add2" width="47" height="47"/>
         <image name="BackGroundImg" width="750" height="1334"/>
         <image name="Background" width="750" height="1334"/>
+        <image name="CheckTerms" width="28" height="27"/>
         <image name="EndDateIcon" width="24" height="24"/>
         <image name="History" width="42" height="40"/>
         <image name="Logout" width="46" height="46"/>
