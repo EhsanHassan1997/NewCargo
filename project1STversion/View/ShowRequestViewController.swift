@@ -26,26 +26,61 @@ class ShowRequestViewController: UIViewController {
     @IBOutlet weak var StartDate: UILabel!
     @IBOutlet weak var EndDate: UILabel!
     @IBOutlet weak var PriceTextField: UITextField!
-    
     @IBOutlet weak var imageTerms: UIImageView!
     @IBOutlet weak var IgnoreButton: LGButton!
     @IBOutlet weak var AcceptButton: LGButton!
     @IBOutlet weak var EnterPriceLable: UILabel!
     
-    var  ReqTOTO = RequestDetaile()
+//    var  ReqTOTO = RequestDetaile()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ReqTOTO.cargoType = "liqued"
-        ReqTOTO.Quantity = 3
-        ReqTOTO.Weight = 4.5
-        ReqTOTO.Hieght = 2
-        ReqTOTO.Length = 4
-        ReqTOTO.Width = 3
-        ReqTOTO.Volume = ReqTOTO.Weight! *  ReqTOTO.Hieght! * ReqTOTO.Width!
-        ReqTOTO.PickUp = " 23 st Giza Tahrer"
-        ReqTOTO.Destination = "34 st cairo naser"
+        
+//        ApiMethods.LoginUser(Email: email!, Password: password!) { (tokeN) in
+//            UserDefaults.standard.set(tokeN, forKey: "token")
+        //     UserDefaults.standard.set(true, forKey: "Logged")
+        
+  //  }
+//        ApiMethods.TransportRequestDetails(requestId: 3
+//       , Request: (RequestDetaile)){(ReqTOTO) in
+//
+//        CargoType.text = "Cargo Type : " + ReqTOTO.cargoType
+//        QuantityOfCargo.text = "Quantity : " + String(ReqTOTO.Quantity!)
+//        WeightOfCargo.text = "Weight : " + String(ReqTOTO.Weight!)
+//        VolumeOfCargo.text = "Volume : " + String(ReqTOTO.Volume!)
+//        WidthOfCargo.text = "Width  : " + String(ReqTOTO.Width!)
+//        HeightOfCargo.text = "Hieght : " + String(ReqTOTO.Hieght!)
+//        LenghtOfCargo.text = "Lenght : " + String(ReqTOTO.Length!)
+//        PickUpLocation.text = String(ReqTOTO.PickUp!)
+//        DestinationLocation.text = String(ReqTOTO.Destination!)
+//        ImportExportLogoImage.layer.cornerRadius = ImportExportLogoImage.bounds.width / 2
+//        ImportExportLogoImage.clipsToBounds = true
+//
+//        }
+        
+        ApiMethods.TransportRequestDetails(requestId : 3) { (ReqTOTO) in
+            print("Cargo Type:--\n", ReqTOTO.cargoType)
+//            self.CargoType.text = "Cargo Type : " + ReqTOTO.cargoType
+//            self.QuantityOfCargo.text = "Quantity : " + String(ReqTOTO.Quantity!)
+//            self.WeightOfCargo.text = "Weight : " + String(ReqTOTO.Weight!)
+//            self.VolumeOfCargo.text = "Volume : " + String(ReqTOTO.Volume!)
+//            self.WidthOfCargo.text = "Width  : " + String(ReqTOTO.Width!)
+//            self.HeightOfCargo.text = "Hieght : " + String(ReqTOTO.Hieght!)
+//            self.LenghtOfCargo.text = "Lenght : " + String(ReqTOTO.Length!)
+//            self.PickUpLocation.text = String(ReqTOTO.PickUp!)
+//            self.DestinationLocation.text = String(ReqTOTO.Destination!)
+        }
+        
+//        ReqTOTO.cargoType = "liqued"
+//        ReqTOTO.Quantity = 3
+//        ReqTOTO.Weight = 4.5
+//        ReqTOTO.Hieght = 2
+//        ReqTOTO.Length = 4
+//        ReqTOTO.Width = 3
+//        ReqTOTO.Volume = ReqTOTO.Weight! *  ReqTOTO.Hieght! * ReqTOTO.Width!
+//        ReqTOTO.PickUp = " 23 st Giza Tahrer"
+//        ReqTOTO.Destination = "34 st cairo naser"
         
         //        ReqTOTO.EndDate = Date()
         //        var EdateComponents = DateComponents()
@@ -53,15 +88,7 @@ class ShowRequestViewController: UIViewController {
         //        EdateComponents.month = 2
         //        EdateComponents.day = 10
         
-        CargoType.text = ReqTOTO.cargoType
-        QuantityOfCargo.text = "Quantity : " + String(ReqTOTO.Quantity!)
-        WeightOfCargo.text = "Weight : " + String(ReqTOTO.Weight!)
-        VolumeOfCargo.text = "Volume : " + String(ReqTOTO.Volume!)
-        WidthOfCargo.text = "Width  : " + String(ReqTOTO.Width!)
-        HeightOfCargo.text = "Hieght : " + String(ReqTOTO.Hieght!)
-        LenghtOfCargo.text = "Lenght : " + String(ReqTOTO.Length!)
-        PickUpLocation.text = String(ReqTOTO.PickUp!)
-        DestinationLocation.text = String(ReqTOTO.Destination!)
+        
         
         // let userCalendar = Calendar.current // user calendar
         // let someDateTime = userCalendar.date(from: SdateComponents)
@@ -70,27 +97,27 @@ class ShowRequestViewController: UIViewController {
         //let someDateTime = formatter.date(from: ReqTOTO.StartDate )
         //ReqTOTO.StartDate = Date()
         
-        let userCalendar = Calendar.current
-        var SdateComponents = DateComponents()
-        SdateComponents.year = 2019
-        SdateComponents.month = 7
-        SdateComponents.day = 20
-        let start = userCalendar.date(from: SdateComponents)!
-        let myFormatter = DateFormatter()
-        myFormatter.dateFormat = "dd/MM/y"
-        StartDate.text = " Start date : " + myFormatter.string(from: start)
-        
-        
-        var EdateComponents = DateComponents()
-        EdateComponents.year = 2020
-        EdateComponents.month = 2
-        EdateComponents.day = 10
-        let end = userCalendar.date(from:EdateComponents)!
-        let mmyFormatter = DateFormatter()
-        mmyFormatter.dateFormat = "dd/MM/y"
-        StartDate.text = "End date :" + myFormatter.string(from: end)
-        
-        
+//        let userCalendar = Calendar.current
+//        var SdateComponents = DateComponents()
+//        SdateComponents.year = 2019
+//        SdateComponents.month = 7
+//        SdateComponents.day = 20
+//        let start = userCalendar.date(from: SdateComponents)!
+//        let myFormatter = DateFormatter()
+//        myFormatter.dateFormat = "dd/MM/y"
+//        StartDate.text = " Start date : " + myFormatter.string(from: start)
+//
+//
+//        var EdateComponents = DateComponents()
+//        EdateComponents.year = 2020
+//        EdateComponents.month = 2
+//        EdateComponents.day = 10
+//        let end = userCalendar.date(from:EdateComponents)!
+//        let mmyFormatter = DateFormatter()
+//        mmyFormatter.dateFormat = "dd/MM/y"
+//        StartDate.text = "End date :" + myFormatter.string(from: end)
+//
+//
         
         //myFormatter.string(from: firstLandPhoneCallDate) // What gives?
         
@@ -101,9 +128,7 @@ class ShowRequestViewController: UIViewController {
         //        StartDate.text = myFormatter.string(from: firstLandPhoneCallDate)
         //        //label.text = result
         
-        ImportExportLogoImage.layer.cornerRadius = ImportExportLogoImage.bounds.width / 2
-        ImportExportLogoImage.clipsToBounds = true
-        
+      
         // Do any additional setup after loading the view.
     }
     

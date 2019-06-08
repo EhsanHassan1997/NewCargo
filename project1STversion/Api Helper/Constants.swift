@@ -14,5 +14,5 @@ let MainUrl = ServerUrl + "api/"
 let UserLoginUrl = MainUrl + "user/login"
 
 //request details
-let RequestDetailsUrl = ServerUrl + "request/store"
+let RequestDetailsUrl = MainUrl + "req/reqs"
 

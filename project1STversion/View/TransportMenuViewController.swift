@@ -10,6 +10,15 @@ import UIKit
 
 class TransportMenuViewController: UIViewController {
 
+    @IBOutlet weak var CompanyName: UIButton!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var MenuView: UIView!
+    @IBOutlet weak var PaymentButton: UIButton!
+    @IBOutlet weak var HistoryOfShipment: UIButton!
+    
+    @IBOutlet weak var LogoutCutton: UIButton!
+    @IBOutlet weak var CurrentShipment: UIButton!
+    @IBOutlet weak var closeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         

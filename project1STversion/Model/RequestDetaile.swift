@@ -7,7 +7,8 @@
 //
 
 import Foundation
-class RequestDetaile{
+class RequestDetaile {
+    var comIm_Ex : String!
     var cargoType : String!
     var Quantity : Int!
     var Weight : Double!
@@ -17,6 +18,6 @@ class RequestDetaile{
     var Length: Double!
     var PickUp : String!
     var Destination : String!
-    var StartDate : Date!
-    var EndDate : Date!
+    var StartDate : String!
+    var EndDate : String!
 }
