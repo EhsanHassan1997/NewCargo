@@ -26,7 +26,7 @@ class ShowRequestViewController: UIViewController {
     @IBOutlet weak var StartDate: UILabel!
     @IBOutlet weak var EndDate: UILabel!
     @IBOutlet weak var PriceTextField: UITextField!
-   
+    
     @IBOutlet weak var imageTerms: UIImageView!
     @IBOutlet weak var IgnoreButton: LGButton!
     @IBOutlet weak var AcceptButton: LGButton!
@@ -37,16 +37,16 @@ class ShowRequestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                ReqTOTO.cargoType = "liqued"
-                ReqTOTO.Quantity = 3
-                ReqTOTO.Weight = 4.5
-                ReqTOTO.Hieght = 2
-                ReqTOTO.Length = 4
-                ReqTOTO.Width = 3
-                ReqTOTO.Volume = ReqTOTO.Weight! *  ReqTOTO.Hieght! * ReqTOTO.Width!
-                ReqTOTO.PickUp = " 23 st Giza Tahrer"
-                ReqTOTO.Destination = "34 st cairo naser"
-
+        ReqTOTO.cargoType = "liqued"
+        ReqTOTO.Quantity = 3
+        ReqTOTO.Weight = 4.5
+        ReqTOTO.Hieght = 2
+        ReqTOTO.Length = 4
+        ReqTOTO.Width = 3
+        ReqTOTO.Volume = ReqTOTO.Weight! *  ReqTOTO.Hieght! * ReqTOTO.Width!
+        ReqTOTO.PickUp = " 23 st Giza Tahrer"
+        ReqTOTO.Destination = "34 st cairo naser"
+        
         //        ReqTOTO.EndDate = Date()
         //        var EdateComponents = DateComponents()
         //        EdateComponents.year = 2020
@@ -92,16 +92,14 @@ class ShowRequestViewController: UIViewController {
         
         
         
-        
-
         //myFormatter.string(from: firstLandPhoneCallDate) // What gives?
         
-//        print("jhhgcf",myFormatter.string(from: firstLandPhoneCallDate))
-//        StartDate.text = myFormatter.string(from:firstLandPhoneCallDate )
+        //        print("jhhgcf",myFormatter.string(from: firstLandPhoneCallDate))
+        //        StartDate.text = myFormatter.string(from:firstLandPhoneCallDate )
         
-//        myFormatter.dateFormat = "MM/dd/yy"
-//        StartDate.text = myFormatter.string(from: firstLandPhoneCallDate)
-//        //label.text = result
+        //        myFormatter.dateFormat = "MM/dd/yy"
+        //        StartDate.text = myFormatter.string(from: firstLandPhoneCallDate)
+        //        //label.text = result
         
         ImportExportLogoImage.layer.cornerRadius = ImportExportLogoImage.bounds.width / 2
         ImportExportLogoImage.clipsToBounds = true
@@ -117,8 +115,8 @@ class ShowRequestViewController: UIViewController {
         if (price != nil ){
             
             // open notifiaction again
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransportNotificationViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
+            //            let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransportNotificationViewController
+            //            self.navigationController?.pushViewController(vc, animated: true)
             print("notification button is clicked")
             
         }else if (price == nil){
@@ -133,9 +131,9 @@ class ShowRequestViewController: UIViewController {
         print("price = ", price)
     }
     @IBAction func IgnoreActoin(_ sender: LGButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransportNotificationViewController
-        self.navigationController?.pushViewController(vc, animated: true)
-        print("notification button is clicked")
+        //        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransNotificationViewController
+        //        self.navigationController?.pushViewController(vc, animated: true)
+        //        print("notification button is clicked")
     }
     
     @IBAction func TermsConditions(_ sender: UIButton) {
@@ -150,11 +148,11 @@ class ShowRequestViewController: UIViewController {
             sender.setImage( UIImage(named:"Unchecked"), for: [] )
             
         }
-     
- }
-    
-    
-
         
+    }
+    
+    
+    
+    
 }
 
