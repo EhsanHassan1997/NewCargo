@@ -27,6 +27,9 @@
          pod 'GooglePlaces'
         
          pod 'GooglePlacesSearchController'
-             
-
+         
+         pod 'DropDown'
+         
+         pod 'DatePicker', '1.0.1'
+         
 end

@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.8.1)
   - DLRadioButton (1.4.12)
+  - DropDown (2.3.12)
   - GoogleMaps (3.0.2):
     - GoogleMaps/Maps (= 3.0.2)
   - GoogleMaps/Base (3.0.2)
@@ -20,6 +21,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - DLRadioButton (~> 1.4)
+  - DropDown
   - GoogleMaps
   - GooglePlaces
   - GooglePlacesSearchController
@@ -33,6 +35,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - DLRadioButton
+    - DropDown
     - GoogleMaps
     - GooglePlaces
     - GooglePlacesSearchController
@@ -45,6 +48,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  DropDown: 0bcc278799ec11a3d34ce1aac9367fbbaf5423d9
   GoogleMaps: 941cd655e009b4d8e42df19a3d749bc3fccec973
   GooglePlaces: c086e0055dc5f0177d7c9d65fc77a1734f9a4825
   GooglePlacesSearchController: e53b61b7497cf40cb18ec296b1d3314c11c0a1c0
@@ -54,6 +58,6 @@ SPEC CHECKSUMS:
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 898645bfb664b7a3c7385b699c03f642089bb334
+PODFILE CHECKSUM: 9ec42e71a5ab44ee63dd15e9ca467bdb87f21d10
 
 COCOAPODS: 1.5.3

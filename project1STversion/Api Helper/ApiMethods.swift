@@ -39,10 +39,14 @@ class ApiMethods {
             case .success(let value):
                 let json = JSON(value)
                 print(json)
-                if let request = json["request"].
-                
+//                if let request = json["request"].
+              break
+            case .failure(let error):
+                print("error: ",error)
+                break
                 
         }
         
     }
+}
 }
