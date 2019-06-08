@@ -96,6 +96,7 @@ class SignInViewController: UIViewController {
                 errorMessageLabel.text = ""
                 
                 ApiMethods.LoginUser(Email: email!, Password: password!) { (tokeN) in
+                    print("token:-  ",tokeN)
                     UserDefaults.standard.set(tokeN, forKey: "token")
                     UserDefaults.standard.set(true, forKey: "Logged")
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "home")as! TransportHomeViewController

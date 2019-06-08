@@ -58,34 +58,47 @@ class ApiMethods {
                                                 if let ItemLength = json["Item_length"].double{
                                                     if let startDate = json["start_date"].string{
                                                         if let endDate = json["finish_date"].string{
+                                                           
                                                             if let companyImportExport = json["company_import_export"].string{
-                                                                if let volume = json["Total_Volume"].double{
-                                                                    requestDetaile.cargoType = CargoType
-                                                                    requestDetaile.PickUp = PickUpLocation
-                                                                    requestDetaile.Destination = Destination
-                                                                    requestDetaile.Quantity = Quantity
-                                                                    requestDetaile.Width = ItemWeight
-                                                                    requestDetaile.Hieght = ItemHeight
-                                                                    requestDetaile.Weight = ItemWeight
-                                                                    requestDetaile.Length = ItemLength
-                                                                    requestDetaile.StartDate = startDate
-                                                                    requestDetaile.EndDate = endDate
-                                                                    requestDetaile.comIm_Ex = companyImportExport
-                                                                    Request(requestDetaile)
-                                                                    return
+                                                                requestDetaile.cargoType = CargoType
+                                                                requestDetaile.PickUp = PickUpLocation
+                                                                requestDetaile.Destination = Destination
+                                                                requestDetaile.Quantity = Quantity
+                                                                requestDetaile.Weight = ItemWeight
+                                                                requestDetaile.Width = ItemWidth
+                                                                requestDetaile.Hieght = ItemHeight
+                                                                requestDetaile.Length = ItemLength
+                                                                requestDetaile.StartDate = startDate
+                                                                requestDetaile.EndDate = endDate
+                                                                requestDetaile.comIm_Ex = companyImportExport
+                                                                Request(requestDetaile)
+                                                                return
+//                                                                if let volume = json["Total_Volume"].double{
+//                                                                    requestDetaile.cargoType = CargoType
+//                                                                    requestDetaile.PickUp = PickUpLocation
+//                                                                    requestDetaile.Destination = Destination
+//                                                                    requestDetaile.Quantity = Quantity
+//                                                                    requestDetaile.Width = ItemWeight
+//                                                                    requestDetaile.Hieght = ItemHeight
+//                                                                    requestDetaile.Weight = ItemWeight
+//                                                                    requestDetaile.Length = ItemLength
+//                                                                    requestDetaile.StartDate = startDate
+//                                                                    requestDetaile.EndDate = endDate
+//                                                                    requestDetaile.comIm_Ex = companyImportExport
+//                                                                    Request(
+//                                                                        //requestDetaile,
+//                                                                        CargoType)
+//                                                                    return
                                                                 }
-                                                                
-                                                            }
+//
+//                                                            }
                                                         }
                                                     }
                                                 }
                                             }
-                                        
                                      }
-                                    
                                 }
                             }
-                            
                         }
                     }
                 }
