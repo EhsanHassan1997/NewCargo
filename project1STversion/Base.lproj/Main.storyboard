@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vjt-v6-IwJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y3G-Gp-62G">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -3958,6 +3958,9 @@ pay 5% of the shipment price.</string>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E37-E0-nZY">
                                                                         <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
+                                                                        <connections>
+                                                                            <action selector="PaymentAction:" destination="I6a-M9-NcU" eventType="touchUpInside" id="Q7F-JJ-pll"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4001,6 +4004,9 @@ pay 5% of the shipment price.</string>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRQ-FW-wQG">
                                                                         <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
+                                                                        <connections>
+                                                                            <action selector="CurrentShipment:" destination="I6a-M9-NcU" eventType="touchUpInside" id="nq3-Ip-9Qp"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4044,6 +4050,9 @@ pay 5% of the shipment price.</string>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVw-KE-Ibn">
                                                                         <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
+                                                                        <connections>
+                                                                            <action selector="HistoryOfShipment:" destination="I6a-M9-NcU" eventType="touchUpInside" id="Htm-ua-0qS"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4087,6 +4096,9 @@ pay 5% of the shipment price.</string>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4e-LG-HJE">
                                                                         <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
+                                                                        <connections>
+                                                                            <action selector="LogOtuAction:" destination="I6a-M9-NcU" eventType="touchUpInside" id="aRE-2i-n1z"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4130,6 +4142,9 @@ pay 5% of the shipment price.</string>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fK-MI-6MK">
                                                                         <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
+                                                                        <connections>
+                                                                            <action selector="ContactUsAction:" destination="I6a-M9-NcU" eventType="touchUpInside" id="T15-qQ-vxB"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4174,6 +4189,9 @@ pay 5% of the shipment price.</string>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6j-qe-qJK">
                                                                         <rect key="frame" x="0.0" y="0.0" width="216" height="30"/>
                                                                         <state key="normal" title="Button"/>
+                                                                        <connections>
+                                                                            <action selector="HelpAction:" destination="I6a-M9-NcU" eventType="touchUpInside" id="mPM-D3-QMb"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4308,8 +4326,8 @@ pay 5% of the shipment price.</string>
                         <outlet property="CurrentShipment" destination="tRQ-FW-wQG" id="JpZ-CZ-vfj"/>
                         <outlet property="HistoryOfShipment" destination="nVw-KE-Ibn" id="M2w-3b-X8N"/>
                         <outlet property="LogoutCutton" destination="D4e-LG-HJE" id="JX4-V0-kxk"/>
+                        <outlet property="MenuView" destination="Fi4-t2-cgy" id="YMe-z5-ETf"/>
                         <outlet property="PaymentButton" destination="E37-E0-nZY" id="yP7-FD-X0u"/>
-                        <outlet property="closeButton" destination="oV6-ID-ASY" id="z4d-T7-4PM"/>
                         <outlet property="profileImage" destination="Ycx-i9-M4S" id="UjX-Zy-fH2"/>
                     </connections>
                 </viewController>

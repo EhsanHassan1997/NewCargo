@@ -58,7 +58,6 @@ class ApiMethods {
                                                 if let ItemLength = json["Item_length"].double{
                                                     if let startDate = json["start_date"].string{
                                                         if let endDate = json["finish_date"].string{
-                                                           
                                                             if let companyImportExport = json["company_import_export"].string{
                                                                 requestDetaile.cargoType = CargoType
                                                                 requestDetaile.PickUp = PickUpLocation
