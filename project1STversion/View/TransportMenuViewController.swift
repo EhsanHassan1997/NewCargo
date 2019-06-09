@@ -15,14 +15,20 @@ class TransportMenuViewController: UIViewController {
     @IBOutlet weak var MenuView: UIView!
     @IBOutlet weak var PaymentButton: UIButton!
     @IBOutlet weak var HistoryOfShipment: UIButton!
-    
     @IBOutlet weak var LogoutCutton: UIButton!
     @IBOutlet weak var CurrentShipment: UIButton!
-    @IBOutlet weak var closeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.1)
+        
+        MenuView.transform = CGAffineTransform(translationX: MenuView.center.x - view.bounds.width, y: 0.5)
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
+            self.MenuView.transform = .identity
+        }) { (success) in
+            
+        }
         
 //        self.showAnimate()
 
@@ -32,6 +38,11 @@ class TransportMenuViewController: UIViewController {
     
     @IBAction func HideAction(_ sender: UIButton) {
         self.removeAnimate()
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
+            self.MenuView.transform = CGAffineTransform(translationX: self.MenuView.center.x - 2 * self.view.bounds.width, y: 0.5)
+        }) { (success) in
+            self.view.removeFromSuperview()
+        }
     }
     
     func showAnimate()
@@ -57,6 +68,22 @@ class TransportMenuViewController: UIViewController {
         });
     }
 
+    @IBAction func PaymentAction(_ sender: UIButton) {
+        
+    }
+    @IBAction func CurrentShipment(_ sender: UIButton) {
+        
+    }
+    @IBAction func HistoryOfShipment(_ sender: UIButton) {
+        
+    }
+   
+    @IBAction func LogOtuAction(_ sender: Any) {
+    }
+    @IBAction func ContactUsAction(_ sender: Any) {
+    }
+    @IBAction func HelpAction(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
