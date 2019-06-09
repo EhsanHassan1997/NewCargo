@@ -11,6 +11,10 @@ import LGButton
 import Kingfisher
 
 class RegisterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+    
+    
+    @IBOutlet weak var imageBorder: UIView!
+    
     @IBOutlet weak var companyNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
@@ -22,6 +26,12 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        imageBorder.layer.borderColor = UIColor.white.cgColor
+       
+        imageBorder.layer.borderWidth = 2
+        
+        imageBorder.layer.cornerRadius = imageBorder.bounds.width / 2
+        
         profileImageView.layer.cornerRadius = profileImageView.bounds.width / 2
         profileImageView.clipsToBounds = true
         

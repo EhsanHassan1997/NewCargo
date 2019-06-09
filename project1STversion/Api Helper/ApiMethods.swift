@@ -32,6 +32,7 @@ class ApiMethods {
             }
         }
     }
+    ///////////////////////////////////////////////////////////////
     class func TransportRequestDetails(requestId : Int, Request:@escaping (_ requestDetaile: RequestDetaile)->Void){
         var requestDetaile = RequestDetaile()
         

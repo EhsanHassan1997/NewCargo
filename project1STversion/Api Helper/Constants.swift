@@ -10,9 +10,26 @@ import Foundation
 let ServerUrl = "http://52.59.231.58/"
 let MainUrl = ServerUrl + "api/"
 
-// user login
+// MARK: user login
 let UserLoginUrl = MainUrl + "user/login"
 
-//request details
+// MARK: request details
 let RequestDetailsUrl = MainUrl + "req/reqs"
+
+// MARK: Add Driver
+
+// MARK: Driven By
+
+// MARK: Add Truck
+
+// MARK: Create Request
+
+// MARK: Register
+
+// MARK: Create Offer
+
+// MARK: Create Contract
+
+// MARK: Get All Requests
+
 
