@@ -14,6 +14,4 @@ class Company : User{
     var TaxFileNumber : String?
     var Phone: String?
     var specialization : String?
-    
-    
 }

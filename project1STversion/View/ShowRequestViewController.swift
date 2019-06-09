@@ -37,14 +37,11 @@ class ShowRequestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\nhi\n")
-        ApiMethods.TransportRequestDetails(requestId : 3) { (
-            //Req,
-            ss) in
-//            print("Cargo Type:--\n", ss)
+        ApiMethods.TransportRequestDetails(requestId : 3) { (ss) in
             self.CargoType.text = "Cargo Type : " + ss.cargoType
             self.QuantityOfCargo.text = "Quantity : " + String(ss.Quantity!)
             self.WeightOfCargo.text = "Weight : " + String(ss.Weight!)
-//            self.VolumeOfCargo.text = "Volume : " + String(ReqTOTO.Volume!)
+            self.VolumeOfCargo.text = "Volume : " + String(ss.Volume!)
             self.WidthOfCargo.text = "Width  : " + String(ss.Width!)
             self.HeightOfCargo.text = "Hieght : " + String(ss.Hieght!)
             self.LenghtOfCargo.text = "Lenght : " + String(ss.Length!)

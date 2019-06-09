@@ -7,29 +7,52 @@
 //
 
 import Foundation
+
 let ServerUrl = "http://52.59.231.58/"
+
 let MainUrl = ServerUrl + "api/"
+
+// MARK: Register
+let UserRegisterUrl = MainUrl + "user/register"
 
 // MARK: user login
 let UserLoginUrl = MainUrl + "user/login"
 
-// MARK: request details
-let RequestDetailsUrl = MainUrl + "req/reqs"
+// MARK: Get User
+let UserDetailsUrl = MainUrl + "user/show/"
 
 // MARK: Add Driver
-
-// MARK: Driven By
+let DriverUrl = MainUrl + "driver/store"
 
 // MARK: Add Truck
+let TruckUrl = MainUrl + "truck/store"
 
-// MARK: Create Request
+// MARK: Driven By
+let DrivenByUrl = MainUrl + "drivenby/store"
 
-// MARK: Register
+// MARK: Get Request
+let RequestDetailsUrl = MainUrl + "req/reqs/"
 
 // MARK: Create Offer
+let OfferUrl = MainUrl + "offer/store/"
 
-// MARK: Create Contract
+// MARK: Add Contract Details
+let ContractDetailsUrl = MainUrl + "Contract_details/store"
+
+// MARK: Create Request
+let RequestUrl = MainUrl + "request/store"
 
 // MARK: Get All Requests
+let AllRequestUrl = "imex/allrequests"
 
+// MARK: Get Offers
 
+// MARK: Create Contract
+let ContractUrl = MainUrl + "Contract/store/"
+
+// MARK: Get Contract
+let ShowContractUrl = MainUrl + "imex/shipment/"
+
+func GetUserToken()->String{
+    return UserDefaults.standard.string(forKey: "token")!
+}
