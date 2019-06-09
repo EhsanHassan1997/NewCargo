@@ -210,19 +210,49 @@ class ApiMethods {
                 print("error: ",error)
                 break
                 
+            }
         }
-        
     }
-}
     
     // MARK: Create Offer
-    class func CreateOffer(){
-        
+    class func CreateOffer(RequestId : Int, Price : Double){
+        let Url = URL(string: OfferUrl + String(RequestId))!
+        let parameters = [
+            "price" : Price,
+            ]
+        let headers = [
+            "Authorization" : "Bearer " + GetUserToken(),
+            ]
+        Alamofire.request(Url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                break
+            case .failure(let Error):
+                break
+            }
+        }
     }
     
     // MARK: Add Contract Details
-    class func AddContractDetails(){
-        
+    class func AddContractDetails(DriverId : Int, TruckId : Int, ContractId : Int, Road : Int){
+        let Url = URL(string: ContractDetailsUrl)!
+        let parameters = [
+            "driver_id" : DriverId,
+            "truck_id" : TruckId,
+            "contract_id" : ContractId,
+            "road" : Road,
+            ]
+        let headers = [
+            "Authorization" : "Bearer " + GetUserToken(),
+            ]
+        Alamofire.request(Url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                break
+            case .failure(let Error):
+                break
+            }
+        }
     }
     
     // MARK: Create Request
