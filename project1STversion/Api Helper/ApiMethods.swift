@@ -38,7 +38,7 @@ class ApiMethods {
     }
     
     // MARK: user login
-    class func LoginUser(Email : String, Password : String, Comp:@escaping (_ token:String)->Void){
+    class func LoginUser(Email : String, Password : String, Comp:@escaping (_ token:String, _ type : String)->Void){
         let Url = URL(string: UserLoginUrl)!
         let prametars = [
             "email" : Email ,
@@ -50,8 +50,12 @@ class ApiMethods {
                 let json = JSON(value)
                 print(json)
                 if let token = json["token"].string{
-                    Comp(token)
-                    return
+                    if let user = json["user"].dictionary{
+                        if let type = user["type"]?.string{
+                            Comp(token,type)
+                            return
+                        }
+                    }
                 }
             case .failure(let error):
                 print("error: ",error)

@@ -79,6 +79,8 @@ class TransportMenuViewController: UIViewController {
     }
    
     @IBAction func LogOtuAction(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "Logged")
+        self.performSegue(withIdentifier: "transportLogout", sender: nil)
     }
     @IBAction func ContactUsAction(_ sender: Any) {
     }

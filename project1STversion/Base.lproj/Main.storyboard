@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NHl-cn-q4g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--loginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" userLabel="loginVC" customClass="SignInViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" title="transportSigningIn" id="BYZ-38-t0r" userLabel="loginVC" customClass="SignInViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,6 +207,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="MbA-aB-X0c"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="emailTextField" destination="yfl-Mb-QzX" id="NPn-ZS-vaq"/>
                         <outlet property="errorMessageLabel" destination="XtB-Px-hbi" id="8aJ-lv-qBw"/>
@@ -215,6 +216,9 @@
                         <outlet property="registerButton" destination="RQb-4r-9UA" id="YXJ-5h-1na"/>
                         <outlet property="rememberMeButton" destination="Gcm-cG-Fdj" id="t9y-sl-yaO"/>
                         <outlet property="signInButton" destination="OqV-MK-Qww" id="ULz-nY-RFf"/>
+                        <segue destination="JaQ-dJ-ncf" kind="show" identifier="transportSigningIn" id="nqM-Wc-dh1"/>
+                        <segue destination="1un-fv-fbC" kind="show" identifier="importExportSigningIn" id="WWG-ss-jhx"/>
+                        <segue destination="b0X-CP-rJK" kind="show" identifier="driverSigningIn" id="dHU-mz-6Hd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -4350,6 +4354,7 @@ pay 5% of the shipment price.</string>
                         <outlet property="MenuView" destination="Fi4-t2-cgy" id="YMe-z5-ETf"/>
                         <outlet property="PaymentButton" destination="E37-E0-nZY" id="yP7-FD-X0u"/>
                         <outlet property="profileImage" destination="Ycx-i9-M4S" id="UjX-Zy-fH2"/>
+                        <segue destination="cYB-8g-B6R" kind="show" identifier="transportLogout" id="PdS-ky-6Sh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5i-x3-FfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -8978,6 +8983,57 @@ pay 5% of the shipment price.</string>
             </objects>
             <point key="canvasLocation" x="1156" y="6125"/>
         </scene>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="76P-Cc-hcY">
+            <objects>
+                <viewController id="zEG-X2-c1n" customClass="LaunchScreenViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6yt-2a-5PZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Bib-Xe-uZ9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfw-qq-B6X">
+                                <rect key="frame" x="0.0" y="41.5" width="375" height="604"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-yD-Kf4">
+                                        <rect key="frame" x="75" y="125" width="225" height="181.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5b6-yD-Kf4" firstAttribute="width" secondItem="qfw-qq-B6X" secondAttribute="width" multiplier="0.6" id="Q6g-ZK-C7f"/>
+                                    <constraint firstItem="5b6-yD-Kf4" firstAttribute="height" secondItem="qfw-qq-B6X" secondAttribute="height" multiplier="0.3" id="W4Q-IO-oVD"/>
+                                    <constraint firstItem="5b6-yD-Kf4" firstAttribute="centerX" secondItem="qfw-qq-B6X" secondAttribute="centerX" id="Zps-lw-Rxj"/>
+                                    <constraint firstItem="5b6-yD-Kf4" firstAttribute="top" secondItem="qfw-qq-B6X" secondAttribute="top" constant="125" id="h0r-cb-vxh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bib-Xe-uZ9" firstAttribute="height" secondItem="6yt-2a-5PZ" secondAttribute="height" id="0Sr-h0-4XS"/>
+                            <constraint firstItem="Bib-Xe-uZ9" firstAttribute="centerY" secondItem="6yt-2a-5PZ" secondAttribute="centerY" id="7TS-0a-5z1"/>
+                            <constraint firstItem="qfw-qq-B6X" firstAttribute="height" secondItem="6yt-2a-5PZ" secondAttribute="height" multiplier="0.905" id="JDL-ns-1ug"/>
+                            <constraint firstItem="qfw-qq-B6X" firstAttribute="centerX" secondItem="PV2-Zn-aCc" secondAttribute="centerX" id="RIG-ii-QB0"/>
+                            <constraint firstItem="Bib-Xe-uZ9" firstAttribute="centerX" secondItem="6yt-2a-5PZ" secondAttribute="centerX" id="Y75-au-tfo"/>
+                            <constraint firstItem="Bib-Xe-uZ9" firstAttribute="width" secondItem="6yt-2a-5PZ" secondAttribute="width" id="uP7-Bf-ZS2"/>
+                            <constraint firstItem="qfw-qq-B6X" firstAttribute="width" secondItem="6yt-2a-5PZ" secondAttribute="width" id="uu9-n2-hj1"/>
+                            <constraint firstItem="qfw-qq-B6X" firstAttribute="centerY" secondItem="PV2-Zn-aCc" secondAttribute="centerY" id="wOr-RK-xH8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PV2-Zn-aCc"/>
+                    </view>
+                    <connections>
+                        <outlet property="LogoImageView" destination="5b6-yD-Kf4" id="157-Ch-QjO"/>
+                        <segue destination="cYB-8g-B6R" kind="show" identifier="SignIn" customClass="MySegue" customModule="project1STversion" customModuleProvider="target" id="Pyv-5Z-bOz"/>
+                        <segue destination="JaQ-dJ-ncf" kind="show" identifier="transport" customClass="MySegue" customModule="project1STversion" customModuleProvider="target" id="peZ-WR-XFr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5e-zW-Cad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12202" y="3097"/>
+        </scene>
     </scenes>
     <resources>
         <image name="&quot;&quot;" width="16" height="16"/>
@@ -9013,5 +9069,9 @@ pay 5% of the shipment price.</string>
         <image name="star" width="25" height="23"/>
         <image name="startDate" width="24" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nqM-Wc-dh1"/>
+        <segue reference="Pyv-5Z-bOz"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -95,17 +95,17 @@ class SignInViewController: UIViewController {
                 
                 errorMessageLabel.text = ""
                 
-                ApiMethods.LoginUser(Email: email!, Password: password!) { (tokeN) in
+                ApiMethods.LoginUser(Email: email!, Password: password!) { (tokeN,Type) in
                     print("token:-  ",tokeN)
                     UserDefaults.standard.set(tokeN, forKey: "token")
                     UserDefaults.standard.set(true, forKey: "Logged")
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "home")as! TransportHomeViewController
-                    self.present(vc, animated: true, completion: nil)
-                    
-//                    self.performSegue(withIdentifier: "home", sender: nil)
-                    
+                    if(Type == "transport"){
+                        self.performSegue(withIdentifier: "transportSigningIn", sender: nil)
+                    }
+                    if(Type == "import_export"){
+                        self.performSegue(withIdentifier: "importExportSigningIn", sender: nil)
+                    }
                 }
-                        
 //                    }else {
 //
 //                        errorMessageLabel.text = "Your password don't match this email"
