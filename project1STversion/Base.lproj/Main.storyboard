@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b1d-ae-D65">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -6793,6 +6793,7 @@ pay 5% of the shipment price.</string>
                         <outlet property="CompanyNameLabel" destination="tyv-90-3fV" id="uWi-Fg-Ldr"/>
                         <outlet property="MenuView" destination="bzc-9Z-IcQ" id="UR0-fk-k0x"/>
                         <outlet property="PrfileImageView" destination="oYK-f4-VHr" id="vWb-fV-Itk"/>
+                        <segue destination="cYB-8g-B6R" kind="show" identifier="importExportLogout" id="khB-gS-tVS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9h-l7-Jha" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -8705,7 +8706,7 @@ pay 5% of the shipment price.</string>
                                 <rect key="frame" x="0.0" y="41.5" width="375" height="604"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-yD-Kf4">
-                                        <rect key="frame" x="75" y="125" width="225" height="181.5"/>
+                                        <rect key="frame" x="75" y="211.5" width="225" height="181"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -8713,7 +8714,6 @@ pay 5% of the shipment price.</string>
                                     <constraint firstItem="5b6-yD-Kf4" firstAttribute="width" secondItem="qfw-qq-B6X" secondAttribute="width" multiplier="0.6" id="Q6g-ZK-C7f"/>
                                     <constraint firstItem="5b6-yD-Kf4" firstAttribute="height" secondItem="qfw-qq-B6X" secondAttribute="height" multiplier="0.3" id="W4Q-IO-oVD"/>
                                     <constraint firstItem="5b6-yD-Kf4" firstAttribute="centerX" secondItem="qfw-qq-B6X" secondAttribute="centerX" id="Zps-lw-Rxj"/>
-                                    <constraint firstItem="5b6-yD-Kf4" firstAttribute="top" secondItem="qfw-qq-B6X" secondAttribute="top" constant="125" id="h0r-cb-vxh"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -8723,6 +8723,7 @@ pay 5% of the shipment price.</string>
                             <constraint firstItem="Bib-Xe-uZ9" firstAttribute="centerY" secondItem="6yt-2a-5PZ" secondAttribute="centerY" id="7TS-0a-5z1"/>
                             <constraint firstItem="qfw-qq-B6X" firstAttribute="height" secondItem="6yt-2a-5PZ" secondAttribute="height" multiplier="0.905" id="JDL-ns-1ug"/>
                             <constraint firstItem="qfw-qq-B6X" firstAttribute="centerX" secondItem="PV2-Zn-aCc" secondAttribute="centerX" id="RIG-ii-QB0"/>
+                            <constraint firstItem="5b6-yD-Kf4" firstAttribute="centerY" secondItem="PV2-Zn-aCc" secondAttribute="centerY" id="UIb-NL-mMs"/>
                             <constraint firstItem="Bib-Xe-uZ9" firstAttribute="centerX" secondItem="6yt-2a-5PZ" secondAttribute="centerX" id="Y75-au-tfo"/>
                             <constraint firstItem="Bib-Xe-uZ9" firstAttribute="width" secondItem="6yt-2a-5PZ" secondAttribute="width" id="uP7-Bf-ZS2"/>
                             <constraint firstItem="qfw-qq-B6X" firstAttribute="width" secondItem="6yt-2a-5PZ" secondAttribute="width" id="uu9-n2-hj1"/>
@@ -8734,6 +8735,8 @@ pay 5% of the shipment price.</string>
                         <outlet property="LogoImageView" destination="5b6-yD-Kf4" id="157-Ch-QjO"/>
                         <segue destination="cYB-8g-B6R" kind="show" identifier="SignIn" customClass="MySegue" customModule="project1STversion" customModuleProvider="target" id="Pyv-5Z-bOz"/>
                         <segue destination="JaQ-dJ-ncf" kind="show" identifier="transport" customClass="MySegue" customModule="project1STversion" customModuleProvider="target" id="peZ-WR-XFr"/>
+                        <segue destination="1un-fv-fbC" kind="show" identifier="importExport" customClass="MySegue" customModule="project1STversion" customModuleProvider="target" id="qjQ-Yy-70q"/>
+                        <segue destination="b0X-CP-rJK" kind="show" identifier="driver" customClass="MySegue" customModule="project1STversion" customModuleProvider="target" id="Fou-Rr-2VC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5e-zW-Cad" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -8743,7 +8746,7 @@ pay 5% of the shipment price.</string>
         <!--Profile-->
         <scene sceneID="8wp-fd-BnH">
             <objects>
-                <viewController id="b1d-ae-D65" customClass="TransportProfileViewController" customModule="theEdited" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b1d-ae-D65" customClass="TransportProfileViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YnC-XU-LpR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -9193,8 +9196,10 @@ pay 5% of the shipment price.</string>
         <image name="startDate" width="24" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="dHU-mz-6Hd"/>
+        <segue reference="WWG-ss-jhx"/>
         <segue reference="nqM-Wc-dh1"/>
-        <segue reference="Pyv-5Z-bOz"/>
+        <segue reference="khB-gS-tVS"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
 </document>

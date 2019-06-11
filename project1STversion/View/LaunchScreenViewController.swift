@@ -15,21 +15,31 @@ class LaunchScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.LogoImageView.transform = CGAffineTransform(translationX: 0, y: self.view.bounds.height * 0.5)
+        if(!UserDefaults.standard.bool(forKey: "rememberUser")){
+            UserDefaults.standard.set("", forKey: "userEmail")
+            UserDefaults.standard.set("", forKey: "userPassword")
+        }
         
         if(!UserDefaults.standard.bool(forKey: "Logged")){
             
-            UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
-                self.LogoImageView.transform = .identity
+            UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
+                self.LogoImageView.transform = CGAffineTransform(translationX: 0, y: -self.view.bounds.height * 0.165)
             }) { (bool) in
                
                 self.performSegue(withIdentifier: "SignIn", sender: nil)
             }
         }else{
-            UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
-                self.LogoImageView.transform = CGAffineTransform(scaleX: 2, y: 2)
+//            self.LogoImageView.center = self.view.center
+            UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveLinear, animations: {
+                
+                self.LogoImageView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
             }) { (bool) in
-                self.performSegue(withIdentifier: "transport", sender: nil)
+                if(UserDefaults.standard.string(forKey: "userType") == "transport"){
+                    self.performSegue(withIdentifier: "transport", sender: nil)
+                }
+                if(UserDefaults.standard.string(forKey: "userType") == "import_export"){
+                    self.performSegue(withIdentifier: "importExport", sender: nil)
+                }
             }
         }
         

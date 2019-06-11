@@ -44,6 +44,8 @@ class ImportExportMenuViewController: UIViewController {
     }
     
     @IBAction func LogoutAction(_ sender: UIButton) {
+        UserDefaults.standard.set(false, forKey: "Logged")
+        self.performSegue(withIdentifier: "importExportLogout", sender: nil)
     }
     
     @IBAction func ContactUsAction(_ sender: UIButton) {

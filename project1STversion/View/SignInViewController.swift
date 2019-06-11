@@ -23,6 +23,12 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if(UserDefaults.standard.bool(forKey: "rememberUser")){
+            emailTextField.text = UserDefaults.standard.string(forKey: "userEmail")
+            passwordTextField.text = UserDefaults.standard.string(forKey: "userPassword")
+            rememberMeButton.setImage( UIImage(named:"CheckedRememberme"), for: [] )
+        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -44,10 +50,12 @@ class SignInViewController: UIViewController {
         if (image == UIImage(named:  "rememberMe")){
             
             sender.setImage( UIImage(named:"CheckedRememberme"), for:[] )
+            UserDefaults.standard.set(true, forKey: "rememberUser")
             
         }else{
             
             sender.setImage( UIImage(named:"rememberMe"), for: [] )
+            UserDefaults.standard.set(false, forKey: "rememberUser")
             
         }
         
@@ -99,6 +107,14 @@ class SignInViewController: UIViewController {
                     print("token:-  ",tokeN)
                     UserDefaults.standard.set(tokeN, forKey: "token")
                     UserDefaults.standard.set(true, forKey: "Logged")
+                    UserDefaults.standard.set(Type, forKey: "userType")
+                    if(UserDefaults.standard.bool(forKey: "rememberUser")){
+                        UserDefaults.standard.set(self.emailTextField.text, forKey: "userEmail")
+                        UserDefaults.standard.set(self.passwordTextField.text, forKey: "userPassword")
+                    }else{
+                        UserDefaults.standard.set("", forKey: "userEmail")
+                        UserDefaults.standard.set("", forKey: "userPassword")
+                    }
                     if(Type == "transport"){
                         self.performSegue(withIdentifier: "transportSigningIn", sender: nil)
                     }
