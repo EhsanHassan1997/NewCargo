@@ -9,17 +9,59 @@
 import UIKit
 
 class TransportProfileViewController: UIViewController {
-  
+    
     @IBOutlet weak var profileImage: UIImageView!
+    
+    @IBOutlet weak var RateLabel: UILabel!
+    
+    @IBOutlet weak var CangeEmailButton: UIButton!
+    @IBOutlet weak var EmailTextField: UITextField!
+    @IBOutlet weak var EmailLable: UILabel!
+    
+    @IBOutlet weak var CompanyNameTextField: UITextField!
+    @IBOutlet weak var ChangeCompanyNameButton: UIButton!
+    
+    @IBOutlet weak var PhoneButton: UIButton!
+    @IBOutlet weak var PhoneTextField: UITextField!
+    @IBOutlet weak var PhoneLable: UILabel!
+    
+    @IBOutlet weak var AddressTextField: UITextField!
+    @IBOutlet weak var AddressButton: UIButton!
+    @IBOutlet weak var AddressLable: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func ChangeImageAction(_ sender: UIButton) {
     }
+    
+    @IBAction func ChangeCompanyName(_ sender: Any) {
+    }
+    
+    @IBAction func changeEmailAction(_ sender: UIButton) {
+                if (CangeEmailButton.isEnabled ==  true){
+                    EmailTextField.isHidden = false
+                    EmailTextField.isUserInteractionEnabled = true
+        
+                }else if (CangeEmailButton.isEnabled ==  false){
+                    EmailTextField.isHidden = true
+                    EmailTextField.isUserInteractionEnabled = false
+                }
+        
+            }
+            @IBAction func PhoneAction(_ sender: UIButton) {
+            }
+            @IBAction func AddressAction(_ sender: UIButton) {
+            }
+            @IBAction func DriverAction(_ sender: UIButton) {
+            }
+    
+            @IBAction func TruckAction(_ sender: UIButton) {
+            }
     
     /*
     // MARK: - Navigation
@@ -32,3 +74,4 @@ class TransportProfileViewController: UIViewController {
     */
 
 }
+
