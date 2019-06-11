@@ -32,6 +32,8 @@ class ImportExportMenuViewController: UIViewController {
     }
     
     @IBAction func BookTransportAction(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CreateRequest") as! CreateRequestViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func PaymentAction(_ sender: UIButton) {

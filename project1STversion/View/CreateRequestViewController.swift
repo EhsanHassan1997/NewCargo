@@ -9,6 +9,7 @@
 import UIKit
 import DropDown
 
+//import 
 
 class CreateRequestViewController: UIViewController {
 
@@ -66,14 +67,6 @@ class CreateRequestViewController: UIViewController {
     @IBOutlet weak var DestinationTextField: UITextField!
     
     @IBOutlet weak var DestinationAnchorView: UIView!
-    
-    @IBOutlet weak var StartDateTextField: UITextField!
-    
-    @IBOutlet weak var StartDateAnchorView: UIView!
-    
-    @IBOutlet weak var EndDateTextField: UITextField!
-    
-    @IBOutlet weak var EndDateAnchorView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -181,8 +174,18 @@ class CreateRequestViewController: UIViewController {
         DestinationDropDown.show()
     }
     
+//    @IBAction func SelectDateAction(_ sender: UIButton) {
+//        let dateRangePickerViewController = CalendarDateRangePickerViewController(collectionViewLayout: UICollectionViewFlowLayout())
+//        dateRangePickerViewController.delegate = self
+//        let navigationController = UINavigationController(rootViewController: dateRangePickerViewController)
+//        self.navigationController?.present(navigationController, animated: true, completion: nil)
+        
+//    }
     
-    
+//    protocol CalendarDateRangePickerViewControllerDelegate {
+//        func didCancelPickingDateRange()
+//        func didPickDateRange(startDate: Date!, endDate: Date!)
+//    }
     
     @IBAction func TermsAndConditionAction(_ sender: UIButton) {
         let image : UIImage! = sender.image(for:.normal)
