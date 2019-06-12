@@ -266,6 +266,7 @@ class ApiMethods {
     
     // MARK: Get All Requests
     class func GetAllRequest(){
+         let Url = URL(string: AllRequestUrl)
         
     }
     
