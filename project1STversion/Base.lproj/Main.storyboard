@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c4d-AS-Jbi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -4468,7 +4468,7 @@ pay 5% of the shipment price.</string>
         <!--transportNotification-->
         <scene sceneID="GxV-ng-01Z">
             <objects>
-                <viewController storyboardIdentifier="TransportNotification" title="transportNotification" id="c4d-AS-Jbi" customClass="TransportNotificationViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransportNotification" title="transportNotification" automaticallyAdjustsScrollViewInsets="NO" id="c4d-AS-Jbi" customClass="TransportNotificationViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7kw-6f-p46">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4491,29 +4491,30 @@ pay 5% of the shipment price.</string>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dMt-PJ-pnc">
-                                                    <rect key="frame" x="117" y="21.5" width="216" height="60.5"/>
+                                                    <rect key="frame" x="114.5" y="21.5" width="258.5" height="60.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjj-41-7jc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="216" height="30.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="258.5" height="30.5"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="You have request from">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.33333333333333331" green="0.396078431372549" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        <font key="NSFont" size="13" name="LucidaGrande-Bold"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpo-fS-lA3">
-                                                            <rect key="frame" x="0.0" y="30.5" width="216" height="30"/>
+                                                            <rect key="frame" x="0.0" y="30.5" width="258.5" height="30"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Import-Export Company">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.33333333333333331" green="0.396078431372549" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        <font key="NSFont" size="12" name="LucidaGrande-Bold"/>
+                                                                        <font key="NSOriginalFont" size="12" name="LucidaGrande-Bold"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -4524,12 +4525,12 @@ pay 5% of the shipment price.</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="eHx-0F-qCb" firstAttribute="centerX" secondItem="96B-zP-INn" secondAttribute="centerX" multiplier="0.35" id="0Qf-yC-UvB"/>
-                                                <constraint firstItem="dMt-PJ-pnc" firstAttribute="centerX" secondItem="96B-zP-INn" secondAttribute="centerX" multiplier="1.2" id="3Fh-lJ-rQI"/>
+                                                <constraint firstItem="dMt-PJ-pnc" firstAttribute="centerX" secondItem="96B-zP-INn" secondAttribute="centerX" multiplier="1.3" id="3Fh-lJ-rQI"/>
                                                 <constraint firstItem="dMt-PJ-pnc" firstAttribute="height" secondItem="eHx-0F-qCb" secondAttribute="height" multiplier="0.7" id="8eO-Va-2pW"/>
                                                 <constraint firstItem="eHx-0F-qCb" firstAttribute="width" secondItem="96B-zP-INn" secondAttribute="width" multiplier="0.23" id="9XV-d3-ZPe"/>
                                                 <constraint firstItem="eHx-0F-qCb" firstAttribute="centerY" secondItem="96B-zP-INn" secondAttribute="centerY" id="EGp-5l-ZpE"/>
                                                 <constraint firstItem="dMt-PJ-pnc" firstAttribute="centerY" secondItem="eHx-0F-qCb" secondAttribute="centerY" id="Gd8-uC-G8k"/>
-                                                <constraint firstItem="dMt-PJ-pnc" firstAttribute="width" secondItem="eHx-0F-qCb" secondAttribute="width" multiplier="2.5" id="KuK-NK-34c"/>
+                                                <constraint firstItem="dMt-PJ-pnc" firstAttribute="width" secondItem="eHx-0F-qCb" secondAttribute="width" multiplier="3" id="KuK-NK-34c"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -4556,7 +4557,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xM0-gF-dEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2238" y="6125"/>
+            <point key="canvasLocation" x="-2095" y="6132"/>
         </scene>
         <!--ViewPhone-->
         <scene sceneID="rTH-qd-LMh">
