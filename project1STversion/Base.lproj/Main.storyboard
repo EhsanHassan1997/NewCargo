@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c4d-AS-Jbi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c4d-AS-Jbi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -8215,19 +8215,12 @@ pay 5% of the shipment price.</string>
                                                                 <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </view>
-                                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cD-rk-AAC" userLabel="startDateTF">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cD-rk-AAC" userLabel="startDateTF">
                                                                 <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZv-9m-1qa" userLabel="startDateB">
-                                                                <rect key="frame" x="279" y="21.5" width="15" height="13.5"/>
-                                                                <state key="normal" image="DropDownIcon"/>
-                                                                <connections>
-                                                                    <action selector="DestinationDropDownAction:" destination="ejs-qs-5ZR" eventType="touchUpInside" id="y9w-Qg-A2w"/>
-                                                                </connections>
-                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hE-mi-20m">
                                                                 <rect key="frame" x="10" y="0.0" width="71" height="17"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
@@ -8239,7 +8232,6 @@ pay 5% of the shipment price.</string>
                                                         <constraints>
                                                             <constraint firstItem="8cD-rk-AAC" firstAttribute="width" secondItem="Wcz-qP-tBD" secondAttribute="width" id="8Z1-Fl-oUi"/>
                                                             <constraint firstItem="Btg-PW-VNo" firstAttribute="height" secondItem="8cD-rk-AAC" secondAttribute="height" id="9g1-6L-WcD"/>
-                                                            <constraint firstItem="VZv-9m-1qa" firstAttribute="centerY" secondItem="8cD-rk-AAC" secondAttribute="centerY" id="Gxb-Oq-jFA"/>
                                                             <constraint firstAttribute="bottom" secondItem="8cD-rk-AAC" secondAttribute="bottom" id="Jme-1U-Aua"/>
                                                             <constraint firstItem="Btg-PW-VNo" firstAttribute="width" secondItem="8cD-rk-AAC" secondAttribute="width" id="Kdv-vK-gLI"/>
                                                             <constraint firstItem="8cD-rk-AAC" firstAttribute="centerX" secondItem="Wcz-qP-tBD" secondAttribute="centerX" id="ZWO-vU-pQq"/>
@@ -8256,19 +8248,12 @@ pay 5% of the shipment price.</string>
                                                                 <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </view>
-                                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m8U-w9-Mvc" userLabel="endDateTF">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m8U-w9-Mvc" userLabel="endDateTF">
                                                                 <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQy-ND-AzW" userLabel="endDateB">
-                                                                <rect key="frame" x="279" y="21.5" width="15" height="13.5"/>
-                                                                <state key="normal" image="DropDownIcon"/>
-                                                                <connections>
-                                                                    <action selector="DestinationDropDownAction:" destination="ejs-qs-5ZR" eventType="touchUpInside" id="v7P-hJ-EAA"/>
-                                                                </connections>
-                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-Jt-tn7">
                                                                 <rect key="frame" x="10" y="0.0" width="62" height="17"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
@@ -8287,7 +8272,6 @@ pay 5% of the shipment price.</string>
                                                             <constraint firstItem="B74-GD-jWj" firstAttribute="height" secondItem="m8U-w9-Mvc" secondAttribute="height" id="shm-Dq-2xG"/>
                                                             <constraint firstItem="m8U-w9-Mvc" firstAttribute="width" secondItem="Aab-Rp-r5e" secondAttribute="width" id="uFU-oN-48T"/>
                                                             <constraint firstItem="Mhm-Jt-tn7" firstAttribute="top" secondItem="Aab-Rp-r5e" secondAttribute="top" id="xYw-uA-VaF"/>
-                                                            <constraint firstItem="WQy-ND-AzW" firstAttribute="centerY" secondItem="m8U-w9-Mvc" secondAttribute="centerY" id="z7K-Z1-VYg"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -8313,7 +8297,6 @@ pay 5% of the shipment price.</string>
                                                     <constraint firstItem="kqJ-Kf-9Ax" firstAttribute="height" secondItem="d8g-Hh-xRP" secondAttribute="height" id="KRF-pi-D7r"/>
                                                     <constraint firstItem="zde-60-uM1" firstAttribute="centerX" secondItem="d8g-Hh-xRP" secondAttribute="centerX" id="M5m-uj-hcS"/>
                                                     <constraint firstItem="vhO-Ob-u5V" firstAttribute="height" secondItem="CQd-Is-2mU" secondAttribute="height" id="Mr7-Hs-Wff"/>
-                                                    <constraint firstItem="WQy-ND-AzW" firstAttribute="centerX" secondItem="4g0-ce-xI5" secondAttribute="centerX" id="N2K-gV-Foh"/>
                                                     <constraint firstItem="pzy-N8-JmZ" firstAttribute="width" secondItem="d8g-Hh-xRP" secondAttribute="width" id="NJh-ok-6cy"/>
                                                     <constraint firstItem="UkH-JB-Kmq" firstAttribute="height" secondItem="StQ-6K-IUc" secondAttribute="height" id="NhL-wY-xD7"/>
                                                     <constraint firstItem="8at-RW-iIT" firstAttribute="height" secondItem="tR9-TA-KoZ" secondAttribute="height" id="NrD-pN-yBB"/>
@@ -8328,9 +8311,7 @@ pay 5% of the shipment price.</string>
                                                     <constraint firstItem="kqJ-Kf-9Ax" firstAttribute="centerX" secondItem="d8g-Hh-xRP" secondAttribute="centerX" id="TBH-os-Ukz"/>
                                                     <constraint firstItem="zde-60-uM1" firstAttribute="height" secondItem="d8g-Hh-xRP" secondAttribute="height" id="Tc8-9y-F8J"/>
                                                     <constraint firstItem="Ov6-0C-IMH" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="UVp-JS-zrG"/>
-                                                    <constraint firstItem="WQy-ND-AzW" firstAttribute="width" secondItem="4g0-ce-xI5" secondAttribute="width" id="UZe-06-CjN"/>
                                                     <constraint firstItem="hoh-Lo-QWU" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="V72-if-WMQ"/>
-                                                    <constraint firstItem="WQy-ND-AzW" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="VBG-6p-fu8"/>
                                                     <constraint firstItem="B3h-Mv-dFO" firstAttribute="height" secondItem="8at-RW-iIT" secondAttribute="height" id="WXC-JG-RO6"/>
                                                     <constraint firstItem="1If-bc-4ZC" firstAttribute="height" secondItem="tR9-TA-KoZ" secondAttribute="height" id="WaK-20-00y"/>
                                                     <constraint firstItem="vhO-Ob-u5V" firstAttribute="width" secondItem="CQd-Is-2mU" secondAttribute="width" id="Xha-Tm-l01"/>
@@ -8346,7 +8327,6 @@ pay 5% of the shipment price.</string>
                                                     <constraint firstItem="hoh-Lo-QWU" firstAttribute="width" secondItem="4g0-ce-xI5" secondAttribute="width" id="iPM-jp-odE"/>
                                                     <constraint firstItem="UkH-JB-Kmq" firstAttribute="width" secondItem="StQ-6K-IUc" secondAttribute="width" id="imk-Xa-xFR"/>
                                                     <constraint firstItem="saW-9g-VqG" firstAttribute="width" secondItem="CQd-Is-2mU" secondAttribute="width" id="imm-Kv-KeR"/>
-                                                    <constraint firstItem="VZv-9m-1qa" firstAttribute="width" secondItem="4g0-ce-xI5" secondAttribute="width" id="jiR-TZ-jhE"/>
                                                     <constraint firstItem="NUl-nc-T9d" firstAttribute="height" secondItem="CQd-Is-2mU" secondAttribute="height" id="lhy-uh-WVk"/>
                                                     <constraint firstItem="m8U-w9-Mvc" firstAttribute="height" secondItem="tR9-TA-KoZ" secondAttribute="height" id="mVq-zf-7hn"/>
                                                     <constraint firstItem="B3h-Mv-dFO" firstAttribute="width" secondItem="8at-RW-iIT" secondAttribute="width" id="o1f-U7-eD3"/>
@@ -8357,10 +8337,8 @@ pay 5% of the shipment price.</string>
                                                     <constraint firstItem="CvC-x2-Uml" firstAttribute="height" secondItem="8at-RW-iIT" secondAttribute="height" id="sTj-Se-Wzs"/>
                                                     <constraint firstItem="XHb-Ta-JBJ" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="uFN-4M-mW1"/>
                                                     <constraint firstItem="n2f-Rc-oTv" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="vDi-ib-jmL"/>
-                                                    <constraint firstItem="VZv-9m-1qa" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="vj0-mL-y1a"/>
                                                     <constraint firstItem="CvC-x2-Uml" firstAttribute="width" secondItem="8at-RW-iIT" secondAttribute="width" id="wo9-Tv-1iU"/>
                                                     <constraint firstItem="I0I-dX-MRe" firstAttribute="width" secondItem="CQd-Is-2mU" secondAttribute="width" id="xV2-Ig-hDx"/>
-                                                    <constraint firstItem="VZv-9m-1qa" firstAttribute="centerX" secondItem="4g0-ce-xI5" secondAttribute="centerX" id="xh5-zt-s3r"/>
                                                     <constraint firstItem="8lF-Z0-tdg" firstAttribute="height" secondItem="8at-RW-iIT" secondAttribute="height" id="yZa-NI-Ng3"/>
                                                     <constraint firstItem="etY-UV-eaQ" firstAttribute="height" secondItem="CQd-Is-2mU" secondAttribute="height" id="zDk-gO-Mp3"/>
                                                 </constraints>
@@ -8492,6 +8470,7 @@ pay 5% of the shipment price.</string>
                         <outlet property="CargoTypeTextField" destination="tR9-TA-KoZ" id="DN3-L7-mIq"/>
                         <outlet property="DestinationAnchorView" destination="2Wo-jW-Azp" id="Yh9-gk-Pfq"/>
                         <outlet property="DestinationTextField" destination="e19-85-5JU" id="l5a-I3-5iw"/>
+                        <outlet property="EndDateTextField" destination="m8U-w9-Mvc" id="k1S-r6-ucr"/>
                         <outlet property="HieghtMeasureAnchorView" destination="7Q0-ek-bZV" id="iRq-xI-GaX"/>
                         <outlet property="HieghtMeasureTextField" destination="8lF-Z0-tdg" id="Pcl-dz-fHZ"/>
                         <outlet property="HieghtTextField" destination="kqJ-Kf-9Ax" id="RD6-xs-J9e"/>
@@ -8501,6 +8480,7 @@ pay 5% of the shipment price.</string>
                         <outlet property="PickUpLocationAnchorView" destination="LEG-r4-OnD" id="V8c-LW-Qf8"/>
                         <outlet property="PickUpLocationTextField" destination="1If-bc-4ZC" id="Ld8-w8-fpY"/>
                         <outlet property="QuantityTextField" destination="WhN-hf-pbh" id="ss9-aj-azz"/>
+                        <outlet property="StartDateTextField" destination="8cD-rk-AAC" id="FrH-N5-Lhc"/>
                         <outlet property="WidthMeasureAnchorView" destination="Oar-rg-a6q" id="5a4-ln-EnF"/>
                         <outlet property="WidthMeasureTextField" destination="B3h-Mv-dFO" id="53O-fS-T6c"/>
                         <outlet property="WidthTextField" destination="pzy-N8-JmZ" id="NfA-bO-qtu"/>

@@ -68,6 +68,10 @@ class CreateRequestViewController: UIViewController {
     
     @IBOutlet weak var DestinationAnchorView: UIView!
     
+    @IBOutlet weak var StartDateTextField: UITextField!
+    
+    @IBOutlet weak var EndDateTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -94,7 +98,51 @@ class CreateRequestViewController: UIViewController {
         
         DestinationDropDown.anchorView = DestinationAnchorView
         
+        let StartDateDatePicker = UIDatePicker()
+        
+        StartDateDatePicker.datePickerMode = UIDatePicker.Mode.date
+        
+        StartDateDatePicker.addTarget(self, action: #selector(CreateRequestViewController.StartDateDatePickerValueChanged), for: UIControl.Event.valueChanged)
+        
+        let EndDateDatePicker = UIDatePicker()
+        
+        EndDateDatePicker.datePickerMode = UIDatePicker.Mode.date
+        
+        EndDateDatePicker.addTarget(self, action: #selector(CreateRequestViewController.EndDateDatePickerValueChanged), for: UIControl.Event.valueChanged)
+        
+        let tapGusture = UITapGestureRecognizer(target: self, action: #selector(CreateRequestViewController.viewTapped(gestureRecognizer:)))
+        
+        view.addGestureRecognizer(tapGusture)
+        
+        StartDateTextField.inputView = StartDateDatePicker
+        
+        EndDateTextField.inputView = EndDateDatePicker
+
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func viewTapped(gestureRecognizer : UITapGestureRecognizer){
+        view.endEditing(true)
+    }
+    
+    @objc func StartDateDatePickerValueChanged(_ sender: UIDatePicker) {
+        
+        let dateformatter = DateFormatter()
+        
+        dateformatter.dateFormat = "MM/dd/yyyy"
+        
+        StartDateTextField.text = dateformatter.string(from: sender.date)
+        //        view.endEditing(true)
+    }
+    
+    @objc func EndDateDatePickerValueChanged(_ sender: UIDatePicker) {
+        
+        let dateformatter = DateFormatter()
+        
+        dateformatter.dateFormat = "MM/dd/yyyy"
+        
+        EndDateTextField.text = dateformatter.string(from: sender.date)
+        //        view.endEditing(true)
     }
     
     @IBAction func CargoTypeDropDownAction(_ sender: UIButton) {
