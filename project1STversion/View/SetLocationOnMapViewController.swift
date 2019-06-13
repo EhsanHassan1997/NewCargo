@@ -10,23 +10,39 @@ import UIKit
 import GoogleMaps
 
 
-class SetLocationOnMapViewController: UIViewController, GMSMapViewDelegate {
+class SetLocationOnMapViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
     
-    @IBOutlet weak var myMap: GMSMapView!
+    var locationManager = CLLocationManager()
+    
+//    var camera = GMSCameraPosition()
+    
+    var latitude = CLLocationDegrees()
+    var longitude = CLLocationDegrees()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        
     }
     
     override func loadView() {
-        let camera = GMSCameraPosition.camera(withLatitude: 1.285,
-                                              longitude: 103.848,
-                                              zoom: 12)
-        
+        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 17)
         let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
         mapView.delegate = self
+        mapView.isMyLocationEnabled = true
         self.view = mapView
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        latitude = (locations.last?.coordinate.latitude)!
+        longitude = (locations.last?.coordinate.longitude)!
+        
+        locationManager.stopUpdatingLocation()
+    }
     // MARK: GMSMapViewDelegate
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
