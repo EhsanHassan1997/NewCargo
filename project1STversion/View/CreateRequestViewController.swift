@@ -8,10 +8,13 @@
 
 import UIKit
 import DropDown
+import GoogleMaps
 
 //import 
 
-class CreateRequestViewController: UIViewController {
+class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
+
+    var locationManager = CLLocationManager()
 
     let CargoTypeDropDown = DropDown()
     
@@ -71,6 +74,11 @@ class CreateRequestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        
         CargoTypeDropDown.anchorView = CargoTypeAnchorView
         CargoTypeDropDown.dataSource = ["Liqued Materials","Sold Materials","Frozen Materials","Breakable Materials","Building Materials","Furniture","Vehicle","Vehicle Spare Parts"]
         
@@ -111,6 +119,13 @@ class CreateRequestViewController: UIViewController {
         EndDateTextField.inputView = EndDateDatePicker
 
         // Do any additional setup after loading the view.
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let latitude = locations.last?.coordinate.latitude
+        let longitude = locations.last?.coordinate.longitude
+        UserDefaults.standard.set(Double(latitude!), forKey: "latitude")
+        UserDefaults.standard.set(Double(longitude!), forKey: "longitude")
     }
     
     @objc func viewTapped(gestureRecognizer : UITapGestureRecognizer){

@@ -39,22 +39,26 @@ class SetLocationOnMapViewController: UIViewController, GMSMapViewDelegate, CLLo
 //        locationManager.startUpdatingLocation()
 //    }
     
-//    override func loadView() {
-//        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
-//        mapView.delegate = self
-//        mapView.isMyLocationEnabled = true
-//        self.view = mapView
-//    }
+    override func loadView() {
+//        UserDefaults.standard.set(Double(latitude), forKey: "latitude")
+//        UserDefaults.standard.set(Double(longitude), forKey: "longitude")
+        camera = GMSCameraPosition.camera(withLatitude: UserDefaults.standard.double(forKey: "latitude"), longitude: UserDefaults.standard.double(forKey: "longitude"), zoom: 17)
+        print(latitude)
+        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        mapView.delegate = self
+        mapView.isMyLocationEnabled = true
+        self.view = mapView
+    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         latitude = (locations.last?.coordinate.latitude)!
         longitude = (locations.last?.coordinate.longitude)!
         camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 17)
-        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
-        mapView.delegate = self
-        mapView.isMyLocationEnabled = true
-        self.view = mapView
-        locationManager.stopUpdatingLocation()
+//        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+//        mapView.delegate = self
+//        mapView.isMyLocationEnabled = true
+//        self.view = mapView
+//        locationManager.stopUpdatingLocation()
     }
     // MARK: GMSMapViewDelegate
     
