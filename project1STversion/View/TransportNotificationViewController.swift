@@ -87,6 +87,11 @@ extension TransportNotificationViewController  :UITableViewDataSource{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
             self.navigationController?.pushViewController(vc, animated: true)
             
+        }else if indexPath.row == 1{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            
         }
 //        else if indexPath.row == 2 {
 //            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
