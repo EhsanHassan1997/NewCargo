@@ -42,7 +42,7 @@ class SetLocationOnMapViewController: UIViewController, GMSMapViewDelegate, CLLo
     override func loadView() {
 //        UserDefaults.standard.set(Double(latitude), forKey: "latitude")
 //        UserDefaults.standard.set(Double(longitude), forKey: "longitude")
-        camera = GMSCameraPosition.camera(withLatitude: UserDefaults.standard.double(forKey: "latitude"), longitude: UserDefaults.standard.double(forKey: "longitude"), zoom: 17)
+        camera = GMSCameraPosition.camera(withLatitude:UserDefaults.standard.double(forKey: "latitude"), longitude: UserDefaults.standard.double(forKey: "longitude"), zoom: 17)
         print(latitude)
         let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
         mapView.delegate = self
