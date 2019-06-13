@@ -71,6 +71,7 @@ extension TransportNotificationViewController  :UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Notification = TranNot[indexPath.row]
         let cell : TransportNotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TransportNotificationCell", for: indexPath) as! TransportNotificationTableViewCell
@@ -79,9 +80,16 @@ extension TransportNotificationViewController  :UITableViewDataSource{
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if  indexPath.row == 1 {
-//            let
+        
+        if  [indexPath.row][1] {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         }
+//        else if indexPath.row == 2 {
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
     }
 }
 
