@@ -9176,10 +9176,10 @@ pay 5% of the shipment price.</string>
         <image name="startDate" width="24" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dHU-mz-6Hd"/>
-        <segue reference="WWG-ss-jhx"/>
-        <segue reference="nqM-Wc-dh1"/>
-        <segue reference="khB-gS-tVS"/>
+        <segue reference="Fou-Rr-2VC"/>
+        <segue reference="qjQ-Yy-70q"/>
+        <segue reference="peZ-WR-XFr"/>
+        <segue reference="Pyv-5Z-bOz"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
 </document>
