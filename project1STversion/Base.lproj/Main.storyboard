@@ -9215,19 +9215,7 @@ pay 5% of the shipment price.</string>
                     <view key="view" contentMode="scaleToFill" id="Un8-bz-CGS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dB-H4-xgl" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="76.5" width="375" height="600.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="9dB-H4-xgl" firstAttribute="width" secondItem="Un8-bz-CGS" secondAttribute="width" id="A1h-Fd-IWf"/>
-                            <constraint firstItem="9dB-H4-xgl" firstAttribute="height" secondItem="Un8-bz-CGS" secondAttribute="height" multiplier="0.9" id="Crq-OA-Buo"/>
-                            <constraint firstItem="9dB-H4-xgl" firstAttribute="centerX" secondItem="zkN-bb-Cn6" secondAttribute="centerX" id="sj9-fW-PWw"/>
-                            <constraint firstItem="9dB-H4-xgl" firstAttribute="bottom" secondItem="zkN-bb-Cn6" secondAttribute="bottom" constant="10" id="u39-SZ-w4e"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zkN-bb-Cn6"/>
                     </view>
                     <navigationItem key="navigationItem" id="HSV-UA-kDW">
