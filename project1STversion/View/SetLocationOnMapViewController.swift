@@ -18,9 +18,11 @@ class SetLocationOnMapViewController: UIViewController, GMSMapViewDelegate, CLLo
     
     var latitude = CLLocationDegrees()
     var longitude = CLLocationDegrees()
+    var camera = GMSCameraPosition()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 17)
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -29,18 +31,29 @@ class SetLocationOnMapViewController: UIViewController, GMSMapViewDelegate, CLLo
         
     }
     
-    override func loadView() {
-        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 17)
-        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
-        mapView.delegate = self
-        mapView.isMyLocationEnabled = true
-        self.view = mapView
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        
+//        locationManager.delegate = self
+//        locationManager.requestWhenInUseAuthorization()
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        locationManager.startUpdatingLocation()
+//    }
+    
+//    override func loadView() {
+//        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+//        mapView.delegate = self
+//        mapView.isMyLocationEnabled = true
+//        self.view = mapView
+//    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         latitude = (locations.last?.coordinate.latitude)!
         longitude = (locations.last?.coordinate.longitude)!
-        
+        camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 17)
+        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        mapView.delegate = self
+        mapView.isMyLocationEnabled = true
+        self.view = mapView
         locationManager.stopUpdatingLocation()
     }
     // MARK: GMSMapViewDelegate
