@@ -8,7 +8,7 @@
 import UIKit
 
 class TransportNotificationTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var imExCompanyLogoImageView: UIImageView!
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
