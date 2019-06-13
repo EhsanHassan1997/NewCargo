@@ -152,8 +152,8 @@ class SignInViewController: UIViewController {
     
     @IBAction func RegisterAction(_ sender: UIButton) {
         print("11")
-//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegisterID")as! RegisterViewController
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegisterID")as! RegisterViewController
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     

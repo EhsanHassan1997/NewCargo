@@ -3546,7 +3546,7 @@ pay 5% of the shipment price.</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPK-i1-2XQ">
                                         <rect key="frame" x="15" y="0.0" width="270" height="129.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile image" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-i9-M4S">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileimage" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-i9-M4S">
                                                 <rect key="frame" x="20.5" y="37" width="81" height="81"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ycx-i9-M4S" secondAttribute="height" multiplier="1:1" id="rbd-ve-0Zp"/>
@@ -9123,7 +9123,7 @@ pay 5% of the shipment price.</string>
         <!--Confirm Location View Controller-->
         <scene sceneID="Cg7-DT-4yw">
             <objects>
-                <viewController storyboardIdentifier="Confirm" id="OTg-S6-u2y" customClass="ConfirmLocationViewController" customModule="testingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Confirm" id="OTg-S6-u2y" customClass="ConfirmLocationViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3so-dm-MPG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -9237,7 +9237,7 @@ pay 5% of the shipment price.</string>
         <!--Set Location On Map View Controller-->
         <scene sceneID="25i-c7-SPh">
             <objects>
-                <viewController storyboardIdentifier="SetLocation" id="yvh-pa-jUP" customClass="SetLocationOnMapViewController" customModule="testingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetLocation" id="yvh-pa-jUP" customClass="SetLocationOnMapViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Un8-bz-CGS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -9297,6 +9297,7 @@ pay 5% of the shipment price.</string>
         <image name="payment" width="46" height="33"/>
         <image name="pickUpLocation" width="21" height="22"/>
         <image name="profile image" width="256" height="256"/>
+        <image name="profileimage" width="256" height="256"/>
         <image name="reightArrow" width="30" height="50"/>
         <image name="rememberMe" width="22" height="22"/>
         <image name="star" width="25" height="23"/>
@@ -9306,7 +9307,7 @@ pay 5% of the shipment price.</string>
         <segue reference="Fou-Rr-2VC"/>
         <segue reference="qjQ-Yy-70q"/>
         <segue reference="peZ-WR-XFr"/>
-        <segue reference="Pyv-5Z-bOz"/>
+        <segue reference="PdS-ky-6Sh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
 </document>
