@@ -79,9 +79,11 @@ extension TransportNotificationViewController  :UITableViewDataSource{
         
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if  [indexPath.row][1] {
+       // var Tran : [TransportNotificationClass] = []
+        if  indexPath.row == 0 {
+            print("hi")
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
             self.navigationController?.pushViewController(vc, animated: true)
             
