@@ -62,11 +62,7 @@ class CreateRequestViewController: UIViewController {
     
     @IBOutlet weak var PickUpLocationTextField: UITextField!
     
-    @IBOutlet weak var PickUpLocationAnchorView: UIView!
-    
     @IBOutlet weak var DestinationTextField: UITextField!
-    
-    @IBOutlet weak var DestinationAnchorView: UIView!
     
     @IBOutlet weak var StartDateTextField: UITextField!
     
@@ -93,10 +89,6 @@ class CreateRequestViewController: UIViewController {
         WidthMeasureDropDown.anchorView = WidthMeasureAnchorView
         WidthMeasureDropDown.dataSource = ["Meter","cm"]
         WidthMeasureTextField.text = "Meter"
-        
-        PickUpLocationDropDown.anchorView = PickUpLocationAnchorView
-        
-        DestinationDropDown.anchorView = DestinationAnchorView
         
         let StartDateDatePicker = UIDatePicker()
         
@@ -200,40 +192,15 @@ class CreateRequestViewController: UIViewController {
         WidthMeasureDropDown.show()
     }
     
-    @IBAction func PickUpLocationDropDownAction(_ sender: UIButton) {
-        PickUpLocationDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            print("Selected item: \(item) at index: \(index)")
-            self.PickUpLocationTextField.text = item
-        }
-        
-        DropDown.startListeningToKeyboard()
-        
-        PickUpLocationDropDown.show()
+    @IBAction func SelectPickUpLocationAction(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SetLocation") as! SetLocationOnMapViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    @IBAction func DestinationDropDownAction(_ sender: UIButton) {
-        DestinationDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            print("Selected item: \(item) at index: \(index)")
-            self.DestinationTextField.text = item
-        }
-        
-        DropDown.startListeningToKeyboard()
-        
-        DestinationDropDown.show()
+    @IBAction func SelectDestinationAction(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SetLocation") as! SetLocationOnMapViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-//    @IBAction func SelectDateAction(_ sender: UIButton) {
-//        let dateRangePickerViewController = CalendarDateRangePickerViewController(collectionViewLayout: UICollectionViewFlowLayout())
-//        dateRangePickerViewController.delegate = self
-//        let navigationController = UINavigationController(rootViewController: dateRangePickerViewController)
-//        self.navigationController?.present(navigationController, animated: true, completion: nil)
-        
-//    }
-    
-//    protocol CalendarDateRangePickerViewControllerDelegate {
-//        func didCancelPickingDateRange()
-//        func didPickDateRange(startDate: Date!, endDate: Date!)
-//    }
     
     @IBAction func TermsAndConditionAction(_ sender: UIButton) {
         let image : UIImage! = sender.image(for:.normal)

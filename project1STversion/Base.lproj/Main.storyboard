@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c4d-AS-Jbi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -2786,7 +2786,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nl-3H-e15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8402" y="6995"/>
+            <point key="canvasLocation" x="-6874" y="6996"/>
         </scene>
         <!--DriverHome-->
         <scene sceneID="cqc-fj-bvg">
@@ -3109,7 +3109,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MQ-c9-0Rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9167" y="6996"/>
+            <point key="canvasLocation" x="-7639" y="6997"/>
         </scene>
         <!--selectDriverVC-->
         <scene sceneID="T9C-FS-1y4">
@@ -8133,10 +8133,6 @@ pay 5% of the shipment price.</string>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tK6-S9-7W8" userLabel="pickUpLocationV">
                                                         <rect key="frame" x="0.0" y="330" width="300" height="45"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEG-r4-OnD">
-                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </view>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1If-bc-4ZC" userLabel="pickUpLocationTF">
                                                                 <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
@@ -8144,10 +8140,9 @@ pay 5% of the shipment price.</string>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov6-0C-IMH" userLabel="pickUpLocationB">
-                                                                <rect key="frame" x="279" y="21.5" width="15" height="13.5"/>
-                                                                <state key="normal" image="DropDownIcon"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <connections>
-                                                                    <action selector="PickUpLocationDropDownAction:" destination="ejs-qs-5ZR" eventType="touchUpInside" id="wRU-on-dWC"/>
+                                                                    <action selector="SelectPickUpLocationAction:" destination="ejs-qs-5ZR" eventType="touchUpInside" id="zLC-fK-gCb"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Up Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etY-UV-eaQ">
@@ -8160,22 +8155,17 @@ pay 5% of the shipment price.</string>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="Ov6-0C-IMH" firstAttribute="centerY" secondItem="1If-bc-4ZC" secondAttribute="centerY" id="0Az-4w-kQl"/>
+                                                            <constraint firstItem="Ov6-0C-IMH" firstAttribute="height" secondItem="1If-bc-4ZC" secondAttribute="height" id="0Eh-RY-Vmq"/>
                                                             <constraint firstItem="etY-UV-eaQ" firstAttribute="leading" secondItem="tK6-S9-7W8" secondAttribute="leading" constant="10" id="3cE-ch-6dw"/>
-                                                            <constraint firstItem="LEG-r4-OnD" firstAttribute="width" secondItem="1If-bc-4ZC" secondAttribute="width" id="3qp-vK-h9m"/>
-                                                            <constraint firstItem="LEG-r4-OnD" firstAttribute="height" secondItem="1If-bc-4ZC" secondAttribute="height" id="71z-Dd-fQq"/>
-                                                            <constraint firstItem="LEG-r4-OnD" firstAttribute="centerX" secondItem="1If-bc-4ZC" secondAttribute="centerX" id="9Yh-SI-SxO"/>
                                                             <constraint firstItem="etY-UV-eaQ" firstAttribute="top" secondItem="tK6-S9-7W8" secondAttribute="top" id="9it-9i-MCV"/>
-                                                            <constraint firstItem="LEG-r4-OnD" firstAttribute="centerY" secondItem="1If-bc-4ZC" secondAttribute="centerY" id="Nlq-yc-ZfB"/>
+                                                            <constraint firstItem="Ov6-0C-IMH" firstAttribute="centerX" secondItem="1If-bc-4ZC" secondAttribute="centerX" id="VsU-RN-Wt4"/>
+                                                            <constraint firstItem="Ov6-0C-IMH" firstAttribute="width" secondItem="1If-bc-4ZC" secondAttribute="width" id="fP1-5I-STE"/>
                                                             <constraint firstAttribute="bottom" secondItem="1If-bc-4ZC" secondAttribute="bottom" id="jWc-fY-gGH"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5a-8R-Jvk" userLabel="destinationV">
                                                         <rect key="frame" x="0.0" y="385" width="300" height="45"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wo-jW-Azp">
-                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </view>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e19-85-5JU" userLabel="destinationTF">
                                                                 <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <nil key="textColor"/>
@@ -8183,10 +8173,9 @@ pay 5% of the shipment price.</string>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHb-Ta-JBJ" userLabel="destinationB">
-                                                                <rect key="frame" x="279" y="21.5" width="15" height="13.5"/>
-                                                                <state key="normal" image="DropDownIcon"/>
+                                                                <rect key="frame" x="0.0" y="11.5" width="300" height="33.5"/>
                                                                 <connections>
-                                                                    <action selector="DestinationDropDownAction:" destination="ejs-qs-5ZR" eventType="touchUpInside" id="STj-IH-MQi"/>
+                                                                    <action selector="SelectDestinationAction:" destination="ejs-qs-5ZR" eventType="touchUpInside" id="JUn-AW-B1r"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMS-2L-uvk">
@@ -8198,14 +8187,13 @@ pay 5% of the shipment price.</string>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="2Wo-jW-Azp" firstAttribute="centerX" secondItem="e19-85-5JU" secondAttribute="centerX" id="483-PH-kBp"/>
-                                                            <constraint firstItem="2Wo-jW-Azp" firstAttribute="width" secondItem="e19-85-5JU" secondAttribute="width" id="Huc-iH-FxV"/>
                                                             <constraint firstItem="XHb-Ta-JBJ" firstAttribute="centerY" secondItem="e19-85-5JU" secondAttribute="centerY" id="K0N-hR-Jr8"/>
                                                             <constraint firstAttribute="bottom" secondItem="e19-85-5JU" secondAttribute="bottom" id="PAn-Xw-Hev"/>
                                                             <constraint firstItem="JMS-2L-uvk" firstAttribute="top" secondItem="L5a-8R-Jvk" secondAttribute="top" id="T0f-tl-EHg"/>
-                                                            <constraint firstItem="2Wo-jW-Azp" firstAttribute="height" secondItem="e19-85-5JU" secondAttribute="height" id="VgV-G0-3fX"/>
+                                                            <constraint firstItem="XHb-Ta-JBJ" firstAttribute="centerX" secondItem="e19-85-5JU" secondAttribute="centerX" id="hWU-ao-yeb"/>
+                                                            <constraint firstItem="XHb-Ta-JBJ" firstAttribute="width" secondItem="e19-85-5JU" secondAttribute="width" id="hWj-fj-pzW"/>
                                                             <constraint firstItem="JMS-2L-uvk" firstAttribute="leading" secondItem="L5a-8R-Jvk" secondAttribute="leading" constant="10" id="lIn-mk-JvW"/>
-                                                            <constraint firstItem="2Wo-jW-Azp" firstAttribute="centerY" secondItem="e19-85-5JU" secondAttribute="centerY" id="rlm-pU-57i"/>
+                                                            <constraint firstItem="XHb-Ta-JBJ" firstAttribute="height" secondItem="e19-85-5JU" secondAttribute="height" id="uBY-BQ-aQp"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wcz-qP-tBD" userLabel="startDateV">
@@ -8288,7 +8276,6 @@ pay 5% of the shipment price.</string>
                                                     <constraint firstItem="8lF-Z0-tdg" firstAttribute="width" secondItem="8at-RW-iIT" secondAttribute="width" id="Bot-xY-JOg"/>
                                                     <constraint firstItem="NUl-nc-T9d" firstAttribute="width" secondItem="CQd-Is-2mU" secondAttribute="width" id="CGN-9H-C3C"/>
                                                     <constraint firstItem="etY-UV-eaQ" firstAttribute="width" secondItem="CQd-Is-2mU" secondAttribute="width" id="CV0-QP-lmE"/>
-                                                    <constraint firstItem="XHb-Ta-JBJ" firstAttribute="width" secondItem="4g0-ce-xI5" secondAttribute="width" id="EKb-eh-A1H"/>
                                                     <constraint firstItem="e19-85-5JU" firstAttribute="width" secondItem="tR9-TA-KoZ" secondAttribute="width" id="Hi8-jv-m61"/>
                                                     <constraint firstItem="kaf-X5-evL" firstAttribute="width" secondItem="CQd-Is-2mU" secondAttribute="width" id="HsH-Al-gVR"/>
                                                     <constraint firstItem="n2f-Rc-oTv" firstAttribute="centerX" secondItem="4g0-ce-xI5" secondAttribute="centerX" id="J1o-RY-DSK"/>
@@ -8307,10 +8294,8 @@ pay 5% of the shipment price.</string>
                                                     <constraint firstItem="JMS-2L-uvk" firstAttribute="height" secondItem="CQd-Is-2mU" secondAttribute="height" id="RgL-XD-ufX"/>
                                                     <constraint firstItem="WhN-hf-pbh" firstAttribute="width" secondItem="tR9-TA-KoZ" secondAttribute="width" id="Rvr-tD-juW"/>
                                                     <constraint firstItem="I0I-dX-MRe" firstAttribute="height" secondItem="CQd-Is-2mU" secondAttribute="height" id="Sip-ug-194"/>
-                                                    <constraint firstItem="XHb-Ta-JBJ" firstAttribute="centerX" secondItem="4g0-ce-xI5" secondAttribute="centerX" id="Sui-DI-AHy"/>
                                                     <constraint firstItem="kqJ-Kf-9Ax" firstAttribute="centerX" secondItem="d8g-Hh-xRP" secondAttribute="centerX" id="TBH-os-Ukz"/>
                                                     <constraint firstItem="zde-60-uM1" firstAttribute="height" secondItem="d8g-Hh-xRP" secondAttribute="height" id="Tc8-9y-F8J"/>
-                                                    <constraint firstItem="Ov6-0C-IMH" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="UVp-JS-zrG"/>
                                                     <constraint firstItem="hoh-Lo-QWU" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="V72-if-WMQ"/>
                                                     <constraint firstItem="B3h-Mv-dFO" firstAttribute="height" secondItem="8at-RW-iIT" secondAttribute="height" id="WXC-JG-RO6"/>
                                                     <constraint firstItem="1If-bc-4ZC" firstAttribute="height" secondItem="tR9-TA-KoZ" secondAttribute="height" id="WaK-20-00y"/>
@@ -8319,7 +8304,6 @@ pay 5% of the shipment price.</string>
                                                     <constraint firstItem="UkH-JB-Kmq" firstAttribute="centerX" secondItem="StQ-6K-IUc" secondAttribute="centerX" id="aEb-ti-5o5"/>
                                                     <constraint firstItem="pzy-N8-JmZ" firstAttribute="centerX" secondItem="d8g-Hh-xRP" secondAttribute="centerX" id="eFq-nH-aB8"/>
                                                     <constraint firstItem="StQ-6K-IUc" firstAttribute="centerX" secondItem="4g0-ce-xI5" secondAttribute="centerX" id="eUj-3x-zhe"/>
-                                                    <constraint firstItem="Ov6-0C-IMH" firstAttribute="centerX" secondItem="4g0-ce-xI5" secondAttribute="centerX" id="fdJ-At-MjC"/>
                                                     <constraint firstItem="1If-bc-4ZC" firstAttribute="width" secondItem="tR9-TA-KoZ" secondAttribute="width" id="g9x-3v-mkd"/>
                                                     <constraint firstItem="kqJ-Kf-9Ax" firstAttribute="width" secondItem="d8g-Hh-xRP" secondAttribute="width" id="gBB-qk-FNj"/>
                                                     <constraint firstItem="pzy-N8-JmZ" firstAttribute="height" secondItem="d8g-Hh-xRP" secondAttribute="height" id="gMD-LL-tMd"/>
@@ -8332,10 +8316,8 @@ pay 5% of the shipment price.</string>
                                                     <constraint firstItem="B3h-Mv-dFO" firstAttribute="width" secondItem="8at-RW-iIT" secondAttribute="width" id="o1f-U7-eD3"/>
                                                     <constraint firstItem="8lF-Z0-tdg" firstAttribute="centerX" secondItem="8at-RW-iIT" secondAttribute="centerX" id="oB3-gT-Tub"/>
                                                     <constraint firstItem="e19-85-5JU" firstAttribute="height" secondItem="tR9-TA-KoZ" secondAttribute="height" id="oec-gi-a4u"/>
-                                                    <constraint firstItem="Ov6-0C-IMH" firstAttribute="width" secondItem="4g0-ce-xI5" secondAttribute="width" id="rLb-5Z-cYP"/>
                                                     <constraint firstItem="d8g-Hh-xRP" firstAttribute="height" secondItem="tR9-TA-KoZ" secondAttribute="height" id="rbm-VO-dZa"/>
                                                     <constraint firstItem="CvC-x2-Uml" firstAttribute="height" secondItem="8at-RW-iIT" secondAttribute="height" id="sTj-Se-Wzs"/>
-                                                    <constraint firstItem="XHb-Ta-JBJ" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="uFN-4M-mW1"/>
                                                     <constraint firstItem="n2f-Rc-oTv" firstAttribute="height" secondItem="4g0-ce-xI5" secondAttribute="height" id="vDi-ib-jmL"/>
                                                     <constraint firstItem="CvC-x2-Uml" firstAttribute="width" secondItem="8at-RW-iIT" secondAttribute="width" id="wo9-Tv-1iU"/>
                                                     <constraint firstItem="I0I-dX-MRe" firstAttribute="width" secondItem="CQd-Is-2mU" secondAttribute="width" id="xV2-Ig-hDx"/>
@@ -8468,7 +8450,6 @@ pay 5% of the shipment price.</string>
                     <connections>
                         <outlet property="CargoTypeAnchorView" destination="T5V-hW-fmo" id="mUl-uK-wSq"/>
                         <outlet property="CargoTypeTextField" destination="tR9-TA-KoZ" id="DN3-L7-mIq"/>
-                        <outlet property="DestinationAnchorView" destination="2Wo-jW-Azp" id="Yh9-gk-Pfq"/>
                         <outlet property="DestinationTextField" destination="e19-85-5JU" id="l5a-I3-5iw"/>
                         <outlet property="EndDateTextField" destination="m8U-w9-Mvc" id="k1S-r6-ucr"/>
                         <outlet property="HieghtMeasureAnchorView" destination="7Q0-ek-bZV" id="iRq-xI-GaX"/>
@@ -8477,7 +8458,6 @@ pay 5% of the shipment price.</string>
                         <outlet property="LengthMeasureAnchorView" destination="FNF-I3-Wl5" id="er8-Bi-t9o"/>
                         <outlet property="LengthMeasureTextField" destination="CvC-x2-Uml" id="ikz-aV-ebu"/>
                         <outlet property="LengthTextField" destination="zde-60-uM1" id="Ibs-ut-yyM"/>
-                        <outlet property="PickUpLocationAnchorView" destination="LEG-r4-OnD" id="V8c-LW-Qf8"/>
                         <outlet property="PickUpLocationTextField" destination="1If-bc-4ZC" id="Ld8-w8-fpY"/>
                         <outlet property="QuantityTextField" destination="WhN-hf-pbh" id="ss9-aj-azz"/>
                         <outlet property="StartDateTextField" destination="8cD-rk-AAC" id="FrH-N5-Lhc"/>
@@ -8740,8 +8720,8 @@ pay 5% of the shipment price.</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivU-hy-NK4">
                                         <rect key="frame" x="37.5" y="3.5" width="300" height="26.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXc-tI-MhL" userLabel="menu">
-                                                <rect key="frame" x="0.0" y="0.0" width="24" height="26.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXc-tI-MhL" userLabel="menu">
+                                                <rect key="frame" x="0.0" y="-1" width="24" height="26.5"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oP-UA-DqE">
@@ -9140,6 +9120,153 @@ pay 5% of the shipment price.</string>
             </objects>
             <point key="canvasLocation" x="-9954.3999999999996" y="6122.788605697152"/>
         </scene>
+        <!--Confirm Location View Controller-->
+        <scene sceneID="Cg7-DT-4yw">
+            <objects>
+                <viewController storyboardIdentifier="Confirm" id="OTg-S6-u2y" customClass="ConfirmLocationViewController" customModule="testingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3so-dm-MPG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9N-Cp-INx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="66.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sRP-LT-MnN">
+                                        <rect key="frame" x="19" y="0.0" width="337.5" height="66.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.3411764706" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sRP-LT-MnN" firstAttribute="height" secondItem="n9N-Cp-INx" secondAttribute="height" id="8UP-mF-uxO"/>
+                                    <constraint firstItem="sRP-LT-MnN" firstAttribute="width" secondItem="n9N-Cp-INx" secondAttribute="width" multiplier="0.9" id="PBs-38-aWl"/>
+                                    <constraint firstItem="sRP-LT-MnN" firstAttribute="centerX" secondItem="n9N-Cp-INx" secondAttribute="centerX" id="RlW-GD-D2W"/>
+                                    <constraint firstItem="sRP-LT-MnN" firstAttribute="centerY" secondItem="n9N-Cp-INx" secondAttribute="centerY" id="SOx-RM-bml"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XSE-dt-oW6">
+                                <rect key="frame" x="0.0" y="553.5" width="375" height="47"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cp2-aM-HbP">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjd-nJ-2Ky">
+                                                <rect key="frame" x="47" y="0.0" width="93.5" height="47"/>
+                                                <color key="backgroundColor" red="0.050980392159999999" green="0.3411764706" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="BackAction:" destination="OTg-S6-u2y" eventType="touchUpInside" id="d8u-ez-ODS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Qjd-nJ-2Ky" firstAttribute="centerX" secondItem="Cp2-aM-HbP" secondAttribute="centerX" id="4Bp-DZ-TZ6"/>
+                                            <constraint firstItem="Qjd-nJ-2Ky" firstAttribute="centerY" secondItem="Cp2-aM-HbP" secondAttribute="centerY" id="weC-Aj-h2v"/>
+                                            <constraint firstItem="Qjd-nJ-2Ky" firstAttribute="height" secondItem="Cp2-aM-HbP" secondAttribute="height" id="zEu-zV-r1t"/>
+                                            <constraint firstItem="Qjd-nJ-2Ky" firstAttribute="width" secondItem="Cp2-aM-HbP" secondAttribute="width" multiplier="0.5" id="zU2-HQ-hIr"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldw-tm-TsO">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFx-L6-hss">
+                                                <rect key="frame" x="47" y="0.0" width="93.5" height="47"/>
+                                                <color key="backgroundColor" red="0.050980392159999999" green="0.3411764706" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Done">
+                                                            <attributes>
+                                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" metaFont="system" size="25"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="bFx-L6-hss" firstAttribute="height" secondItem="ldw-tm-TsO" secondAttribute="height" id="0F9-QH-cRK"/>
+                                            <constraint firstItem="bFx-L6-hss" firstAttribute="width" secondItem="ldw-tm-TsO" secondAttribute="width" multiplier="0.5" id="Upx-YZ-TZS"/>
+                                            <constraint firstItem="bFx-L6-hss" firstAttribute="centerY" secondItem="ldw-tm-TsO" secondAttribute="centerY" id="qCP-L0-tHn"/>
+                                            <constraint firstItem="bFx-L6-hss" firstAttribute="centerX" secondItem="ldw-tm-TsO" secondAttribute="centerX" id="sVE-HB-cjH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n9N-Cp-INx" firstAttribute="height" secondItem="3so-dm-MPG" secondAttribute="height" multiplier="0.1" id="5e0-Pm-q1v"/>
+                            <constraint firstItem="WGR-6S-4fg" firstAttribute="top" secondItem="n9N-Cp-INx" secondAttribute="top" id="Cpb-jL-SXf"/>
+                            <constraint firstItem="XSE-dt-oW6" firstAttribute="width" secondItem="3so-dm-MPG" secondAttribute="width" id="G2a-HA-iGM"/>
+                            <constraint firstItem="n9N-Cp-INx" firstAttribute="width" secondItem="3so-dm-MPG" secondAttribute="width" id="G80-tS-quU"/>
+                            <constraint firstItem="XSE-dt-oW6" firstAttribute="bottom" secondItem="WGR-6S-4fg" secondAttribute="bottom" multiplier="0.9" id="OHc-0t-X9i"/>
+                            <constraint firstItem="XSE-dt-oW6" firstAttribute="centerX" secondItem="WGR-6S-4fg" secondAttribute="centerX" id="Otq-E3-z1c"/>
+                            <constraint firstItem="n9N-Cp-INx" firstAttribute="centerX" secondItem="3so-dm-MPG" secondAttribute="centerX" id="VRd-HQ-gvj"/>
+                            <constraint firstItem="XSE-dt-oW6" firstAttribute="height" secondItem="3so-dm-MPG" secondAttribute="height" multiplier="0.07" id="vX4-mL-wc8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WGR-6S-4fg"/>
+                    </view>
+                    <connections>
+                        <outlet property="BackButton" destination="Qjd-nJ-2Ky" id="O5y-UN-plY"/>
+                        <outlet property="DoneButton" destination="bFx-L6-hss" id="pSW-9L-DKl"/>
+                        <outlet property="LocationLabel" destination="sRP-LT-MnN" id="noP-93-bYS"/>
+                        <outlet property="searchDisplayController" destination="vqj-lb-h8D" id="enX-Z2-eVT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5x-ak-ouv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="vqj-lb-h8D">
+                    <connections>
+                        <outlet property="delegate" destination="OTg-S6-u2y" id="mRK-J7-eXt"/>
+                        <outlet property="searchContentsController" destination="OTg-S6-u2y" id="K77-ka-rEt"/>
+                        <outlet property="searchResultsDataSource" destination="OTg-S6-u2y" id="Omo-bR-JVm"/>
+                        <outlet property="searchResultsDelegate" destination="OTg-S6-u2y" id="Tz9-Em-IgB"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-8402" y="6995"/>
+        </scene>
+        <!--Set Location On Map View Controller-->
+        <scene sceneID="25i-c7-SPh">
+            <objects>
+                <viewController storyboardIdentifier="SetLocation" id="yvh-pa-jUP" customClass="SetLocationOnMapViewController" customModule="testingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Un8-bz-CGS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dB-H4-xgl" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="76.5" width="375" height="600.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9dB-H4-xgl" firstAttribute="width" secondItem="Un8-bz-CGS" secondAttribute="width" id="A1h-Fd-IWf"/>
+                            <constraint firstItem="9dB-H4-xgl" firstAttribute="height" secondItem="Un8-bz-CGS" secondAttribute="height" multiplier="0.9" id="Crq-OA-Buo"/>
+                            <constraint firstItem="9dB-H4-xgl" firstAttribute="centerX" secondItem="zkN-bb-Cn6" secondAttribute="centerX" id="sj9-fW-PWw"/>
+                            <constraint firstItem="9dB-H4-xgl" firstAttribute="bottom" secondItem="zkN-bb-Cn6" secondAttribute="bottom" constant="10" id="u39-SZ-w4e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zkN-bb-Cn6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HSV-UA-kDW">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myMap" destination="9dB-H4-xgl" id="byK-9N-rtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lqr-ak-Rfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9167" y="6995"/>
+        </scene>
     </scenes>
     <resources>
         <image name="&quot;&quot;" width="16" height="16"/>
@@ -9176,10 +9303,10 @@ pay 5% of the shipment price.</string>
         <image name="startDate" width="24" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dHU-mz-6Hd"/>
-        <segue reference="WWG-ss-jhx"/>
-        <segue reference="nqM-Wc-dh1"/>
-        <segue reference="khB-gS-tVS"/>
+        <segue reference="Fou-Rr-2VC"/>
+        <segue reference="qjQ-Yy-70q"/>
+        <segue reference="peZ-WR-XFr"/>
+        <segue reference="Pyv-5Z-bOz"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
 </document>
