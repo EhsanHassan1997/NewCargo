@@ -42,6 +42,8 @@
 		C4CB9261223D28B30020172C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB9260223D28B30020172C /* User.swift */; };
 		C4CB9264223D41BC0020172C /* TransportHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB9263223D41BC0020172C /* TransportHomeViewController.swift */; };
 		C4CB9266223D429D0020172C /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB9265223D429D0020172C /* VerifyEmailViewController.swift */; };
+		C4CFBDE022B2BC4700C5C276 /* assignTruckToDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */; };
+		C4CFBDE222B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDE122B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		C4CB9260223D28B30020172C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C4CB9263223D41BC0020172C /* TransportHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportHomeViewController.swift; sourceTree = "<group>"; };
 		C4CB9265223D429D0020172C /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
+		C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignTruckToDriverViewController.swift; sourceTree = "<group>"; };
+		C4CFBDE122B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverCurrentLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 				1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */,
 				1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */,
 				1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */,
+				C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */,
+				C4CFBDE122B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -389,6 +395,7 @@
 				C4286DCD223E4D0D0037A459 /* VerificationCodeViewController.swift in Sources */,
 				C431C7842200B3C4001AEDB8 /* AppDelegate.swift in Sources */,
 				C419C8A022AD0D560043EBC9 /* TransportProfileViewController.swift in Sources */,
+				C4CFBDE222B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift in Sources */,
 				C4C265262260C07F00C0211F /* SetPasswordViewController.swift in Sources */,
 				1887D47122ADD7DA007AB29F /* MySegue.swift in Sources */,
 				18FDA5A12263568500AE30A2 /* TransportNotificationViewController.swift in Sources */,
@@ -408,6 +415,7 @@
 				C4C265242260B40900C0211F /* SecondRegisterViewController.swift in Sources */,
 				18EAA2E8227336940054919D /* Constants.swift in Sources */,
 				18EAA2F0227358A70054919D /* TransportMenuViewController.swift in Sources */,
+				C4CFBDE022B2BC4700C5C276 /* assignTruckToDriverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,7 +43,7 @@ class TransportNotificationViewController: UIViewController {
         let not3 = TransportNotificationClass( 3 , "YOUr offer has been ignored by  ", "Company name Losy",image3 )
         
         let image4 = UIImage(named: "Application")!
-        let not4 = TransportNotificationClass( 4 , "YOUr driver Curren Status ", "Cargo follow up",image4 )
+        let not4 = TransportNotificationClass( 4 , "YOUr driver Current Status ", "Cargo follow up",image4 )
         
         Temp.append(not1)
         Temp.append(not2)
@@ -82,21 +82,23 @@ extension TransportNotificationViewController  :UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        // var Tran : [TransportNotificationClass] = []
-        if  indexPath.row == 0 {
+        if  indexPath.row == 0{
             print("hi")
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
             self.navigationController?.pushViewController(vc, animated: true)
-            
-        }else if indexPath.row == 1{
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
-            self.navigationController?.pushViewController(vc, animated: true)
-            
-            
         }
-//        else if indexPath.row == 2 {
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
+        else if indexPath.row == 1{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! assignTruckToDriverViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if indexPath.row == 2{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "home") as! TransportHomeViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if indexPath.row == 3{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! DriverCurrentLocationViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 

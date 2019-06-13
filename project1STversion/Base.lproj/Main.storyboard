@@ -228,7 +228,7 @@
         <!--SelectTrucks-->
         <scene sceneID="Twg-p4-ozm">
             <objects>
-                <viewController id="zCb-NW-eYv" userLabel="SelectTrucks" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AssignTruckToDriver" id="zCb-NW-eYv" userLabel="SelectTrucks" customClass="assignTruckToDriverViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F1g-3e-mgo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1040,6 +1040,21 @@
             </objects>
             <point key="canvasLocation" x="-12202" y="5357"/>
         </scene>
+        <!--DriverCurntLocation -->
+        <scene sceneID="uiN-sI-STs">
+            <objects>
+                <viewController storyboardIdentifier="DriverCurrentLocation" id="VqR-yW-Nob" userLabel="DriverCurntLocation " customClass="DriverCurrentLocationViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xhy-ou-sCi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="i6h-oz-H5w"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1G-8Z-aaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1261" y="5456"/>
+        </scene>
         <!--RequestDetail-->
         <scene sceneID="tMl-tl-Sg9">
             <objects>
@@ -1060,7 +1075,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWS-Te-rU6" userLabel="ImageAndName">
                                                         <rect key="frame" x="19" y="26" width="337.5" height="112"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Hm-vh-vHq" userLabel="profileImageI">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileimage" translatesAutoresizingMaskIntoConstraints="NO" id="7Hm-vh-vHq" userLabel="profileImageI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="111.5" height="112"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="7Hm-vh-vHq" secondAttribute="height" multiplier="1:1" id="i9H-7z-2oo"/>
