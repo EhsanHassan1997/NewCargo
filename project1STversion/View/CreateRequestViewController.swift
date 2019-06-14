@@ -74,6 +74,13 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if(UserDefaults.standard.string(forKey: "Location_Return") == "PickUp"){
+            PickUpLocationTextField.text = UserDefaults.standard.string(forKey: "LocationTaped")
+        }
+        if(UserDefaults.standard.string(forKey: "Location_Return") == "Destination"){
+            DestinationTextField.text = UserDefaults.standard.string(forKey: "LocationTaped")
+        }
+        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -208,11 +215,13 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func SelectPickUpLocationAction(_ sender: UIButton) {
+        UserDefaults.standard.set("PickUp", forKey: "Location_Return")
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SetLocation") as! SetLocationOnMapViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func SelectDestinationAction(_ sender: UIButton) {
+        UserDefaults.standard.set("Destination", forKey: "Location_Return")
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SetLocation") as! SetLocationOnMapViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
