@@ -65,7 +65,9 @@ class ApiMethods {
     }
     
     // MARK: Get User
-    class func GetUser(UserId : Int){
+    class func GetUser(UserId : Int, Usser :@escaping(_ user : User)->Void ){
+        var user = User()
+        
         let Url = URL(string: UserDetailsUrl + String(UserId))!
         let headers = [
             "Authorization" : "Bearer " + GetUserToken(),
@@ -73,6 +75,18 @@ class ApiMethods {
         Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             switch response.result {
             case .success(let value):
+                
+                 let json =  JSON(value)
+                 if let userName = json["name"].string{
+                    if let userEmail = json["email"].string{
+                        user.name = userName
+                        user.email = userEmail
+                        Usser(user)
+                        return
+                    }
+                    
+                 }
+                 
                 break
             case .failure(let Error):
                 break

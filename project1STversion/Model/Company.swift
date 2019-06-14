@@ -9,8 +9,9 @@
 import Foundation
 class Company : User{
     var CompanyId : Int?
-    var Address : String?
-    var TaxCard : String?
+    var CompanyName : String!
+    var Address : String!
+    var TaxCard : String!
     var TaxFileNumber : String?
     var Phone: String?
     var specialization : String?

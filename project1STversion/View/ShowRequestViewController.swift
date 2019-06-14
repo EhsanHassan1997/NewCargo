@@ -49,68 +49,11 @@ class ShowRequestViewController: UIViewController {
             self.DestinationLocation.text = ss.Destination
             self.StartDate.text = "Start Date: " + ss.StartDate
             self.EndDate.text = "End Date: " + ss.EndDate
-            self.ImportExportNameLable.text = ss.comIm_Ex
-            
+            ApiMethods.GetUser(UserId: Int(ss.comIm_Ex)! , Usser: { (User) in
+                self.ImportExportNameLable.text = User.name
+            })
         }
-        
-//        ReqTOTO.cargoType = "liqued"
-//        ReqTOTO.Quantity = 3
-//        ReqTOTO.Weight = 4.5
-//        ReqTOTO.Hieght = 2
-//        ReqTOTO.Length = 4
-//        ReqTOTO.Width = 3
-//        ReqTOTO.Volume = ReqTOTO.Weight! *  ReqTOTO.Hieght! * ReqTOTO.Width!
-//        ReqTOTO.PickUp = " 23 st Giza Tahrer"
-//        ReqTOTO.Destination = "34 st cairo naser"
-        
-        //        ReqTOTO.EndDate = Date()
-        //        var EdateComponents = DateComponents()
-        //        EdateComponents.year = 2020
-        //        EdateComponents.month = 2
-        //        EdateComponents.day = 10
-        
-        
-        
-        // let userCalendar = Calendar.current // user calendar
-        // let someDateTime = userCalendar.date(from: SdateComponents)
-        //let formatter = DateFormatter()
-        //formatter.dateFormat = "yyyy/MM/dd"
-        //let someDateTime = formatter.date(from: ReqTOTO.StartDate )
-        //ReqTOTO.StartDate = Date()
-        
-//        let userCalendar = Calendar.current
-//        var SdateComponents = DateComponents()
-//        SdateComponents.year = 2019
-//        SdateComponents.month = 7
-//        SdateComponents.day = 20
-//        let start = userCalendar.date(from: SdateComponents)!
-//        let myFormatter = DateFormatter()
-//        myFormatter.dateFormat = "dd/MM/y"
-//        StartDate.text = " Start date : " + myFormatter.string(from: start)
-//
-//
-//        var EdateComponents = DateComponents()
-//        EdateComponents.year = 2020
-//        EdateComponents.month = 2
-//        EdateComponents.day = 10
-//        let end = userCalendar.date(from:EdateComponents)!
-//        let mmyFormatter = DateFormatter()
-//        mmyFormatter.dateFormat = "dd/MM/y"
-//        StartDate.text = "End date :" + myFormatter.string(from: end)
-//
-//
-        
-        //myFormatter.string(from: firstLandPhoneCallDate) // What gives?
-        
-        //        print("jhhgcf",myFormatter.string(from: firstLandPhoneCallDate))
-        //        StartDate.text = myFormatter.string(from:firstLandPhoneCallDate )
-        
-        //        myFormatter.dateFormat = "MM/dd/yy"
-        //        StartDate.text = myFormatter.string(from: firstLandPhoneCallDate)
-        //        //label.text = result
-        
-      
-        // Do any additional setup after loading the view.
+
     }
     
     @IBAction func AcceptingAction(_ sender: LGButton) {
@@ -119,10 +62,6 @@ class ShowRequestViewController: UIViewController {
         price = Int(PriceTextField.text!)
         
         if (price != nil ){
-            
-            // open notifiaction again
-            //            let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransportNotificationViewController
-            //            self.navigationController?.pushViewController(vc, animated: true)
             print("notification button is clicked")
             
         }else if (price == nil){
@@ -137,9 +76,9 @@ class ShowRequestViewController: UIViewController {
         print("price = ", price)
     }
     @IBAction func IgnoreActoin(_ sender: LGButton) {
-        //        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransNotificationViewController
-        //        self.navigationController?.pushViewController(vc, animated: true)
-        //        print("notification button is clicked")
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransportNotificationViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+                print("notification button is clicked")
     }
     
     @IBAction func TermsConditions(_ sender: UIButton) {
