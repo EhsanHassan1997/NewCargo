@@ -4,17 +4,15 @@
 
  target 'project1STversion' do
   
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-    use_frameworks!
+         use_frameworks!
 
-  # Pods for project1STversion
-        pod 'SwiftyJSON', '~> 4.0'
+         pod 'SwiftyJSON', '~> 4.0'
         
-        pod 'LGButton'
+         pod 'LGButton'
 
-        pod 'DLRadioButton', '~> 1.4'
+         pod 'DLRadioButton', '~> 1.4'
         
-        pod 'Alamofire'
+         pod 'Alamofire'
         
          pod 'IQKeyboardManagerSwift'
          
@@ -29,8 +27,5 @@
          pod 'GooglePlacesSearchController'
          
          pod 'DropDown'
-#         pod 'CalendarDateRangePickerViewController'
-
-#         pod 'DatePicker', '1.0.1'
-
+         
 end
