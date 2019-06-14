@@ -11,6 +11,8 @@ import LGButton
 
 class RequestReviewViewController: UIViewController {
 
+    var request : Request!
+    
     @IBOutlet weak var CargoTypeLabel: UILabel!
     
     @IBOutlet weak var QuantityLabel: UILabel!

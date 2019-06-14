@@ -259,14 +259,16 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
             request.PickUp = PickUpLocationTextField.text
             request.Quantity = Int(QuantityTextField.text!)
             request.StartDate = StartDateTextField.text
-            request.Weight = Double(WidthTextField.text!)
+            request.Weight = Double(WieghtTextField.text!)
+            request.Width = Double(WidthTextField.text!)
+            performSegue(withIdentifier: "RequestReview", sender: request)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "secondRegister"{
-            let vc = segue.destination as! SecondRegisterViewController
-            vc.myCompany = sender as? Company
+        if segue.identifier == "RequestReview"{
+            let vc = segue.destination as! RequestReviewViewController
+            vc.request = sender as? Request
         }
     }
     /*
