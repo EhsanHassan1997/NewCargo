@@ -41,7 +41,7 @@ class ApiMethods {
     }
     
     // MARK: user login
-    class func LoginUser(Email : String, Password : String, Comp:@escaping (_ token:String,_ type : String,_ userID : Int)->Void){
+    class func LoginUser(Email : String, Password : String, Comp:@escaping (_ token:String,_ type : String,_ userID : Int,_ userName: String)->Void){
         let Url = URL(string: UserLoginUrl)!
         let prametars = [
             "email" : Email ,
@@ -56,8 +56,10 @@ class ApiMethods {
                     if let user = json["user"].dictionary{
                         if let type = user["type"]?.string{
                             if let UserID = user["id"]?.int{
-                                Comp(token,type,UserID)
-                                return
+                                if let Username = user["name"]?.string{
+                                    Comp(token,type,UserID,Username)
+                                    return
+                                }
                             }
                         }
                     }
@@ -177,8 +179,8 @@ class ApiMethods {
     }
     
     // MARK: Get Request
-    class func TransportRequestDetails(requestId : Int, Request:@escaping (_ requestDetaile: RequestDetaile)->Void){
-        var requestDetaile = RequestDetaile()
+    class func TransportRequestDetails(requestId : Int, RequestDetaile:@escaping (_ requestDetaile: Request)->Void){
+        var requestDetaile = Request()
         
         var header = [
             "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEwOSwiaXNzIjoiaHR0cDovLzUyLjU5LjIzMS41OC9hcGkvdXNlci9sb2dpbiIsImlhdCI6MTU2MDAwOTk5MCwiZXhwIjo3NTYwMDA5OTkwLCJuYmYiOjE1NjAwMDk5OTAsImp0aSI6ImRyTlZOck1JZnpRTWIzMEEifQ.LMCYb8LF_rYfaFfaz9FTXHUjPmXaq0hq8Cvmo3Vvi5Y" ,
@@ -214,7 +216,7 @@ class ApiMethods {
                                                                     requestDetaile.EndDate = endDate
                                                                     requestDetaile.comIm_Ex = String(companyImportExport)
                                                                     requestDetaile .Volume = Double(volume)
-                                                                    Request(requestDetaile)
+                                                                    RequestDetaile(requestDetaile)
                                                                     return
                                                                 }
                                                             }

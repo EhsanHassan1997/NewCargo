@@ -250,10 +250,25 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func NextAction(_ sender: UIButton) {
         if acceptence && (StartDateDatePicker.date < EndDateDatePicker.date) {
-            
+            var request = Request()
+            request.cargoType = CargoTypeTextField.text
+            request.Destination = DestinationTextField.text
+            request.EndDate = EndDateTextField.text
+            request.Hieght = Double(HieghtTextField.text!)
+            request.Length = Double(LengthTextField.text!)
+            request.PickUp = PickUpLocationTextField.text
+            request.Quantity = Int(QuantityTextField.text!)
+            request.StartDate = StartDateTextField.text
+            request.Weight = Double(WidthTextField.text!)
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "secondRegister"{
+            let vc = segue.destination as! SecondRegisterViewController
+            vc.myCompany = sender as? Company
+        }
+    }
     /*
     // MARK: - Navigation
 

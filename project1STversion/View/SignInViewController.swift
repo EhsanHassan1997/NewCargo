@@ -103,9 +103,11 @@ class SignInViewController: UIViewController {
                 
                 errorMessageLabel.text = ""
                 
-                ApiMethods.LoginUser(Email: email!, Password: password!) { (tokeN,Type) in
+                ApiMethods.LoginUser(Email: email!, Password: password!) { (tokeN,Type,ID,Name) in
                     print("token:-  ",tokeN)
                     UserDefaults.standard.set(tokeN, forKey: "token")
+                    UserDefaults.standard.set(ID, forKey: "UserID")
+                    UserDefaults.standard.set(Name, forKey: "UserName")
                     UserDefaults.standard.set(true, forKey: "Logged")
                     UserDefaults.standard.set(Type, forKey: "userType")
                     if(UserDefaults.standard.bool(forKey: "rememberUser")){

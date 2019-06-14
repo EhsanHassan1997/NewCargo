@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class RequestDetaile {
+class Request {
     var comIm_Ex : String!
     var cargoType : String!
     var Quantity : Int!
