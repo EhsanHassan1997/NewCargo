@@ -14,6 +14,10 @@ import GoogleMaps
 
 class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
 
+    var StartDateDatePicker = UIDatePicker()
+    
+    var EndDateDatePicker = UIDatePicker()
+
     var locationManager = CLLocationManager()
 
     let CargoTypeDropDown = DropDown()
@@ -71,15 +75,21 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var EndDateTextField: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
         if(UserDefaults.standard.string(forKey: "Location_Return") == "PickUp"){
             PickUpLocationTextField.text = UserDefaults.standard.string(forKey: "LocationTaped")
+            UserDefaults.standard.set("",forKey: "LocationTaped")
         }
         if(UserDefaults.standard.string(forKey: "Location_Return") == "Destination"){
             DestinationTextField.text = UserDefaults.standard.string(forKey: "LocationTaped")
+            UserDefaults.standard.set("",forKey: "LocationTaped")
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -105,13 +115,9 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
         WidthMeasureDropDown.dataSource = ["Meter","cm"]
         WidthMeasureTextField.text = "Meter"
         
-        let StartDateDatePicker = UIDatePicker()
-        
         StartDateDatePicker.datePickerMode = UIDatePicker.Mode.date
         
         StartDateDatePicker.addTarget(self, action: #selector(CreateRequestViewController.StartDateDatePickerValueChanged), for: UIControl.Event.valueChanged)
-        
-        let EndDateDatePicker = UIDatePicker()
         
         EndDateDatePicker.datePickerMode = UIDatePicker.Mode.date
         
@@ -124,7 +130,7 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
         StartDateTextField.inputView = StartDateDatePicker
         
         EndDateTextField.inputView = EndDateDatePicker
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -243,6 +249,9 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func NextAction(_ sender: UIButton) {
+        if acceptence && (StartDateDatePicker.date < EndDateDatePicker.date) {
+            
+        }
     }
     
     /*
