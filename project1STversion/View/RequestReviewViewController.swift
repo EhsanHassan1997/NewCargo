@@ -78,6 +78,9 @@ class RequestReviewViewController: UIViewController {
     }
     
     @IBAction func BookAction(_ sender: LGButton) {
+        ApiMethods.CreateRequest(request: request, companyID: UserDefaults.standard.integer(forKey: "UserID")) { (requestID) in
+        }
+        self.performSegue(withIdentifier: "RequestDone", sender: nil)
     }
     
     /*

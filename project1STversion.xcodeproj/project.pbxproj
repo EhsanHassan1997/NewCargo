@@ -15,6 +15,7 @@
 		1887D46F22ADB8FC007AB29F /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */; };
 		1887D47122ADD7DA007AB29F /* MySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887D47022ADD7DA007AB29F /* MySegue.swift */; };
 		18C2D5D722B3DE140093154E /* RequestReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2D5D622B3DE140093154E /* RequestReviewViewController.swift */; };
+		18C2D5D922B432810093154E /* WarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2D5D822B432810093154E /* WarningViewController.swift */; };
 		18E8F64122AAAAB700168594 /* CreateRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8F64022AAAAB700168594 /* CreateRequestViewController.swift */; };
 		18EAA2E7227336940054919D /* ApiMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAA2E5227336940054919D /* ApiMethods.swift */; };
 		18EAA2E8227336940054919D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAA2E6227336940054919D /* Constants.swift */; };
@@ -57,6 +58,7 @@
 		1887D47022ADD7DA007AB29F /* MySegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySegue.swift; sourceTree = "<group>"; };
 		18BA528538B1FAB48A7BF2AB /* Pods-project1STversion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project1STversion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project1STversion/Pods-project1STversion.debug.xcconfig"; sourceTree = "<group>"; };
 		18C2D5D622B3DE140093154E /* RequestReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewViewController.swift; sourceTree = "<group>"; };
+		18C2D5D822B432810093154E /* WarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningViewController.swift; sourceTree = "<group>"; };
 		18E8F64022AAAAB700168594 /* CreateRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRequestViewController.swift; sourceTree = "<group>"; };
 		18EAA2E5227336940054919D /* ApiMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMethods.swift; sourceTree = "<group>"; };
 		18EAA2E6227336940054919D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */,
 				C4CFBDE122B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift */,
 				18C2D5D622B3DE140093154E /* RequestReviewViewController.swift */,
+				18C2D5D822B432810093154E /* WarningViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				C431C7842200B3C4001AEDB8 /* AppDelegate.swift in Sources */,
 				C419C8A022AD0D560043EBC9 /* TransportProfileViewController.swift in Sources */,
 				C4CFBDE222B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift in Sources */,
+				18C2D5D922B432810093154E /* WarningViewController.swift in Sources */,
 				C4C265262260C07F00C0211F /* SetPasswordViewController.swift in Sources */,
 				1887D47122ADD7DA007AB29F /* MySegue.swift in Sources */,
 				18FDA5A12263568500AE30A2 /* TransportNotificationViewController.swift in Sources */,

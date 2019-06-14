@@ -36,6 +36,7 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     
     let DestinationDropDown = DropDown()
     
+    @IBOutlet weak var TermsButton: UIButton!
     
     @IBOutlet weak var CargoTypeTextField: UITextField!
     
@@ -249,7 +250,7 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func NextAction(_ sender: UIButton) {
-        if acceptence && (StartDateDatePicker.date < EndDateDatePicker.date) {
+        if acceptence && (StartDateDatePicker.date < EndDateDatePicker.date) && CargoTypeTextField.text == "" && DestinationTextField.text == "" && EndDateTextField.text == "" && HieghtTextField.text == "" && LengthTextField.text == "" && PickUpLocationTextField.text == "" && QuantityTextField.text == "" && StartDateTextField.text == "" && WieghtTextField.text == "" && WidthTextField.text == "" {
             UserDefaults.standard.set(WieghtMeasureTextField.text, forKey: "WieghtMeasure")
             UserDefaults.standard.set(WidthMeasureTextField.text, forKey: "WidthMeasure")
             UserDefaults.standard.set(LengthMeasureTextField.text, forKey: "LengthMeasure")
@@ -266,6 +267,27 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
             request.Weight = Double(WieghtTextField.text!)
             request.Width = Double(WidthTextField.text!)
             performSegue(withIdentifier: "RequestReview", sender: request)
+        }else if (StartDateDatePicker.date > EndDateDatePicker.date) {
+            UserDefaults.standard.set("End Date Should be after Start Date", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+        }else if !acceptence{
+            UserDefaults.standard.set("you should accept terms and condition", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+        }else{
+            UserDefaults.standard.set("Fill All Fields", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
         }
     }
     

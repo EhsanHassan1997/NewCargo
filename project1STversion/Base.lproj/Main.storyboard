@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -2514,7 +2514,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nl-3H-e15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6092" y="6996"/>
+            <point key="canvasLocation" x="-5330" y="6994"/>
         </scene>
         <!--DriverHome-->
         <scene sceneID="cqc-fj-bvg">
@@ -2837,7 +2837,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MQ-c9-0Rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6879" y="6994"/>
+            <point key="canvasLocation" x="-6092" y="6996"/>
         </scene>
         <!--selectDriverVC-->
         <scene sceneID="T9C-FS-1y4">
@@ -8096,11 +8096,12 @@ pay 5% of the shipment price.</string>
                                                 <rect key="frame" x="37.5" y="724.5" width="262.5" height="27"/>
                                                 <state key="normal" image="Unchecked">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content=" ACCEPT TERMS &amp; CONDITION">
+                                                        <fragment content=" Accept terms &amp; condition">
                                                             <attributes>
-                                                                <color key="NSColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="NSColor" red="0.94509803921568625" green="0.40784313725490196" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <font key="NSFont" size="15" name="LucidaGrande"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -8228,6 +8229,7 @@ pay 5% of the shipment price.</string>
                         <outlet property="PickUpLocationTextField" destination="1If-bc-4ZC" id="Ld8-w8-fpY"/>
                         <outlet property="QuantityTextField" destination="WhN-hf-pbh" id="ss9-aj-azz"/>
                         <outlet property="StartDateTextField" destination="8cD-rk-AAC" id="FrH-N5-Lhc"/>
+                        <outlet property="TermsButton" destination="R4z-Tb-E5z" id="ry2-WZ-mXh"/>
                         <outlet property="WidthMeasureAnchorView" destination="Oar-rg-a6q" id="5a4-ln-EnF"/>
                         <outlet property="WidthMeasureTextField" destination="B3h-Mv-dFO" id="53O-fS-T6c"/>
                         <outlet property="WidthTextField" destination="pzy-N8-JmZ" id="NfA-bO-qtu"/>
@@ -9477,6 +9479,67 @@ pay 5% of the shipment price.</string>
             </objects>
             <point key="canvasLocation" x="-7690" y="6077"/>
         </scene>
+        <!--Warning View Controller-->
+        <scene sceneID="WKr-BQ-nDk">
+            <objects>
+                <viewController storyboardIdentifier="Warning" id="wnF-PY-1SV" customClass="WarningViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="57e-b9-c4K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0i9-N3-D1s">
+                                <rect key="frame" x="37.5" y="233.5" width="300" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Buk-bS-FFI">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="140"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkL-aw-77V">
+                                        <rect key="frame" x="90" y="150.5" width="120" height="40"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.40784313729999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="OKAction:" destination="wnF-PY-1SV" eventType="touchUpInside" id="ztx-gW-b9o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.3411764706" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Buk-bS-FFI" firstAttribute="height" secondItem="0i9-N3-D1s" secondAttribute="height" multiplier="0.7" id="5xZ-D8-XLh"/>
+                                    <constraint firstItem="Buk-bS-FFI" firstAttribute="centerX" secondItem="0i9-N3-D1s" secondAttribute="centerX" id="8KG-Oh-pWJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="wkL-aw-77V" secondAttribute="bottom" multiplier="1.05" id="HLu-Er-4IN"/>
+                                    <constraint firstItem="wkL-aw-77V" firstAttribute="centerX" secondItem="0i9-N3-D1s" secondAttribute="centerX" id="Hh3-wM-a7Y"/>
+                                    <constraint firstItem="Buk-bS-FFI" firstAttribute="width" secondItem="0i9-N3-D1s" secondAttribute="width" id="e5J-wQ-fbi"/>
+                                    <constraint firstItem="wkL-aw-77V" firstAttribute="width" secondItem="0i9-N3-D1s" secondAttribute="width" multiplier="0.4" id="n2n-Zk-ix2"/>
+                                    <constraint firstItem="wkL-aw-77V" firstAttribute="height" secondItem="0i9-N3-D1s" secondAttribute="height" multiplier="0.2" id="rSe-5w-RQ8"/>
+                                    <constraint firstItem="Buk-bS-FFI" firstAttribute="top" secondItem="0i9-N3-D1s" secondAttribute="top" id="v1L-Er-eVl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0i9-N3-D1s" firstAttribute="centerX" secondItem="57e-b9-c4K" secondAttribute="centerX" id="JMu-4F-y14"/>
+                            <constraint firstItem="0i9-N3-D1s" firstAttribute="width" secondItem="57e-b9-c4K" secondAttribute="width" multiplier="0.8" id="R7U-WZ-oTQ"/>
+                            <constraint firstItem="0i9-N3-D1s" firstAttribute="centerY" secondItem="57e-b9-c4K" secondAttribute="centerY" id="Sg7-CW-Lje"/>
+                            <constraint firstItem="0i9-N3-D1s" firstAttribute="height" secondItem="57e-b9-c4K" secondAttribute="height" multiplier="0.3" id="eBt-JH-8Q3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="edd-0P-HiJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="OKButton" destination="wkL-aw-77V" id="EVD-Bv-Rb5"/>
+                        <outlet property="WarningLabel" destination="Buk-bS-FFI" id="3xE-qs-KBJ"/>
+                        <outlet property="WarningView" destination="0i9-N3-D1s" id="SdF-2t-OM6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygd-gr-a4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7690.3999999999996" y="6995.3523238380812"/>
+        </scene>
         <!--RequestDetail-->
         <scene sceneID="IVv-xL-Xox">
             <objects>
@@ -9929,11 +9992,12 @@ pay 5% of the shipment price.</string>
                         <outlet property="VolumeLabel" destination="joi-oz-Nq3" id="xks-AZ-RRN"/>
                         <outlet property="WeightLabel" destination="kNf-Hw-0q1" id="IE4-aS-15A"/>
                         <outlet property="WidthLabel" destination="oY4-Ub-Aq1" id="5P1-3S-Lda"/>
+                        <segue destination="1un-fv-fbC" kind="show" identifier="RequestDone" id="E03-wN-ki4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOj-9I-Xjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7690" y="6996"/>
+            <point key="canvasLocation" x="-6879" y="6994"/>
         </scene>
         <!--DriverCurrentLocation-->
         <scene sceneID="dAZ-Fa-Plg">
@@ -10054,7 +10118,7 @@ pay 5% of the shipment price.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Fou-Rr-2VC"/>
-        <segue reference="qjQ-Yy-70q"/>
+        <segue reference="E03-wN-ki4"/>
         <segue reference="peZ-WR-XFr"/>
         <segue reference="Pyv-5Z-bOz"/>
     </inferredMetricsTieBreakers>
