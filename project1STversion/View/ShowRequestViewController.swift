@@ -54,6 +54,8 @@ class ShowRequestViewController: UIViewController {
             })
         }
 
+        ApiMethods.CreateOffer(RequestId: 3, Price: Double(self.PriceTextField.text!)!)
+
     }
     
     @IBAction func AcceptingAction(_ sender: LGButton) {

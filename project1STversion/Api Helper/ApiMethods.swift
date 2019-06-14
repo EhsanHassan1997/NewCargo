@@ -41,7 +41,7 @@ class ApiMethods {
     }
     
     // MARK: user login
-    class func LoginUser(Email : String, Password : String, Comp:@escaping (_ token:String, _ type : String)->Void){
+    class func LoginUser(Email : String, Password : String, Comp:@escaping (_ token:String,_ type : String,_ userID : Int)->Void){
         let Url = URL(string: UserLoginUrl)!
         let prametars = [
             "email" : Email ,
@@ -55,8 +55,10 @@ class ApiMethods {
                 if let token = json["token"].string{
                     if let user = json["user"].dictionary{
                         if let type = user["type"]?.string{
-                            Comp(token,type)
-                            return
+                            if let UserID = user["id"]?.int{
+                                Comp(token,type,UserID)
+                                return
+                            }
                         }
                     }
                 }
@@ -237,7 +239,7 @@ class ApiMethods {
     
     
     // MARK: Create Offer
-    class func CreateOffer(RequestId : Int, Price : Double){
+    class func CreateOffer(RequestId : Int, Price :Double){
         let Url = URL(string: OfferUrl + String(RequestId))!
         let parameters = [
             "price" : Price,
@@ -251,7 +253,6 @@ class ApiMethods {
             case .success(let value):
                 let json = JSON(value)
                 if let price = json["price"].double{
-                    
                     return
                 }
                 
