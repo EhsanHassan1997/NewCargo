@@ -9,6 +9,9 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import Foundation
+import GooglePlaces
+import GoogleMaps
 class ApiMethods {
         
     // MARK: Register
@@ -232,6 +235,7 @@ class ApiMethods {
         }
     }
     
+    
     // MARK: Create Offer
     class func CreateOffer(RequestId : Int, Price : Double){
         let Url = URL(string: OfferUrl + String(RequestId))!
@@ -242,8 +246,15 @@ class ApiMethods {
             "Authorization" : "Bearer " + GetUserToken(),
             ]
         Alamofire.request(Url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+            
             switch response.result {
             case .success(let value):
+                let json = JSON(value)
+                if let price = json["price"].double{
+                    
+                    return
+                }
+                
                 break
             case .failure(let Error):
                 break
@@ -273,6 +284,40 @@ class ApiMethods {
         }
     }
     
+    //MARK: Current Location Driver
+    class func myMap(from source: CLLocationCoordinate2D ,  to destination: CLLocationCoordinate2D , comp:@escaping (_ polyLineString:[String?])->Void){
+        
+        let url = URL(string: "http://maps.googleapis.com/maps/api/directions/json?origin=\(source.latitude),\(source.longitude)&destination=\(destination.latitude),\(destination.longitude)&sensor=false&mode=driving")!
+        
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
+            switch response.result{
+                
+            case .failure(let error):
+                print("Error: ",error)
+                break
+                
+            case .success(let value):
+                var Points :[String?] = []
+                let json = JSON(value)
+                if let Routes = json["routes"].array{
+                    for route in Routes{
+                        if let legs = route["legs"].array{
+                            for leg in legs{
+                                if let overview_polyline = leg["overview_polyline"].dictionary{
+                                    if let points = overview_polyline["points"]?.string{
+                                        Points.append(points)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    comp(Points)
+                }
+                return
+            }
+        }
+    }
+    
     // MARK: Create Request
     class func CreateRequest(){
         
@@ -298,4 +343,6 @@ class ApiMethods {
     class func GetContract(){
         
     }
+    
+
 }

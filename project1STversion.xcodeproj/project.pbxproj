@@ -45,6 +45,7 @@
 		C4CB9266223D429D0020172C /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB9265223D429D0020172C /* VerifyEmailViewController.swift */; };
 		C4CFBDE022B2BC4700C5C276 /* assignTruckToDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */; };
 		C4CFBDE222B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDE122B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift */; };
+		C4CFBDE422B3DAA200C5C276 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDE322B3DAA200C5C276 /* CurrentLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		C4CB9265223D429D0020172C /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
 		C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignTruckToDriverViewController.swift; sourceTree = "<group>"; };
 		C4CFBDE122B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverCurrentLocationViewController.swift; sourceTree = "<group>"; };
+		C4CFBDE322B3DAA200C5C276 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				18E8F64022AAAAB700168594 /* CreateRequestViewController.swift */,
+				C4CFBDE322B3DAA200C5C276 /* CurrentLocationViewController.swift */,
 				C431C7852200B3C4001AEDB8 /* SignInViewController.swift */,
 				C4C265232260B40900C0211F /* SecondRegisterViewController.swift */,
 				C4C265212260B3CE00C0211F /* RegisterViewController.swift */,
@@ -413,6 +416,7 @@
 				C49B09D9225DFD6100E3C771 /* Company.swift in Sources */,
 				C4CB9266223D429D0020172C /* VerifyEmailViewController.swift in Sources */,
 				C4CB925F223D27BF0020172C /* GetUserByEmail.swift in Sources */,
+				C4CFBDE422B3DAA200C5C276 /* CurrentLocationViewController.swift in Sources */,
 				C402DDBA225FACB80099D103 /* ShowRequestViewController.swift in Sources */,
 				C447F60222A92C300083420A /* RequestDetaile.swift in Sources */,
 				1802CEF622A81300000193B7 /* ImportExportHomeViewController.swift in Sources */,
