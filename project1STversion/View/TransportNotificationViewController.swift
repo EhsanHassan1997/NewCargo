@@ -96,6 +96,7 @@ extension TransportNotificationViewController  :UITableViewDataSource{
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else if indexPath.row == 3{
+            print("tOOoooooooooooooz")
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! DriverCurrentLocationViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
