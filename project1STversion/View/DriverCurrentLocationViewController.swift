@@ -34,27 +34,76 @@ class DriverCurrentLocationViewController: UIViewController , CLLocationManagerD
         locationManager.startUpdatingLocation()
         
     }
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let latitude = locations.last?.coordinate.latitude
-        let longitude = locations.last?.coordinate.longitude
-        center = CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
-        let camera = GMSCameraPosition.camera(withLatitude: latitude!, longitude: longitude!, zoom: 20)
-        
-        let currentLocation = GMSMarker()
-        currentLocation.position = destination
-        currentLocation.title = "My Current Location"
-        currentLocation.snippet = "I am here now"
-        currentLocation.map = myMapView
-        
-        
-        self.myMapView.camera = camera
-        
-        self.myMapView.isMyLocationEnabled = true
-        
-        fetchRoute(from: center, to: destination)
-        locationManager.stopUpdatingLocation()
-        
-    }
+    
+//    func updateLocationoordinates(coordinates:CLLocationCoordinate2D) {
+//        if destinationMarker == nil
+//        {
+//            destinationMarker = GMSMarker()
+//            destinationMarker.position = coordinates
+//            let image = UIImage(named:"destinationmarker")
+//            destinationMarker.icon = image
+//            destinationMarker.map = viewMap
+//            destinationMarker.appearAnimation = kGMSMarkerAnimationPop
+//        }
+//        else
+//        {
+//            CATransaction.begin()
+//            CATransaction.setAnimationDuration(1.0)
+//            destinationMarker.position =  coordinates
+//            CATransaction.commit()
+//        }
+//    }
+//
+//    // Camera change Position this methods will call every time
+//    func mapView(mapView: GMSMapView, didChangeCameraPosition position: GMSCameraPosition) {
+//        let destinationLocation = CLLocation()
+//        if self.mapGesture == true
+//        {
+//            destinationLocation = CLLocation(latitude: position.target.latitude,  longitude: position.target.longitude)
+//            destinationCoordinate = destinationLocation.coordinate
+//            updateLocationoordinates(destinationCoordinate)
+//        }
+//    }
+//    override func loadView() {
+//        let camera = GMSCameraPosition.camera(withLatitude:30.7777777, longitude: 30.4664646, zoom: 17)
+//        myMapView.camera = camera
+//
+//        let carMarker = GMSMarker()
+//        carMarker.position = CLLocationCoordinate2D(latitude:30.7777777, longitude: 30.4664646)
+//        carMarker.title = "Hello World"
+//        carMarker.map = myMapView
+//
+//        let startMarker = GMSMarker()
+//        startMarker.position = CLLocationCoordinate2D(latitude: 30.0159394, longitude: 31.2838786)
+//        startMarker.title = "Hello World"
+//        startMarker.map = mapView
+//
+//        let endmarker = GMSMarker()
+//        endmarker.position = CLLocationCoordinate2D(latitude: 31.0159394, longitude: 32.2838786)
+//        endmarker.title = "Hello World"
+//        endmarker.map = mapView
+//    }
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        let latitude = locations.last?.coordinate.latitude
+//        let longitude = locations.last?.coordinate.longitude
+//        center = CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
+//        let camera = GMSCameraPosition.camera(withLatitude: latitude!, longitude: longitude!, zoom: 20)
+//        
+//        let currentLocation = GMSMarker()
+//        currentLocation.position = destination
+//        currentLocation.title = "My Current Location"
+//        currentLocation.snippet = "I am here now"
+//        currentLocation.map = myMapView
+//        
+//        
+//        self.myMapView.camera = camera
+//        
+//        self.myMapView.isMyLocationEnabled = true
+//        
+//        fetchRoute(from: center, to: destination)
+//        locationManager.stopUpdatingLocation()
+//        
+//    }
     
     //MARK:- route draw
     
