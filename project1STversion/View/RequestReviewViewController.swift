@@ -37,7 +37,43 @@ class RequestReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        CargoTypeLabel.text = "Cargo Type: " + request.cargoType
+        
+        QuantityLabel.text = "Quantity: " + String(request.Quantity!)
+        
+        WeightLabel.text = "Weight: " + String(request.Weight!) + " " + UserDefaults.standard.string(forKey: "WieghtMeasure")!
+        if(UserDefaults.standard.string(forKey: "WieghtMeasure") == "KG"){
+            request.Weight = request.Weight / 1000
+        }
+        if(UserDefaults.standard.string(forKey: "WieghtMeasure") == "G"){
+            request.Weight = request.Weight / (1000*1000)
+        }
+        UserDefaults.standard.set("",forKey: "WieghtMeasure")
+        
+        VolumeLabel.text = "Volume: " + String(request.Width! * request.Length! * request.Hieght!) + " Cubic Meter"
+        
+        WidthLabel.text = "Width: " + String(request.Width!) + " " + UserDefaults.standard.string(forKey: "WidthMeasure")!
+        if(UserDefaults.standard.string(forKey: "WidthMeasure") == "cm"){
+            request.Width = request.Width / 100
+        }
+        UserDefaults.standard.set("",forKey: "WidthMeasure")
 
+        HieghtLabel.text = "Hieght: " + String(request.Hieght!) + " " + UserDefaults.standard.string(forKey: "HieghtMeasure")!
+        if(UserDefaults.standard.string(forKey: "HieghtMeasure") == "cm"){
+            request.Hieght = request.Hieght / 100
+        }
+        UserDefaults.standard.set("",forKey: "HieghtMeasure")
+
+        LengthLabel.text = "Length: " + String(request.Length!) + " " + UserDefaults.standard.string(forKey: "LengthMeasure")!
+        if(UserDefaults.standard.string(forKey: "LengthMeasure") == "cm"){
+            request.Length = request.Length / 100
+        }
+        UserDefaults.standard.set("",forKey: "LengthMeasure")
+
+        PickUpLabel.text = request.PickUp
+        Destination.text = request.Destination
+        StartDateLabel.text = "Start Date: " + request.StartDate
+        EndDateLabel.text = "End Date: " + request.EndDate
         // Do any additional setup after loading the view.
     }
     

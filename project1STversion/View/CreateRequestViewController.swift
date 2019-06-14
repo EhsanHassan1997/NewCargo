@@ -250,6 +250,10 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func NextAction(_ sender: UIButton) {
         if acceptence && (StartDateDatePicker.date < EndDateDatePicker.date) {
+            UserDefaults.standard.set(WieghtMeasureTextField.text, forKey: "WieghtMeasure")
+            UserDefaults.standard.set(WidthMeasureTextField.text, forKey: "WidthMeasure")
+            UserDefaults.standard.set(LengthMeasureTextField.text, forKey: "LengthMeasure")
+            UserDefaults.standard.set(HieghtMeasureTextField.text, forKey: "HieghtMeasure")
             var request = Request()
             request.cargoType = CargoTypeTextField.text
             request.Destination = DestinationTextField.text
