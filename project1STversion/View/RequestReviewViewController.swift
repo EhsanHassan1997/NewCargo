@@ -79,16 +79,17 @@ class RequestReviewViewController: UIViewController {
     
     @IBAction func BookAction(_ sender: LGButton) {
         ApiMethods.CreateRequest(request: request, companyID: UserDefaults.standard.integer(forKey: "UserID")) { (requestID) in
-            if (requestID == 0){
+            if (requestID == 1){
                 UserDefaults.standard.set("Error Connection", forKey: "warning")
                 let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
                 self.addChild(Warning)
                 Warning.view.frame = self.view.frame
                 self.view.addSubview(Warning.view)
                 Warning.didMove(toParent: self)
+            }else{
+                self.performSegue(withIdentifier: "RequestDone", sender: nil)
             }
         }
-        self.performSegue(withIdentifier: "RequestDone", sender: nil)
     }
     
     /*
