@@ -279,7 +279,7 @@
                                                                             </attributedString>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zTt-ZV-A8M" userLabel="truckType">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zTt-ZV-A8M" userLabel="Plat Form Number">
                                                                             <rect key="frame" x="0.0" y="57" width="78" height="46.5"/>
                                                                             <attributedString key="attributedText">
                                                                                 <fragment content="Platform number:">
@@ -331,64 +331,21 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="driverName" destination="PwL-v8-yBn" id="MX5-Az-muo"/>
-                                            <outlet property="platformNumber" destination="zTt-ZV-A8M" id="lfM-nB-7Rh"/>
-                                            <outlet property="truckType" destination="zTt-ZV-A8M" id="rSG-fo-Wpy"/>
+                                            <outlet property="driverName" destination="PwL-v8-yBn" id="FpZ-XE-rCB"/>
+                                            <outlet property="platformNumber" destination="zTt-ZV-A8M" id="7UR-mr-D56"/>
+                                            <outlet property="truckType" destination="kcX-LK-TbB" id="qEU-OP-Oa4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zo-hn-5By" userLabel="selectBD" customClass="LGButton" customModule="LGButton">
-                                <rect key="frame" x="112.5" y="578" width="150" height="46.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxX-Kv-r1y">
-                                        <rect key="frame" x="-0.5" y="0.0" width="150" height="46.5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Select">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.015479397028684616" green="0.33769494295120239" blue="0.51637297868728638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="17"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.98206621409999995" green="0.43492507930000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZM4-PG-9ng" userLabel="selectBL">
-                                <rect key="frame" x="112.5" y="578" width="150" height="46.5"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6zo-hn-5By" firstAttribute="width" secondItem="F1g-3e-mgo" secondAttribute="width" multiplier="0.4" id="3kb-59-bmz"/>
-                            <constraint firstItem="ZM4-PG-9ng" firstAttribute="centerX" secondItem="6zo-hn-5By" secondAttribute="centerX" id="4R5-H6-PJi"/>
                             <constraint firstItem="TZA-oK-xum" firstAttribute="width" secondItem="F1g-3e-mgo" secondAttribute="width" id="Bhh-zw-fnc"/>
                             <constraint firstItem="TZA-oK-xum" firstAttribute="height" secondItem="F1g-3e-mgo" secondAttribute="height" multiplier="0.75" id="JOi-DV-uS9"/>
-                            <constraint firstItem="ZM4-PG-9ng" firstAttribute="height" secondItem="6zo-hn-5By" secondAttribute="height" id="OnU-O2-sGe"/>
-                            <constraint firstItem="6zo-hn-5By" firstAttribute="centerX" secondItem="gHF-yN-FGm" secondAttribute="centerX" id="SB5-cf-llV"/>
                             <constraint firstItem="RZI-RI-o4s" firstAttribute="top" secondItem="gHF-yN-FGm" secondAttribute="top" id="Tdw-7n-VlC"/>
-                            <constraint firstItem="ZM4-PG-9ng" firstAttribute="width" secondItem="6zo-hn-5By" secondAttribute="width" id="Uh7-3o-wIh"/>
                             <constraint firstItem="RZI-RI-o4s" firstAttribute="height" secondItem="F1g-3e-mgo" secondAttribute="height" multiplier="0.06" id="Voq-un-aYx"/>
-                            <constraint firstItem="6zo-hn-5By" firstAttribute="centerY" secondItem="gHF-yN-FGm" secondAttribute="centerY" multiplier="1.75" id="ayQ-Uo-AJC"/>
                             <constraint firstItem="RZI-RI-o4s" firstAttribute="centerX" secondItem="gHF-yN-FGm" secondAttribute="centerX" id="eif-V7-9Dh"/>
-                            <constraint firstItem="6zo-hn-5By" firstAttribute="height" secondItem="F1g-3e-mgo" secondAttribute="height" multiplier="0.07" id="ftx-yR-ESz"/>
-                            <constraint firstItem="ZM4-PG-9ng" firstAttribute="centerY" secondItem="6zo-hn-5By" secondAttribute="centerY" id="hqG-fw-u3V"/>
                             <constraint firstItem="RZI-RI-o4s" firstAttribute="width" secondItem="F1g-3e-mgo" secondAttribute="width" id="lha-GJ-Z3L"/>
                             <constraint firstItem="TZA-oK-xum" firstAttribute="centerX" secondItem="gHF-yN-FGm" secondAttribute="centerX" id="qgw-pM-yiH"/>
                             <constraint firstItem="TZA-oK-xum" firstAttribute="centerY" secondItem="gHF-yN-FGm" secondAttribute="centerY" multiplier="0.9" id="x8U-Xc-vQw"/>

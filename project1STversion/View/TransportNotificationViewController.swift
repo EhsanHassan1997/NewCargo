@@ -92,8 +92,7 @@ extension TransportNotificationViewController  :UITableViewDataSource{
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else if indexPath.row == 2{
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "home") as! TransportHomeViewController
-            self.navigationController?.pushViewController(vc, animated: true)
+            self.navigationController?.popViewController(animated: true)
         }
         else if indexPath.row == 3{
             print("tOOoooooooooooooz")

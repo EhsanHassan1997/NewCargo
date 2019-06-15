@@ -16,6 +16,8 @@ class AssignTruckViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        UserDefaults.standard.set(-1,forKey: "selectedTruck")
+        UserDefaults.standard.set("",forKey: "selectedDriver")
         tableView.tableFooterView = UIView()
         tableView.separatorInset = .zero
         tableView.contentInset = .zero
@@ -29,9 +31,11 @@ class AssignTruckViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        viewDidAppear(animated)
-        Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].drivername = UserDefaults.standard.string(forKey: "selectedDriver")
+    override func viewWillAppear(_ animated: Bool) {
+        viewWillAppear(animated)
+        if !(UserDefaults.standard.integer(forKey: "selectedTruck") == -1 ){
+            Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].drivername = UserDefaults.standard.string(forKey: "selectedDriver")
+            }
     }
     
     func createTrucks()-> [assignTruck] {

@@ -71,7 +71,7 @@ extension SelectDriverViewController  :UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        UserDefaults.standard.set(Driver[indexPath.row], forKey: "selectedDriver")
+        UserDefaults.standard.set(Driver[indexPath.row].driverName, forKey: "selectedDriver")
         self.navigationController?.popViewController(animated: true)
         // var Tran : [TransportNotificationClass] = []
         //        if  indexPath.row == 0{
