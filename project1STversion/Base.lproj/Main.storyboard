@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -2448,7 +2448,7 @@ pay 5% of the shipment price.</string>
                                 <rect key="frame" x="0.0" y="44.5" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="rPT-yb-KNz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="imExNotification" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="rPT-yb-KNz" customClass="ImExTableViewCell" customModule="project1STversion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rPT-yb-KNz" id="MAm-cq-ZZg">
@@ -2500,6 +2500,11 @@ pay 5% of the shipment price.</string>
                                                 <constraint firstItem="oX6-ah-xIG" firstAttribute="height" secondItem="MAm-cq-ZZg" secondAttribute="height" multiplier="0.3" id="puy-oU-15s"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label1" destination="oX6-ah-xIG" id="RdE-pa-fke"/>
+                                            <outlet property="label2" destination="bfG-LT-dix" id="hJk-U3-a3f"/>
+                                            <outlet property="logoImage" destination="KSg-hL-8Px" id="QJC-kh-Jg4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -2513,6 +2518,9 @@ pay 5% of the shipment price.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OOG-bw-P5V"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="vVh-kc-lNB" id="Pbq-fz-BXn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nl-3H-e15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
