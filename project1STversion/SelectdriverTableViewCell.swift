@@ -10,10 +10,19 @@ import UIKit
 
 class SelectdriverTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var driverImage: UIImageView!
+    
+    @IBOutlet weak var driverName: UILabel!
+    
+    @IBOutlet weak var driverEmail: UILabel!
+    
+    @IBOutlet weak var driverPhone: UILabel!
+    
     func SetDriverTableViewCell(DriverChoosed : assignDriver){
-//        driverName.text = TrucKChoosed.drivername
-//        truckType.text = TrucKChoosed.trucktype
-//        platformNumber.text = TrucKChoosed.platformnumber
+        driverName.text = DriverChoosed.driverName
+        driverEmail.text = DriverChoosed.driverEmail
+        driverPhone.text = DriverChoosed.driverPhone
+        driverImage.image = DriverChoosed.DriverImage
     }
 
 }

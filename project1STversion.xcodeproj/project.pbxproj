@@ -55,6 +55,8 @@
 		C4D7BB5A22B542CB005A03F5 /* TruckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB5922B542CB005A03F5 /* TruckTableViewCell.swift */; };
 		C4D7BB5C22B54DD7005A03F5 /* assignTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB5B22B54DD7005A03F5 /* assignTruck.swift */; };
 		C4D7BB5E22B5676F005A03F5 /* SelectdriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB5D22B5676F005A03F5 /* SelectdriverTableViewCell.swift */; };
+		C4D7BB6422B57E37005A03F5 /* assignDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6322B57E37005A03F5 /* assignDriver.swift */; };
+		C4D7BB6622B57E77005A03F5 /* SelectDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6522B57E77005A03F5 /* SelectDriverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +112,8 @@
 		C4D7BB5922B542CB005A03F5 /* TruckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckTableViewCell.swift; sourceTree = "<group>"; };
 		C4D7BB5B22B54DD7005A03F5 /* assignTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignTruck.swift; sourceTree = "<group>"; };
 		C4D7BB5D22B5676F005A03F5 /* SelectdriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectdriverTableViewCell.swift; sourceTree = "<group>"; };
+		C4D7BB6322B57E37005A03F5 /* assignDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignDriver.swift; sourceTree = "<group>"; };
+		C4D7BB6522B57E77005A03F5 /* SelectDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDriverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 				C45E9AF722B069FA00A28200 /* TransportNotificationClass.swift */,
 				C4CFBDE722B462A700C5C276 /* MapPath.swift */,
 				183C959722B55D0F00898170 /* ImportExportNotification.swift */,
+				C4D7BB6322B57E37005A03F5 /* assignDriver.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				18C2D5D822B432810093154E /* WarningViewController.swift */,
 				C4D7BB5722B54269005A03F5 /* AssignTruckViewController.swift */,
 				C4D7BB5922B542CB005A03F5 /* TruckTableViewCell.swift */,
+				C4D7BB6522B57E77005A03F5 /* SelectDriverViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,6 +432,8 @@
 				C4D7BB5C22B54DD7005A03F5 /* assignTruck.swift in Sources */,
 				C4D7BB5822B54269005A03F5 /* AssignTruckViewController.swift in Sources */,
 				C402DDBD225FC2300099D103 /* Database.swift in Sources */,
+				C4D7BB6622B57E77005A03F5 /* SelectDriverViewController.swift in Sources */,
+				C4D7BB6422B57E37005A03F5 /* assignDriver.swift in Sources */,
 				C4BB07F222493EB5008C0671 /* ConfirmNewPasswordViewController.swift in Sources */,
 				183C959822B55D0F00898170 /* ImportExportNotification.swift in Sources */,
 				C431C7862200B3C4001AEDB8 /* SignInViewController.swift in Sources */,

@@ -9,19 +9,27 @@
 import UIKit
 
 class SelectDriverViewController: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
     fileprivate let cellHeight :CGFloat = 120.0
     var Driver : [assignDriver] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.tableFooterView = UIView()
+        tableView.separatorInset = .zero
+        tableView.contentInset = .zero
+        
+        //tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellidentifier)
+        tableView.dataSource = self
+        tableView.delegate = self
         
         Driver = createDrivers()
         // Do any additional setup after loading the view.
     }
     
-
+    
     func createDrivers()-> [assignDriver] {
         var Temp : [assignDriver] = []
         
@@ -36,15 +44,15 @@ class SelectDriverViewController: UIViewController {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension SelectDriverViewController  :UITableViewDataSource{
