@@ -11,9 +11,14 @@ import GooglePlaces
 import GoogleMaps
 import SwiftyJSON
 import Alamofire
-//
+
 //class DriverCurrentLocationViewController: UIViewController , CLLocationManagerDelegate {
-//    @IBOutlet weak var myMapView: GMSMapView!
+//    @IBOutlet weak var mapView: GMSMapView!
+//    @IBOutlet weak var buttonPlay: UIButton!
+//    @IBAction func buttonHandlerPlay(_ sender: UIButton) {
+//    }
+//
+//
 //    var center = CLLocationCoordinate2D()
 //    let destination = CLLocationCoordinate2D(latitude: 30.0159394, longitude: 31.2838786)
 //
@@ -22,6 +27,10 @@ import Alamofire
 //    lazy var mapView = GMSMapView()
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
+//        // Do any additional setup after loading the view, typically from a nib.
+//        //        let lat = currentLocation.coordinate.latitude
+//        //        let long = currentLocation.coordinate.longitude
+//
 //
 //
 //        locationManager.delegate = self
@@ -102,10 +111,7 @@ import Alamofire
 //        polyline.map = myMapView // Google MapView
 //    }
 //}
-
-
-
-
+//
 class MapPathViewController: UIViewController,GMSMapViewDelegate , MapPathViewModelDelegate{
     
     @IBOutlet weak var mapView: GMSMapView!
@@ -223,4 +229,3 @@ extension MapPathViewController{
     }
     
 }
-

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9231,8 +9231,11 @@ pay 5% of the shipment price.</string>
                                                                 </attributedString>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zh-NB-R5w">
-                                                                <rect key="frame" x="255" y="23.5" width="30" height="30"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zh-NB-R5w">
+                                                                <rect key="frame" x="255" y="24" width="30" height="28.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="ev2-Xw-KDL"/>
+                                                                </constraints>
                                                                 <state key="normal" title="Button"/>
                                                             </button>
                                                         </subviews>
@@ -9240,6 +9243,8 @@ pay 5% of the shipment price.</string>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="Bf5-m1-viM" secondAttribute="trailing" id="Xab-WM-zva"/>
                                                             <constraint firstItem="1zh-NB-R5w" firstAttribute="centerY" secondItem="Zzi-MD-aBn" secondAttribute="centerY" id="iXC-d9-TI2"/>
+                                                            <constraint firstItem="1zh-NB-R5w" firstAttribute="top" secondItem="Bf5-m1-viM" secondAttribute="bottom" constant="5" id="jgq-C3-Rxz"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1zh-NB-R5w" secondAttribute="trailing" constant="15" id="uwR-gr-ayJ"/>
                                                             <constraint firstAttribute="bottom" secondItem="Zzi-MD-aBn" secondAttribute="bottom" id="yUz-ps-ZZV"/>
                                                             <constraint firstItem="Bf5-m1-viM" firstAttribute="top" secondItem="V7g-nS-fGy" secondAttribute="top" id="yh0-Hj-x80"/>
                                                         </constraints>
@@ -10002,7 +10007,7 @@ pay 5% of the shipment price.</string>
         <!--DriverCurrentLocation-->
         <scene sceneID="dAZ-Fa-Plg">
             <objects>
-                <viewController storyboardIdentifier="DriverCurrentLocation" title="Driver follow Bath" id="psu-U2-KLA" userLabel="DriverCurrentLocation" customClass="DriverCurrentLocationViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DriverCurrentLocation" title="Driver follow Bath" id="psu-U2-KLA" userLabel="DriverCurrentLocation" customClass="MapPathViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VVq-A6-x6c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -10010,8 +10015,19 @@ pay 5% of the shipment price.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fto-5D-nhu">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmY-Kg-Bax">
+                                        <rect key="frame" x="0.0" y="589" width="375" height="51.5"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Play ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonHandlerPlay:" destination="psu-U2-KLA" eventType="touchUpInside" id="Tgq-zJ-KBX"/>
+                                        </connections>
+                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4o8-1h-JuJ" customClass="GMSMapView">
-                                        <rect key="frame" x="0.0" y="33.5" width="375" height="613.5"/>
+                                        <rect key="frame" x="0.0" y="33.5" width="375" height="554.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7L-Af-Yeq" userLabel="topParV">
@@ -10053,10 +10069,14 @@ pay 5% of the shipment price.</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="4o8-1h-JuJ" secondAttribute="trailing" id="0IB-ae-7Y1"/>
+                                    <constraint firstItem="GmY-Kg-Bax" firstAttribute="centerX" secondItem="Fto-5D-nhu" secondAttribute="centerX" id="El0-Le-9CO"/>
+                                    <constraint firstItem="GmY-Kg-Bax" firstAttribute="centerY" secondItem="Fto-5D-nhu" secondAttribute="centerY" multiplier="1.9" id="Gjr-ji-98Z"/>
                                     <constraint firstItem="4o8-1h-JuJ" firstAttribute="leading" secondItem="Fto-5D-nhu" secondAttribute="leading" id="TyN-PV-qSO"/>
                                     <constraint firstItem="4o8-1h-JuJ" firstAttribute="top" secondItem="e7L-Af-Yeq" secondAttribute="bottom" id="VFY-qO-tKS"/>
                                     <constraint firstItem="e7L-Af-Yeq" firstAttribute="top" secondItem="Fto-5D-nhu" secondAttribute="top" id="WZg-Na-4Rc"/>
-                                    <constraint firstAttribute="bottom" secondItem="4o8-1h-JuJ" secondAttribute="bottom" id="aqh-JH-0X7"/>
+                                    <constraint firstAttribute="bottom" secondItem="4o8-1h-JuJ" secondAttribute="bottom" multiplier="1.1" id="aqh-JH-0X7"/>
+                                    <constraint firstItem="GmY-Kg-Bax" firstAttribute="width" secondItem="Fto-5D-nhu" secondAttribute="width" id="oZn-uS-tnj"/>
+                                    <constraint firstItem="GmY-Kg-Bax" firstAttribute="height" secondItem="Fto-5D-nhu" secondAttribute="height" multiplier="0.08" id="yf3-G4-NQH"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -10074,7 +10094,8 @@ pay 5% of the shipment price.</string>
                     </view>
                     <navigationItem key="navigationItem" id="VGn-vB-44i"/>
                     <connections>
-                        <outlet property="myMapView" destination="4o8-1h-JuJ" id="L0p-sq-n13"/>
+                        <outlet property="buttonPlay" destination="GmY-Kg-Bax" id="4eJ-6J-Ax4"/>
+                        <outlet property="mapView" destination="4o8-1h-JuJ" id="0bF-FX-Fn7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkc-7x-BR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
