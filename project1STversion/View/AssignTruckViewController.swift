@@ -31,12 +31,12 @@ class AssignTruckViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        viewWillAppear(animated)
-        if !(UserDefaults.standard.integer(forKey: "selectedTruck") == -1 ){
-            Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].drivername = UserDefaults.standard.string(forKey: "selectedDriver")
-            }
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        viewWillAppear(animated)
+//        if !(UserDefaults.standard.integer(forKey: "selectedTruck") == -1 ){
+//            Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].drivername = UserDefaults.standard.string(forKey: "selectedDriver")
+//            }
+//    }
     
     func createTrucks()-> [assignTruck] {
         var Temp : [assignTruck] = []
@@ -48,8 +48,6 @@ class AssignTruckViewController: UIViewController {
 
 
         return Temp
-    }
-    @IBAction func MenuAction(_ sender: UIButton) {
     }
     /*
      // MARK: - Navigation
@@ -68,34 +66,33 @@ extension AssignTruckViewController  :UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Notification = Truck[indexPath.row]
         let cell : TruckTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TruckCell", for: indexPath) as! TruckTableViewCell
         cell.SetTruckTableViewCell(TrucKChoosed: Notification)
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         UserDefaults.standard.set(indexPath.row, forKey: "selectedTruck")
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssigningDriver") as! SelectDriverViewController
         self.navigationController?.pushViewController(vc, animated: true)
-        // var Tran : [TransportNotificationClass] = []
-//        if  indexPath.row == 0{
-//            print("hi")
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-//        else if indexPath.row == 1{
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! assignTruckToDriverViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
+        if  indexPath.row == 0{
+            print("hi")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if indexPath.row == 1{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! assignTruckToDriverViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
 //        else if indexPath.row == 2{
 //            let vc = self.storyboard?.instantiateViewController(withIdentifier: "home") as! TransportHomeViewController
 //            self.navigationController?.pushViewController(vc, animated: true)
 //        }
 //        else if indexPath.row == 3{
-//            print("tOOoooooooooooooz")
+//           // print("tOOoooooooooooooz")
 //            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
 //            self.navigationController?.pushViewController(vc, animated: true)
 //        }
