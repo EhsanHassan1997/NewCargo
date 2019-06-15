@@ -10,6 +10,7 @@
 		1802CEF622A81300000193B7 /* ImportExportHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802CEF522A81300000193B7 /* ImportExportHomeViewController.swift */; };
 		1802CEF822A81696000193B7 /* ImportExportMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802CEF722A81696000193B7 /* ImportExportMenuViewController.swift */; };
 		1802CEFA22A816FC000193B7 /* ImportExportNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802CEF922A816FC000193B7 /* ImportExportNotificationViewController.swift */; };
+		183C959822B55D0F00898170 /* ImportExportNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C959722B55D0F00898170 /* ImportExportNotification.swift */; };
 		1869D84822B2A2910033E4D9 /* SetLocationOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */; };
 		1869D84A22B2A2CE0033E4D9 /* ConfirmLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */; };
 		1887D46F22ADB8FC007AB29F /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */; };
@@ -55,6 +56,7 @@
 		1802CEF522A81300000193B7 /* ImportExportHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportHomeViewController.swift; sourceTree = "<group>"; };
 		1802CEF722A81696000193B7 /* ImportExportMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportMenuViewController.swift; sourceTree = "<group>"; };
 		1802CEF922A816FC000193B7 /* ImportExportNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportNotificationViewController.swift; sourceTree = "<group>"; };
+		183C959722B55D0F00898170 /* ImportExportNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportNotification.swift; sourceTree = "<group>"; };
 		1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationOnMapViewController.swift; sourceTree = "<group>"; };
 		1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmLocationViewController.swift; sourceTree = "<group>"; };
 		1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				C447F60122A92C300083420A /* Request.swift */,
 				C45E9AF722B069FA00A28200 /* TransportNotificationClass.swift */,
 				C4CFBDE722B462A700C5C276 /* MapPath.swift */,
+				183C959722B55D0F00898170 /* ImportExportNotification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				18C2D5D722B3DE140093154E /* RequestReviewViewController.swift in Sources */,
 				C402DDBD225FC2300099D103 /* Database.swift in Sources */,
 				C4BB07F222493EB5008C0671 /* ConfirmNewPasswordViewController.swift in Sources */,
+				183C959822B55D0F00898170 /* ImportExportNotification.swift in Sources */,
 				C431C7862200B3C4001AEDB8 /* SignInViewController.swift in Sources */,
 				1869D84822B2A2910033E4D9 /* SetLocationOnMapViewController.swift in Sources */,
 				C4286DCD223E4D0D0037A459 /* VerificationCodeViewController.swift in Sources */,

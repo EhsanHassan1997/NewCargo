@@ -15,26 +15,28 @@ import GoogleMaps
 class ApiMethods {
         
     // MARK: Register
-    class func Register (Email : String, Name : String, Password : String, Type : String, TaxCard : String,TaxFileNumber : String, TaxRegisterNumber : String, Fax : String, Image : String, Address : String, CargoSpecialization : String){
+    class func Register (company : Company, TaxRegisterNumber : String, Fax : String){
         let url = URL(string: UserRegisterUrl)!
         let parameters = [
-            "email" : Email,
-            "name" : Name,
-            "password" : Password,
-            "type" : Type,
-            "tax_card" : TaxCard,
-            "tax_file_number" : TaxFileNumber,
+            "email" : company.email,
+            "name" : company.name,
+            "password" : company.password,
+            "type" : company.type,
+            "tax_card" : company.TaxCard,
+            "tax_file_number" : company.TaxFileNumber,
             "tax_register_number" : TaxRegisterNumber,
             "fax" : Fax,
-            "image" : Image,
-            "address" : Address,
-            "cargo_specialization" : CargoSpecialization,
+            "image" : company.image,
+            "address" : company.Address,
+            "cargo_specialization" : company.specialization,
         ]
         Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             switch (response.result){
             case .success(let value):
+                print("Value: ",value)
                 break
             case .failure(let error):
+                print("Error: ",error)
                 break
             }
         }
@@ -347,17 +349,13 @@ class ApiMethods {
             "Authorization" : "Bearer " + GetUserToken(),
             ]
         print("4")
-        Alamofire.request(Url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+        Alamofire.request(Url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseString { (response) in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
                 print("JSON:- ",json)
-                if let request = json["request"].dictionary{
-                    if let ID = request["id"]?.int{
-                        comp(ID)
-                        return
-                    }
-                }
+                comp(0)
+                return
             case .failure(let Error):
                 print("error",Error)
                 comp(1)

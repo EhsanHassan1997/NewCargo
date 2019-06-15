@@ -6739,6 +6739,7 @@ pay 5% of the shipment price.</string>
                         <outlet property="doneButton" destination="0gO-Kc-h5L" id="UhI-JP-m5k"/>
                         <outlet property="errorMessageLable" destination="IBI-9T-ZJf" id="T94-Gb-B2Y"/>
                         <outlet property="passwordTextField" destination="4tA-Mb-ERI" id="hwL-0Z-rhq"/>
+                        <segue destination="cYB-8g-B6R" kind="show" identifier="JustRegister" id="qfF-aD-ss1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CU3-70-IAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -10141,7 +10142,7 @@ pay 5% of the shipment price.</string>
         <segue reference="Fou-Rr-2VC"/>
         <segue reference="E03-wN-ki4"/>
         <segue reference="peZ-WR-XFr"/>
-        <segue reference="Pyv-5Z-bOz"/>
+        <segue reference="qfF-aD-ss1"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
 </document>
