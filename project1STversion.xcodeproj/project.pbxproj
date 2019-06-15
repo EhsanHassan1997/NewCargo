@@ -45,8 +45,10 @@
 		C4CB9264223D41BC0020172C /* TransportHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB9263223D41BC0020172C /* TransportHomeViewController.swift */; };
 		C4CB9266223D429D0020172C /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB9265223D429D0020172C /* VerifyEmailViewController.swift */; };
 		C4CFBDE022B2BC4700C5C276 /* assignTruckToDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */; };
-		C4CFBDE222B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDE122B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift */; };
+		C4CFBDE222B2C1DD00C5C276 /* MapPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDE122B2C1DD00C5C276 /* MapPathViewController.swift */; };
 		C4CFBDE822B462A700C5C276 /* MapPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDE722B462A700C5C276 /* MapPath.swift */; };
+		C4CFBDEA22B4721200C5C276 /* MapPathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBDE922B4721200C5C276 /* MapPathViewModel.swift */; };
+		C4CFBDEC22B4752700C5C276 /* LocationData.json in Resources */ = {isa = PBXBuildFile; fileRef = C4CFBDEB22B4752700C5C276 /* LocationData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,8 +94,10 @@
 		C4CB9263223D41BC0020172C /* TransportHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportHomeViewController.swift; sourceTree = "<group>"; };
 		C4CB9265223D429D0020172C /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
 		C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignTruckToDriverViewController.swift; sourceTree = "<group>"; };
-		C4CFBDE122B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverCurrentLocationViewController.swift; sourceTree = "<group>"; };
+		C4CFBDE122B2C1DD00C5C276 /* MapPathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPathViewController.swift; sourceTree = "<group>"; };
 		C4CFBDE722B462A700C5C276 /* MapPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPath.swift; sourceTree = "<group>"; };
+		C4CFBDE922B4721200C5C276 /* MapPathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPathViewModel.swift; sourceTree = "<group>"; };
+		C4CFBDEB22B4752700C5C276 /* LocationData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LocationData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 		C454D85A22455D22001856ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C4CFBDEB22B4752700C5C276 /* LocationData.json */,
 				C4CB9260223D28B30020172C /* User.swift */,
 				C49B09D8225DFD6100E3C771 /* Company.swift */,
 				C447F60122A92C300083420A /* Request.swift */,
@@ -198,7 +203,7 @@
 				1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */,
 				1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */,
 				C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */,
-				C4CFBDE122B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift */,
+				C4CFBDE122B2C1DD00C5C276 /* MapPathViewController.swift */,
 				18C2D5D622B3DE140093154E /* RequestReviewViewController.swift */,
 				18C2D5D822B432810093154E /* WarningViewController.swift */,
 			);
@@ -218,6 +223,7 @@
 			children = (
 				18EAA2E5227336940054919D /* ApiMethods.swift */,
 				18EAA2E6227336940054919D /* Constants.swift */,
+				C4CFBDE922B4721200C5C276 /* MapPathViewModel.swift */,
 			);
 			path = "Api Helper";
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CFBDEC22B4752700C5C276 /* LocationData.json in Resources */,
 				C431C78E2200B3C5001AEDB8 /* LaunchScreen.storyboard in Resources */,
 				C431C78B2200B3C5001AEDB8 /* Assets.xcassets in Resources */,
 				C431C7892200B3C4001AEDB8 /* Main.storyboard in Resources */,
@@ -405,7 +412,7 @@
 				C4286DCD223E4D0D0037A459 /* VerificationCodeViewController.swift in Sources */,
 				C431C7842200B3C4001AEDB8 /* AppDelegate.swift in Sources */,
 				C419C8A022AD0D560043EBC9 /* TransportProfileViewController.swift in Sources */,
-				C4CFBDE222B2C1DD00C5C276 /* DriverCurrentLocationViewController.swift in Sources */,
+				C4CFBDE222B2C1DD00C5C276 /* MapPathViewController.swift in Sources */,
 				18C2D5D922B432810093154E /* WarningViewController.swift in Sources */,
 				C4C265262260C07F00C0211F /* SetPasswordViewController.swift in Sources */,
 				1887D47122ADD7DA007AB29F /* MySegue.swift in Sources */,
@@ -417,6 +424,7 @@
 				18E8F64122AAAAB700168594 /* CreateRequestViewController.swift in Sources */,
 				1887D46F22ADB8FC007AB29F /* LaunchScreenViewController.swift in Sources */,
 				C4C265222260B3CE00C0211F /* RegisterViewController.swift in Sources */,
+				C4CFBDEA22B4721200C5C276 /* MapPathViewModel.swift in Sources */,
 				18FDA5A32263585200AE30A2 /* TransportNotificationTableViewCell.swift in Sources */,
 				C49B09D9225DFD6100E3C771 /* Company.swift in Sources */,
 				C4CB9266223D429D0020172C /* VerifyEmailViewController.swift in Sources */,
