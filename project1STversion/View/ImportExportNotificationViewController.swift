@@ -47,22 +47,18 @@ class ImportExportNotificationViewController: UIViewController {
     func createNotifications()-> [ImportExportNotification] {
         var Temp : [ImportExportNotification] = []
 
-        let image1 = UIImage(named: "ImportCompany")!
-        let not1 = ImportExportNotification(  "YOU have request from Import-Export Company", "Company name Tahran",image1)
+        let image1 = UIImage(named: "Application")!
+        let not1 = ImportExportNotification(  "your request has been accepted by ", " companies select one to be your Tranporter",image1)
 
-        let image2 = UIImage(named: "ImAndExIgnored")!
-        let not2 = ImportExportNotification( "YOU have been accepted for Transporting ", "Company name Losy",image2 )
+        let image2 = UIImage(named: "Application")!
+        let not2 = ImportExportNotification( "View your request  ", "to make sure that your data is accepted to you",image2 )
 
-        let image3 = UIImage(named: "imEx")!
-        let not3 = ImportExportNotification( "YOUr offer has been ignored by  ", "Company name Losy",image3 )
+        
 
-        let image4 = UIImage(named: "Application")!
-        let not4 = ImportExportNotification( "YOUr driver Current Status ", "Cargo follow up",image4 )
 
         Temp.append(not1)
         Temp.append(not2)
-        Temp.append(not3)
-        Temp.append(not4)
+       
 
         return Temp
     }
@@ -96,23 +92,16 @@ extension ImportExportNotificationViewController  :UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if  indexPath.row == 0{
-            print("hi")
+            //print("hi")
+            //to be updater ya omer
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-//        else if indexPath.row == 1{
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! assignTruckToDriverViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-        else if indexPath.row == 2{
+        else if indexPath.row == 1 {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "Import-ExportHome") as! ImportExportHomeViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.row == 3{
-            print("tOOoooooooooooooz")
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+       
     }
 }
 
