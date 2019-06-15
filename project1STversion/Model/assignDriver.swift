@@ -16,7 +16,6 @@ class assignDriver {
     var driverPhone : String!
     
     init(_ i : UIImage , _ d : String ,  _ t : String , _ p : String) {
-        //self.select = s
         self.DriverImage = i
         self.driverName = d
         self.driverEmail = t

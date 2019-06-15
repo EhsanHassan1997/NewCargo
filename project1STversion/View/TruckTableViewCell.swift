@@ -16,6 +16,6 @@ class TruckTableViewCell: UITableViewCell {
         func SetTruckTableViewCell(TrucKChoosed : assignTruck){
              driverName.text = TrucKChoosed.drivername
              truckType.text = TrucKChoosed.trucktype
-            platformNumber.text = TrucKChoosed.platformnumber
+             platformNumber.text = TrucKChoosed.platformnumber
     }
 }
