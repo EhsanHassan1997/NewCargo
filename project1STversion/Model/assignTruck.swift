@@ -15,7 +15,7 @@ class assignTruck {
     var trucktype : String!
     var platformnumber : String!
     
-    init(_ i : UIImage , _ d : String ,  _ t : String , _ p : String) {
+    init(_ d : String ,  _ t : String , _ p : String) {
         //self.select = s
 //        self.image = i
         self.drivername = d
