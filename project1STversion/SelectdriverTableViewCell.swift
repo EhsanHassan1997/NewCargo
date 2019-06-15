@@ -10,15 +10,10 @@ import UIKit
 
 class SelectdriverTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func SetDriverTableViewCell(DriverChoosed : assignDriver){
+//        driverName.text = TrucKChoosed.drivername
+//        truckType.text = TrucKChoosed.trucktype
+//        platformNumber.text = TrucKChoosed.platformnumber
     }
 
 }

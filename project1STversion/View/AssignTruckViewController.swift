@@ -24,18 +24,21 @@ class AssignTruckViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        Truck = createNotifications()
+        Truck = createTrucks()
         
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewWillAppear(animated)
+        Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].drivername = UserDefaults.standard.string(forKey: "selectedDriver")
+    }
     
-    func createNotifications()-> [assignTruck] {
+    func createTrucks()-> [assignTruck] {
         var Temp : [assignTruck] = []
 
-        let image1 = UIImage(named: "profileimage")!
-        let not1 = assignTruck(image1, "i", "ahmed", "545 ع م ق ")
-
+//        let image1 = UIImage(named: "profileimage")!
+        let not1 = assignTruck("i", "", "545 ع م ق ")
 
         Temp.append(not1)
 
@@ -71,6 +74,8 @@ extension AssignTruckViewController  :UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         UserDefaults.standard.set(indexPath.row, forKey: "selectedTruck")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ImportExportNotification") as! SelectDriverViewController
+        self.navigationController?.pushViewController(vc, animated: true)
         // var Tran : [TransportNotificationClass] = []
 //        if  indexPath.row == 0{
 //            print("hi")
