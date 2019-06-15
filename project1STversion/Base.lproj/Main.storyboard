@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -2629,10 +2629,10 @@ pay 5% of the shipment price.</string>
             </objects>
             <point key="canvasLocation" x="-11458" y="8024"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Transport View Controller-->
         <scene sceneID="6aB-0V-uAL">
             <objects>
-                <viewController id="kF3-KA-ix6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchTrans" id="kF3-KA-ix6" customClass="SearchTransportViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xks-27-420">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2652,7 +2652,7 @@ pay 5% of the shipment price.</string>
                                 <rect key="frame" x="0.0" y="100" width="375" height="567"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="170" id="0Gz-WW-Tjv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="searchCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="170" id="0Gz-WW-Tjv" customClass="searchTransportTableViewCell" customModule="project1STversion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Gz-WW-Tjv" id="lXQ-J3-hyk">
@@ -2780,6 +2780,12 @@ pay 5% of the shipment price.</string>
                                                 <constraint firstItem="MEc-Tk-jZX" firstAttribute="centerX" secondItem="lXQ-J3-hyk" secondAttribute="centerX" id="aY7-c0-7Fe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CompanyName" destination="tNI-JO-W7c" id="PxK-Jn-xf4"/>
+                                            <outlet property="CompanyRate" destination="pfT-L9-7xy" id="ZBu-ge-7aT"/>
+                                            <outlet property="LogoImage" destination="tgS-jK-Itk" id="VlS-6l-ugA"/>
+                                            <outlet property="Price" destination="1si-nY-DEk" id="mj6-df-Phz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -2801,6 +2807,11 @@ pay 5% of the shipment price.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XYe-4c-uJD"/>
                     </view>
+                    <connections>
+                        <outlet property="Label" destination="HpS-VW-ngw" id="6HP-wX-v42"/>
+                        <outlet property="SearchBar" destination="OZh-JR-hah" id="EgO-32-wCv"/>
+                        <outlet property="tableView" destination="53g-hz-OOK" id="PVd-Yj-ycF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MQ-c9-0Rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

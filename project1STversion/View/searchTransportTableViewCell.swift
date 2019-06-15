@@ -9,10 +9,14 @@
 import UIKit
 
 class searchTransportTableViewCell: UITableViewCell {
-    func SetTruckTableViewCell(Offer : offer){
-        driverName.text = Offer.Rate
-        truckType.text = Offer.Price
-        platformNumber.text = Offer.Name
+    @IBOutlet weak var LogoImage: UIImageView!
+    @IBOutlet weak var CompanyName: UILabel!
+    @IBOutlet weak var CompanyRate: UILabel!
+    @IBOutlet weak var Price: UILabel!
+    func SetOfferTableViewCell(Offer : offer){
+        CompanyRate.text = Offer.Rate
+        Price.text = Offer.Price
+        CompanyName.text = Offer.Name
         LogoImage.image = Offer.Image
     }
 }

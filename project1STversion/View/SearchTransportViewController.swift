@@ -10,6 +10,10 @@ import UIKit
 
 class SearchTransportViewController: UIViewController {
 
+    @IBOutlet weak var Label: UILabel!
+    
+    @IBOutlet weak var SearchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
     var Offers : [offer] = []
     
     fileprivate let cellHeight :CGFloat = 120.0
@@ -52,42 +56,6 @@ class SearchTransportViewController: UIViewController {
         return Temp
     }
     
-    extension SearchTransportViewController  :UITableViewDataSource{
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return Offers.count
-        }
-        func numberOfSections(in tableView: UITableView) -> Int {
-            return 1
-        }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let Notification = TranNot[indexPath.row]
-            let cell : searchTransportTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TransportNotificationCell", for: indexPath) as! searchTransportTableViewCell
-            cell.SetTransportNotificationTableViewCell(TransNotif: Notification)
-            return cell
-        }
-        
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            // var Tran : [TransportNotificationClass] = []
-            if  indexPath.row == 0{
-                print("hi")
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-            else if indexPath.row == 1{
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! AssignTruckViewController
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-            else if indexPath.row == 2{
-                self.navigationController?.popViewController(animated: true)
-            }
-            else if indexPath.row == 3{
-                print("tOOoooooooooooooz")
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-        }
-    }
     /*
     // MARK: - Navigation
 
@@ -98,4 +66,47 @@ class SearchTransportViewController: UIViewController {
     }
     */
 
+}
+
+extension SearchTransportViewController  :UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Offers.count
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let Notification = Offers[indexPath.row]
+        let cell : searchTransportTableViewCell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as! searchTransportTableViewCell
+        cell.SetOfferTableViewCell(Offer: Notification)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // var Tran : [TransportNotificationClass] = []
+//        if  indexPath.row == 0{
+//            print("hi")
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+//        else if indexPath.row == 1{
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! AssignTruckViewController
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+//        else if indexPath.row == 2{
+//            self.navigationController?.popViewController(animated: true)
+//        }
+//        else if indexPath.row == 3{
+//            print("tOOoooooooooooooz")
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+    }
+}
+
+extension SearchTransportViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return cellHeight
+    }
 }
