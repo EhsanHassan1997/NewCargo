@@ -76,7 +76,6 @@ extension TransportNotificationViewController  :UITableViewDataSource{
         let Notification = TranNot[indexPath.row]
         let cell : TransportNotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TransportNotificationCell", for: indexPath) as! TransportNotificationTableViewCell
         cell.SetTransportNotificationTableViewCell(TransNotif: Notification)
-        
         return cell
     }
     

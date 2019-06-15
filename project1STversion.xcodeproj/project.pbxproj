@@ -12,6 +12,8 @@
 		1802CEFA22A816FC000193B7 /* ImportExportNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802CEF922A816FC000193B7 /* ImportExportNotificationViewController.swift */; };
 		183C959822B55D0F00898170 /* ImportExportNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C959722B55D0F00898170 /* ImportExportNotification.swift */; };
 		183C959A22B5727D00898170 /* ImExTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C959922B5727D00898170 /* ImExTableViewCell.swift */; };
+		183C959C22B590B400898170 /* searchTransportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C959B22B590B400898170 /* searchTransportTableViewCell.swift */; };
+		183C959E22B590F500898170 /* SearchTransportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C959D22B590F500898170 /* SearchTransportViewController.swift */; };
 		1869D84822B2A2910033E4D9 /* SetLocationOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */; };
 		1869D84A22B2A2CE0033E4D9 /* ConfirmLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */; };
 		1887D46F22ADB8FC007AB29F /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */; };
@@ -65,6 +67,8 @@
 		1802CEF922A816FC000193B7 /* ImportExportNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportNotificationViewController.swift; sourceTree = "<group>"; };
 		183C959722B55D0F00898170 /* ImportExportNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportNotification.swift; sourceTree = "<group>"; };
 		183C959922B5727D00898170 /* ImExTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImExTableViewCell.swift; sourceTree = "<group>"; };
+		183C959B22B590B400898170 /* searchTransportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTransportTableViewCell.swift; sourceTree = "<group>"; };
+		183C959D22B590F500898170 /* SearchTransportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTransportViewController.swift; sourceTree = "<group>"; };
 		1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationOnMapViewController.swift; sourceTree = "<group>"; };
 		1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmLocationViewController.swift; sourceTree = "<group>"; };
 		1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 				1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */,
 				1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */,
 				1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */,
+				183C959B22B590B400898170 /* searchTransportTableViewCell.swift */,
+				183C959D22B590F500898170 /* SearchTransportViewController.swift */,
 				C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */,
 				C4CFBDE122B2C1DD00C5C276 /* MapPathViewController.swift */,
 				18C2D5D622B3DE140093154E /* RequestReviewViewController.swift */,
@@ -427,6 +433,7 @@
 				1802CEFA22A816FC000193B7 /* ImportExportNotificationViewController.swift in Sources */,
 				C4CB9261223D28B30020172C /* User.swift in Sources */,
 				18EAA2E7227336940054919D /* ApiMethods.swift in Sources */,
+				183C959C22B590B400898170 /* searchTransportTableViewCell.swift in Sources */,
 				C4CB9264223D41BC0020172C /* TransportHomeViewController.swift in Sources */,
 				18C2D5D722B3DE140093154E /* RequestReviewViewController.swift in Sources */,
 				C4D7BB5C22B54DD7005A03F5 /* assignTruck.swift in Sources */,
@@ -457,6 +464,7 @@
 				C4CFBDEA22B4721200C5C276 /* MapPathViewModel.swift in Sources */,
 				18FDA5A32263585200AE30A2 /* TransportNotificationTableViewCell.swift in Sources */,
 				C49B09D9225DFD6100E3C771 /* Company.swift in Sources */,
+				183C959E22B590F500898170 /* SearchTransportViewController.swift in Sources */,
 				C4CB9266223D429D0020172C /* VerifyEmailViewController.swift in Sources */,
 				C4CB925F223D27BF0020172C /* GetUserByEmail.swift in Sources */,
 				C402DDBA225FACB80099D103 /* ShowRequestViewController.swift in Sources */,

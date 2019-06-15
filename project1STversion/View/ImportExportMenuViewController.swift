@@ -3,7 +3,7 @@
 //  project1STversion
 //
 //  Created by Apple on 6/5/19.
-//  Copyright © 2019 Omar Kelany. All rights reserved.
+//  Copyright © 2019 ehsan hassan. All rights reserved.
 //
 
 import UIKit

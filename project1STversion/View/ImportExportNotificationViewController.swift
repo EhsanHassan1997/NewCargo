@@ -3,22 +3,10 @@
 //  project1STversion
 //
 //  Created by Apple on 6/5/19.
-//  Copyright © 2019 Omar Kelany. All rights reserved.
+//  Copyright © 2019 ehsan hassan. All rights reserved.
 //
 
-//import UIKit
-//
-//class ImportExportNotificationViewController: UIViewController {
-//
-//    @IBOutlet weak var tableView: UITableView!
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
-//
-//
-//}
+
 
 import UIKit
 
@@ -94,11 +82,11 @@ extension ImportExportNotificationViewController  :UITableViewDataSource{
         if  indexPath.row == 0{
             //print("hi")
             //to be updater ya omer
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "searchTrans") as! SearchTransportViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.row == 1 {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Import-ExportHome") as! ImportExportHomeViewController
+        else if indexPath.row == 3{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
        
