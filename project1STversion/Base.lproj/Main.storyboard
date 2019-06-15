@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -228,7 +228,7 @@
         <!--SelectTrucks-->
         <scene sceneID="Twg-p4-ozm">
             <objects>
-                <viewController storyboardIdentifier="AssignTruckToDriver" id="zCb-NW-eYv" userLabel="SelectTrucks" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AssignTruckToDriver" id="zCb-NW-eYv" userLabel="SelectTrucks" customClass="AssignTruckViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F1g-3e-mgo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,92 +250,91 @@
                                 <rect key="frame" x="0.0" y="59" width="375" height="500.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="104" id="J4C-l7-81Z">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TruckCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="104" id="J4C-l7-81Z" customClass="TruckTableViewCell" customModule="project1STversion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J4C-l7-81Z" id="co2-BS-nzh">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="103.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDi-27-1UG" userLabel="selectB">
-                                                    <rect key="frame" x="2" y="42.5" width="19" height="18.5"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" image="circleSelect"/>
-                                                </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile image" translatesAutoresizingMaskIntoConstraints="NO" id="q8l-fZ-68G" userLabel="profileImageI">
-                                                    <rect key="frame" x="28" y="5" width="94" height="93.5"/>
-                                                </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="h2W-k0-Tex">
-                                                    <rect key="frame" x="131.5" y="21.5" width="243.5" height="60.5"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRr-fW-nwX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="103.5"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRr-fW-nwX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="243.5" height="60.5"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Iy-S3-7Dt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="103.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcX-LK-TbB">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="97.5" height="60.5"/>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment content="Platform number:">
-                                                                            <attributes>
-                                                                                <color key="NSColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <font key="NSFont" size="10" name="LucidaGrande-Bold"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rHb-8y-jq1" userLabel="platformNumberL">
-                                                                    <rect key="frame" x="97.5" y="0.0" width="146" height="60.5"/>
-                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <attributedString key="attributedText"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hyh-ov-Zhr">
+                                                                    <rect key="frame" x="9.5" y="0.0" width="168.5" height="103.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kcX-LK-TbB">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="47"/>
+                                                                            <attributedString key="attributedText">
+                                                                                <fragment content="Truck Type">
+                                                                                    <attributes>
+                                                                                        <color key="NSColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <font key="NSFont" size="10" name="LucidaGrande-Bold"/>
+                                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                    </attributes>
+                                                                                </fragment>
+                                                                            </attributedString>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zTt-ZV-A8M" userLabel="truckType">
+                                                                            <rect key="frame" x="0.0" y="57" width="78" height="46.5"/>
+                                                                            <attributedString key="attributedText">
+                                                                                <fragment content="Platform number:">
+                                                                                    <attributes>
+                                                                                        <color key="NSColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <font key="NSFont" size="10" name="LucidaGrande-Bold"/>
+                                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                    </attributes>
+                                                                                </fragment>
+                                                                            </attributedString>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="kcX-LK-TbB" firstAttribute="height" secondItem="tRr-fW-nwX" secondAttribute="height" id="14s-5e-rfE"/>
-                                                                <constraint firstItem="rHb-8y-jq1" firstAttribute="width" secondItem="tRr-fW-nwX" secondAttribute="width" multiplier="0.6" id="2Jl-Y6-xC0"/>
-                                                                <constraint firstItem="kcX-LK-TbB" firstAttribute="width" secondItem="tRr-fW-nwX" secondAttribute="width" multiplier="0.4" id="AjR-Cj-bQt"/>
-                                                                <constraint firstItem="rHb-8y-jq1" firstAttribute="centerY" secondItem="tRr-fW-nwX" secondAttribute="centerY" id="Hf8-af-RzQ"/>
-                                                                <constraint firstItem="kcX-LK-TbB" firstAttribute="leading" secondItem="tRr-fW-nwX" secondAttribute="leading" id="cbw-zQ-GeO"/>
-                                                                <constraint firstItem="rHb-8y-jq1" firstAttribute="height" secondItem="tRr-fW-nwX" secondAttribute="height" id="oaQ-rY-Nze"/>
-                                                                <constraint firstAttribute="trailing" secondItem="rHb-8y-jq1" secondAttribute="trailing" id="qsH-iB-21J"/>
-                                                                <constraint firstItem="kcX-LK-TbB" firstAttribute="centerY" secondItem="tRr-fW-nwX" secondAttribute="centerY" id="sM3-Di-tG8"/>
+                                                                <constraint firstItem="hyh-ov-Zhr" firstAttribute="height" secondItem="7Iy-S3-7Dt" secondAttribute="height" id="0oD-ER-YUf"/>
+                                                                <constraint firstItem="hyh-ov-Zhr" firstAttribute="centerY" secondItem="7Iy-S3-7Dt" secondAttribute="centerY" id="5at-ie-PXq"/>
+                                                                <constraint firstItem="hyh-ov-Zhr" firstAttribute="width" secondItem="7Iy-S3-7Dt" secondAttribute="width" multiplier="0.9" id="Knk-pt-4RX"/>
+                                                                <constraint firstItem="hyh-ov-Zhr" firstAttribute="centerX" secondItem="7Iy-S3-7Dt" secondAttribute="centerX" id="SFf-cL-9Hf"/>
                                                             </constraints>
                                                         </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwL-v8-yBn">
+                                                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="103.5"/>
+                                                            <attributedString key="attributedText"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
-                                                </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdA-ne-4Qk" userLabel="truckTypeL">
-                                                    <rect key="frame" x="147" y="21" width="243.5" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Truck Type">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.33333333333333331" green="0.396078431372549" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="7Iy-S3-7Dt" firstAttribute="centerY" secondItem="tRr-fW-nwX" secondAttribute="centerY" id="3Lb-c4-dO6"/>
+                                                        <constraint firstItem="PwL-v8-yBn" firstAttribute="centerY" secondItem="tRr-fW-nwX" secondAttribute="centerY" id="4Oc-n4-51q"/>
+                                                        <constraint firstAttribute="trailing" secondItem="PwL-v8-yBn" secondAttribute="trailing" id="IiR-WL-9Ad"/>
+                                                        <constraint firstItem="7Iy-S3-7Dt" firstAttribute="leading" secondItem="tRr-fW-nwX" secondAttribute="leading" id="c9a-h6-L3V"/>
+                                                        <constraint firstItem="7Iy-S3-7Dt" firstAttribute="width" secondItem="tRr-fW-nwX" secondAttribute="width" multiplier="0.5" id="fEc-bP-Nfw"/>
+                                                        <constraint firstItem="PwL-v8-yBn" firstAttribute="height" secondItem="tRr-fW-nwX" secondAttribute="height" id="kNC-oy-w4l"/>
+                                                        <constraint firstItem="7Iy-S3-7Dt" firstAttribute="height" secondItem="tRr-fW-nwX" secondAttribute="height" id="lct-yz-G3B"/>
+                                                        <constraint firstItem="PwL-v8-yBn" firstAttribute="width" secondItem="tRr-fW-nwX" secondAttribute="width" multiplier="0.5" id="t9E-jd-uqa"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="q8l-fZ-68G" firstAttribute="centerY" secondItem="qDi-27-1UG" secondAttribute="centerY" id="3TL-MR-tbg"/>
-                                                <constraint firstAttribute="trailing" secondItem="h2W-k0-Tex" secondAttribute="trailing" id="4Bb-Wn-WEg"/>
-                                                <constraint firstItem="h2W-k0-Tex" firstAttribute="height" secondItem="q8l-fZ-68G" secondAttribute="height" multiplier="0.65" id="Pj6-V6-MUU"/>
-                                                <constraint firstItem="q8l-fZ-68G" firstAttribute="height" secondItem="qDi-27-1UG" secondAttribute="height" multiplier="5" id="XvH-iU-Qc3"/>
-                                                <constraint firstItem="qDi-27-1UG" firstAttribute="width" secondItem="qDi-27-1UG" secondAttribute="height" multiplier="1:1" id="ZVF-0x-970"/>
-                                                <constraint firstItem="qDi-27-1UG" firstAttribute="width" secondItem="co2-BS-nzh" secondAttribute="width" multiplier="0.05" id="ha9-76-qH2"/>
-                                                <constraint firstItem="qDi-27-1UG" firstAttribute="centerY" secondItem="co2-BS-nzh" secondAttribute="centerY" id="jBh-zA-mRn"/>
-                                                <constraint firstItem="h2W-k0-Tex" firstAttribute="width" secondItem="q8l-fZ-68G" secondAttribute="width" multiplier="2.6" id="ls9-C6-YO0"/>
-                                                <constraint firstItem="qDi-27-1UG" firstAttribute="leading" secondItem="co2-BS-nzh" secondAttribute="leading" constant="2" id="mCg-YG-ZYH"/>
-                                                <constraint firstItem="h2W-k0-Tex" firstAttribute="centerY" secondItem="q8l-fZ-68G" secondAttribute="centerY" id="qfG-gk-NV3"/>
-                                                <constraint firstItem="q8l-fZ-68G" firstAttribute="centerX" secondItem="co2-BS-nzh" secondAttribute="centerX" multiplier="0.4" id="r7i-bc-VFR"/>
-                                                <constraint firstItem="q8l-fZ-68G" firstAttribute="width" secondItem="qDi-27-1UG" secondAttribute="width" multiplier="5" id="ris-tX-WJe"/>
+                                                <constraint firstItem="tRr-fW-nwX" firstAttribute="centerY" secondItem="co2-BS-nzh" secondAttribute="centerY" id="0yl-A7-MJz"/>
+                                                <constraint firstItem="tRr-fW-nwX" firstAttribute="width" secondItem="co2-BS-nzh" secondAttribute="width" id="XQx-QR-nKj"/>
+                                                <constraint firstItem="tRr-fW-nwX" firstAttribute="leading" secondItem="co2-BS-nzh" secondAttribute="leading" id="eqp-EB-WuX"/>
+                                                <constraint firstItem="tRr-fW-nwX" firstAttribute="height" secondItem="co2-BS-nzh" secondAttribute="height" id="owv-bA-zkt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="driverName" destination="PwL-v8-yBn" id="MX5-Az-muo"/>
+                                            <outlet property="platformNumber" destination="zTt-ZV-A8M" id="lfM-nB-7Rh"/>
+                                            <outlet property="truckType" destination="zTt-ZV-A8M" id="rSG-fo-Wpy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -396,6 +395,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gHF-yN-FGm"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="TZA-oK-xum" id="kUQ-iq-hgd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7h-pv-sfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3045,7 +3047,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeU-M8-J9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="446" y="6124"/>
+            <point key="canvasLocation" x="287" y="6122"/>
         </scene>
         <!--viewEmail-->
         <scene sceneID="yaD-pR-ZbM">
@@ -5075,9 +5077,9 @@ pay 5% of the shipment price.</string>
                                                                 </attributedString>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gy5-gD-AOp">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gy5-gD-AOp">
                                                                 <rect key="frame" x="255" y="27" width="30" height="23"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <state key="normal" title="Button" image="DropDownIcon"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -8418,7 +8420,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tmg-MI-5cL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1156" y="6125"/>
+            <point key="canvasLocation" x="1050" y="6122"/>
         </scene>
         <!--Launch Screen View Controller-->
         <scene sceneID="76P-Cc-hcY">
