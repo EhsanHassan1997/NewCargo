@@ -323,15 +323,15 @@ class ApiMethods {
     
     // MARK: Create Request
     class func CreateRequest(request:Request, companyID:Int,comp:@escaping (_ requestID:Int) -> Void){
-        print("token",GetUserToken())
+        print("token",GetUserToken(),"/nCompanyID: ",companyID)
         print("1")
         let Url = URL(string: RequestUrl)!
         print("2")
-        let parameters = [
+        let parameters : [String : Any] = [
             "Cargo_type" : request.cargoType,
             "Pick_Up_Location" : request.PickUp,
             "Deliver_To" : request.Destination,
-            "quantity" : Double(request.Quantity),
+            "quantity" : request.Quantity,
             "Item_Weight" : request.Weight,
             "Item_Width" : request.Width,
             "Item_length" : request.Length,
@@ -341,7 +341,7 @@ class ApiMethods {
             "finish_date" : request.EndDate,
             "Item_Height" : request.Hieght,
             "company_import_export" : companyID,
-            ] as [String : Any]
+            ]
         print("3")
         let headers = [
             "Authorization" : "Bearer " + GetUserToken(),
