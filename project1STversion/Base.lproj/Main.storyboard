@@ -7397,6 +7397,9 @@ pay 5% of the shipment price.</string>
                                 <state key="normal" title="Add Payment Method">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="AddPaymentMethod:" destination="Qej-6K-d3B" eventType="touchUpInside" id="Jgg-M2-b3a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

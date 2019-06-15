@@ -11,9 +11,9 @@ import UIKit
 class paymentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cardImage: UIImageView!
-    
     @IBOutlet weak var ccvCard: UILabel!
     @IBOutlet weak var numberOfCard: UILabel!
+    
     func SetpaymentTableViewCell(Payment : payment){
         cardImage.image = Payment.Image
         numberOfCard.text = Payment.number
