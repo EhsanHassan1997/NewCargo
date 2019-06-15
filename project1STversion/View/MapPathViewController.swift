@@ -11,107 +11,6 @@ import GooglePlaces
 import GoogleMaps
 import SwiftyJSON
 import Alamofire
-
-//class DriverCurrentLocationViewController: UIViewController , CLLocationManagerDelegate {
-//    @IBOutlet weak var mapView: GMSMapView!
-//    @IBOutlet weak var buttonPlay: UIButton!
-//    @IBAction func buttonHandlerPlay(_ sender: UIButton) {
-//    }
-//
-//
-//    var center = CLLocationCoordinate2D()
-//    let destination = CLLocationCoordinate2D(latitude: 30.0159394, longitude: 31.2838786)
-//
-//    //    var currentLocation: CLLocation!
-//    var locationManager = CLLocationManager()
-//    lazy var mapView = GMSMapView()
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        // Do any additional setup after loading the view, typically from a nib.
-//        //        let lat = currentLocation.coordinate.latitude
-//        //        let long = currentLocation.coordinate.longitude
-//
-//
-//
-//        locationManager.delegate = self
-//        locationManager.requestWhenInUseAuthorization()
-//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager.startUpdatingLocation()
-//
-//    }
-//        override func loadView() {
-//        let camera = GMSCameraPosition.camera(withLatitude:30.243127377031502, longitude: 31.72428846359253, zoom: 17)
-//        myMapView.camera = camera
-//
-//        let carMarker = GMSMarker()
-//        carMarker.position = CLLocationCoordinate2D(latitude:30.7777777, longitude: 30.4664646)
-//        carMarker.title = "Hello World"
-//        carMarker.map = myMapView
-//
-//        let startMarker = GMSMarker()
-//        startMarker.position = CLLocationCoordinate2D(latitude: 30.243127377031502, longitude: 31.72428846359253)
-//        startMarker.title = "Hello World"
-//        startMarker.map = myMapView
-//
-//        let endmarker = GMSMarker()
-//        endmarker.position = CLLocationCoordinate2D(latitude: 30.394893244198155, longitude: 30.98472196608782)
-//        endmarker.title = "Hello World"
-//        endmarker.map = myMapView
-//    }
-//
-//    //MARK:- route draw
-//
-//    func fetchRoute(from source: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D) {
-//
-//        let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(source.latitude),\(source.longitude)&destination=\(destination.latitude),\(destination.longitude)&sensor=false&mode=driving&key=AIzaSyB7kcLWMSUcrIwIwzgccwXzoljlyp0qeHI")!
-//
-//        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
-//            switch response.result{
-//
-//            case .failure(let error):
-//                print("Error: ",error)
-//                break
-//
-//            case .success(let value):
-//                print("json: ",value)
-//
-//                var Points :[String?] = []
-//                let json = JSON(value)
-//                print("json",json)
-//                if let Routes = json["routes"].array{
-//                    for route in Routes{
-//
-//
-//                        if let overview_polyline = route["overview_polyline"].dictionary{
-//                            if let points = overview_polyline["points"]?.string{
-//                                Points.append(points)
-//
-//                            }
-//                        }
-//
-//
-//                    }
-//                    self.drawPath(from: Points[0]!)
-//                }
-//
-//                //
-//
-//            }
-//
-//        }
-//
-//    }
-//
-//    //MARK:- end of route draw
-//
-//    func drawPath(from polyStr: String){
-//        let path = GMSPath(fromEncodedPath: polyStr)
-//        let polyline = GMSPolyline(path: path)
-//        polyline.strokeWidth = 10.0
-//        polyline.map = myMapView // Google MapView
-//    }
-//}
-//
 class MapPathViewController: UIViewController,GMSMapViewDelegate , MapPathViewModelDelegate{
     
     @IBOutlet weak var mapView: GMSMapView!
@@ -124,7 +23,7 @@ class MapPathViewController: UIViewController,GMSMapViewDelegate , MapPathViewMo
     
     
     //inially load location on map
-    let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 22.857165, longitude: 77.354613, zoom: 4.0)
+    let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 30.39509105362621, longitude: 30.98486144095659, zoom: 10)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -207,7 +106,7 @@ extension MapPathViewController{
             
             marker.rotation = iTempMapPath.angle!
             
-            marker.icon = UIImage(named: "map_car_running.png")
+            marker.icon = UIImage(named: "truckSymbol")
             marker.map = mapView
             
             // Timer close
