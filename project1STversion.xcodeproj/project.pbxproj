@@ -60,6 +60,9 @@
 		C4D7BB5E22B5676F005A03F5 /* SelectdriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB5D22B5676F005A03F5 /* SelectdriverTableViewCell.swift */; };
 		C4D7BB6422B57E37005A03F5 /* assignDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6322B57E37005A03F5 /* assignDriver.swift */; };
 		C4D7BB6622B57E77005A03F5 /* SelectDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6522B57E77005A03F5 /* SelectDriverViewController.swift */; };
+		C4D7BB6822B59C28005A03F5 /* payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6722B59C28005A03F5 /* payment.swift */; };
+		C4D7BB6A22B59CFE005A03F5 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6922B59CFE005A03F5 /* paymentViewController.swift */; };
+		C4D7BB6C22B59D17005A03F5 /* paymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6B22B59D17005A03F5 /* paymentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +123,9 @@
 		C4D7BB5D22B5676F005A03F5 /* SelectdriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectdriverTableViewCell.swift; sourceTree = "<group>"; };
 		C4D7BB6322B57E37005A03F5 /* assignDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignDriver.swift; sourceTree = "<group>"; };
 		C4D7BB6522B57E77005A03F5 /* SelectDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDriverViewController.swift; sourceTree = "<group>"; };
+		C4D7BB6722B59C28005A03F5 /* payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payment.swift; sourceTree = "<group>"; };
+		C4D7BB6922B59CFE005A03F5 /* paymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
+		C4D7BB6B22B59D17005A03F5 /* paymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,7 @@
 				C4CFBDEB22B4752700C5C276 /* LocationData.json */,
 				C4CB9260223D28B30020172C /* User.swift */,
 				C4D7BB5B22B54DD7005A03F5 /* assignTruck.swift */,
+				C4D7BB6722B59C28005A03F5 /* payment.swift */,
 				C49B09D8225DFD6100E3C771 /* Company.swift */,
 				C447F60122A92C300083420A /* Request.swift */,
 				C45E9AF722B069FA00A28200 /* TransportNotificationClass.swift */,
@@ -238,6 +245,8 @@
 				18C2D5D822B432810093154E /* WarningViewController.swift */,
 				C4D7BB5722B54269005A03F5 /* AssignTruckViewController.swift */,
 				C4D7BB5922B542CB005A03F5 /* TruckTableViewCell.swift */,
+				C4D7BB6922B59CFE005A03F5 /* paymentViewController.swift */,
+				C4D7BB6B22B59D17005A03F5 /* paymentTableViewCell.swift */,
 				C4D7BB6522B57E77005A03F5 /* SelectDriverViewController.swift */,
 			);
 			path = View;
@@ -436,6 +445,7 @@
 				1802CEFA22A816FC000193B7 /* ImportExportNotificationViewController.swift in Sources */,
 				C4CB9261223D28B30020172C /* User.swift in Sources */,
 				18EAA2E7227336940054919D /* ApiMethods.swift in Sources */,
+				C4D7BB6A22B59CFE005A03F5 /* paymentViewController.swift in Sources */,
 				183C959C22B590B400898170 /* searchTransportTableViewCell.swift in Sources */,
 				C4CB9264223D41BC0020172C /* TransportHomeViewController.swift in Sources */,
 				18C2D5D722B3DE140093154E /* RequestReviewViewController.swift in Sources */,
@@ -450,6 +460,7 @@
 				1869D84822B2A2910033E4D9 /* SetLocationOnMapViewController.swift in Sources */,
 				C4286DCD223E4D0D0037A459 /* VerificationCodeViewController.swift in Sources */,
 				C431C7842200B3C4001AEDB8 /* AppDelegate.swift in Sources */,
+				C4D7BB6C22B59D17005A03F5 /* paymentTableViewCell.swift in Sources */,
 				C419C8A022AD0D560043EBC9 /* TransportProfileViewController.swift in Sources */,
 				C4CFBDE222B2C1DD00C5C276 /* MapPathViewController.swift in Sources */,
 				18C2D5D922B432810093154E /* WarningViewController.swift in Sources */,
@@ -478,6 +489,7 @@
 				C4C265242260B40900C0211F /* SecondRegisterViewController.swift in Sources */,
 				18EAA2E8227336940054919D /* Constants.swift in Sources */,
 				18EAA2F0227358A70054919D /* TransportMenuViewController.swift in Sources */,
+				C4D7BB6822B59C28005A03F5 /* payment.swift in Sources */,
 				183C959A22B5727D00898170 /* ImExTableViewCell.swift in Sources */,
 				C4CFBDE022B2BC4700C5C276 /* assignTruckToDriverViewController.swift in Sources */,
 			);
