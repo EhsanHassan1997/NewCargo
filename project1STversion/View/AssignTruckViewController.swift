@@ -29,8 +29,8 @@ class AssignTruckViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        viewDidAppear(animated)
         Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].drivername = UserDefaults.standard.string(forKey: "selectedDriver")
     }
     
@@ -74,7 +74,7 @@ extension AssignTruckViewController  :UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         UserDefaults.standard.set(indexPath.row, forKey: "selectedTruck")
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ImportExportNotification") as! SelectDriverViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssigningDriver") as! SelectDriverViewController
         self.navigationController?.pushViewController(vc, animated: true)
         // var Tran : [TransportNotificationClass] = []
 //        if  indexPath.row == 0{

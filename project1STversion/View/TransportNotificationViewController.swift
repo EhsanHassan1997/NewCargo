@@ -88,7 +88,7 @@ extension TransportNotificationViewController  :UITableViewDataSource{
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else if indexPath.row == 1{
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! assignTruckToDriverViewController
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! AssignTruckViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else if indexPath.row == 2{
