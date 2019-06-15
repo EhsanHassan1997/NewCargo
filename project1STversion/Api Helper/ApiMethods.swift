@@ -323,41 +323,48 @@ class ApiMethods {
     
     // MARK: Create Request
     class func CreateRequest(request:Request, companyID:Int,comp:@escaping (_ requestID:Int) -> Void){
+        print("token",GetUserToken())
+        print("1")
         let Url = URL(string: RequestUrl)!
+        print("2")
         let parameters = [
             "Cargo_type" : request.cargoType,
             "Pick_Up_Location" : request.PickUp,
             "Deliver_To" : request.Destination,
-            "quantity" : request.Quantity,
+            "quantity" : Double(request.Quantity),
             "Item_Weight" : request.Weight,
             "Item_Width" : request.Width,
             "Item_length" : request.Length,
-            "No_of_Shipment" : 1,
-            "Total_Weight" : request.Weight * Double(request.Quantity!),
+            "No_of_Shipment" : "1",
+            "Total_Weight" : request.Weight * Double(request.Quantity),
             "start_date" : request.StartDate,
             "finish_date" : request.EndDate,
             "Item_Height" : request.Hieght,
             "company_import_export" : companyID,
             ] as [String : Any]
+        print("3")
         let headers = [
             "Authorization" : "Bearer " + GetUserToken(),
             ]
+        print("4")
         Alamofire.request(Url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print(json)
+                print("JSON:- ",json)
                 if let request = json["request"].dictionary{
                     if let ID = request["id"]?.int{
                         comp(ID)
                         return
                     }
                 }
-                break
             case .failure(let Error):
-                break
+                print("error",Error)
+                comp(1)
+                return
             }
         }
+        print("5")
     }
     
     // MARK: Get All Requests

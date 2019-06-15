@@ -250,7 +250,104 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func NextAction(_ sender: UIButton) {
-        if acceptence && (StartDateDatePicker.date < EndDateDatePicker.date) && CargoTypeTextField.text == "" && DestinationTextField.text == "" && EndDateTextField.text == "" && HieghtTextField.text == "" && LengthTextField.text == "" && PickUpLocationTextField.text == "" && QuantityTextField.text == "" && StartDateTextField.text == "" && WieghtTextField.text == "" && WidthTextField.text == "" {
+        if (CargoTypeTextField.text == ""){
+            
+            UserDefaults.standard.set("Enter Cargo Type", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if QuantityTextField.text == "" {
+            
+            UserDefaults.standard.set("Enter Quantity", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if WieghtTextField.text == "" {
+            
+            UserDefaults.standard.set("Enter Wieght", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if LengthTextField.text == "" {
+            
+            UserDefaults.standard.set("Enter Length", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if HieghtTextField.text == "" {
+            
+            UserDefaults.standard.set("Enter Hieght", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if WidthTextField.text == "" {
+            
+            UserDefaults.standard.set("Enter Width", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if PickUpLocationTextField.text == "" {
+            
+            UserDefaults.standard.set("Enter Pick Up Location", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if DestinationTextField.text == "" {
+            
+            UserDefaults.standard.set("Enter Destination", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if StartDateTextField.text == "" {
+            
+            UserDefaults.standard.set("Enter Start Date", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if EndDateTextField.text == "" {
+            
+            UserDefaults.standard.set("Enter End Date", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if StartDateDatePicker.date > EndDateDatePicker.date {
+            UserDefaults.standard.set("End Date Should be after Start Date", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+        }else if acceptence {
             UserDefaults.standard.set(WieghtMeasureTextField.text, forKey: "WieghtMeasure")
             UserDefaults.standard.set(WidthMeasureTextField.text, forKey: "WidthMeasure")
             UserDefaults.standard.set(LengthMeasureTextField.text, forKey: "LengthMeasure")
@@ -267,22 +364,8 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
             request.Weight = Double(WieghtTextField.text!)
             request.Width = Double(WidthTextField.text!)
             performSegue(withIdentifier: "RequestReview", sender: request)
-        }else if (StartDateDatePicker.date > EndDateDatePicker.date) {
-            UserDefaults.standard.set("End Date Should be after Start Date", forKey: "warning")
-            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
-            self.addChild(Warning)
-            Warning.view.frame = self.view.frame
-            self.view.addSubview(Warning.view)
-            Warning.didMove(toParent: self)
-        }else if !acceptence{
+        }else {
             UserDefaults.standard.set("you should accept terms and condition", forKey: "warning")
-            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
-            self.addChild(Warning)
-            Warning.view.frame = self.view.frame
-            self.view.addSubview(Warning.view)
-            Warning.didMove(toParent: self)
-        }else{
-            UserDefaults.standard.set("Fill All Fields", forKey: "warning")
             let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
             self.addChild(Warning)
             Warning.view.frame = self.view.frame
