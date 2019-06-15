@@ -9,7 +9,10 @@
 import UIKit
 
 class searchTransportTableViewCell: UITableViewCell {
-
-   
-
+    func SetTruckTableViewCell(Offer : offer){
+        driverName.text = Offer.Rate
+        truckType.text = Offer.Price
+        platformNumber.text = Offer.Name
+        LogoImage.image = Offer.Image
+    }
 }
