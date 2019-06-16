@@ -10,7 +10,7 @@ import UIKit
 
 class paymentViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    fileprivate let cellHeight :CGFloat = 20.0
+    fileprivate let cellHeight :CGFloat = 120.0
     
     var paymentcell : [payment] = []
 

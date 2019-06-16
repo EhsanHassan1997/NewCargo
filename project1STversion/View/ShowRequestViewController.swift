@@ -37,7 +37,7 @@ class ShowRequestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\nhi\n")
-        ApiMethods.TransportRequestDetails(requestId : 3) { (ss) in
+        ApiMethods.TransportRequestDetails(requestId : 60) { (ss) in
             self.CargoType.text = "Cargo Type : " + ss.cargoType
             self.QuantityOfCargo.text = "Quantity : " + String(ss.Quantity!)
             self.WeightOfCargo.text = "Weight : " + String(ss.Weight!)
@@ -52,9 +52,11 @@ class ShowRequestViewController: UIViewController {
             ApiMethods.GetUser(UserId: Int(ss.comIm_Ex)! , Usser: { (User) in
                 self.ImportExportNameLable.text = User.name
             })
-        }
 
-        ApiMethods.CreateOffer(RequestId: 3, Price: Double(self.PriceTextField.text!)!)
+        }
+       // ApiMethods.CreateOffer(RequestId: 3, Price: Double(self.PriceTextField.text!)!)
+
+
 
     }
     
@@ -64,6 +66,7 @@ class ShowRequestViewController: UIViewController {
         price = Int(PriceTextField.text!)
         
         if (price != nil ){
+            ApiMethods.CreateOffer(RequestId: 60, Price: Double(self.PriceTextField.text!)!)
             print("notification button is clicked")
             
         }else if (price == nil){
