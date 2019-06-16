@@ -15,7 +15,7 @@ class ImExTableViewCell: UITableViewCell {
     @IBOutlet weak var label1: UILabel!
     func SetImExTableViewCellTableViewCell(ImExNotif : ImportExportNotification){
         logoImage.image = ImExNotif.Image
-        label2.text =  ImExNotif.Lable1
+        label1.text =  ImExNotif.Lable1
         label2.text = ImExNotif.Lable2
     }
     

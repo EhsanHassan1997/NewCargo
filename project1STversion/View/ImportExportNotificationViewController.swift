@@ -74,7 +74,8 @@ extension ImportExportNotificationViewController  :UITableViewDataSource{
         let Notification = imExNot[indexPath.row]
         let cell : ImExTableViewCell = tableView.dequeueReusableCell(withIdentifier: "imExNotification", for: indexPath) as! ImExTableViewCell
         cell.SetImExTableViewCellTableViewCell(ImExNotif: Notification)
-
+//        let cell : UITableViewCell
+//        cell = UITableViewCell()
         return cell
     }
 
@@ -98,4 +99,3 @@ extension ImportExportNotificationViewController: UITableViewDelegate{
         return cellHeight
     }
 }
-//
