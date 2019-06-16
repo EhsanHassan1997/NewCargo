@@ -99,7 +99,7 @@ extension paymentViewController  :UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celldata = paymentcell[indexPath.row]
-        let cell : paymentViewController = tableView.dequeueReusableCell(withIdentifier: "paymentCell", for: indexPath) as! paymentTableViewCell
+        let cell : paymentTableViewCell = tableView.dequeueReusableCell(withIdentifier: "paymentCell", for: indexPath) as! paymentTableViewCell
         cell.SetpaymentTableViewCell(Payment : celldata )
         return cell
     }
