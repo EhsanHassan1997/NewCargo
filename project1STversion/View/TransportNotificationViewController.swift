@@ -9,8 +9,6 @@ import UIKit
 
 class TransportNotificationViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    
-    //fileprivate let cellidentifier =  "TransportNotificaioncell"
     fileprivate let cellHeight :CGFloat = 120.0
     var TranNot : [TransportNotificationClass] = []
     
@@ -80,9 +78,7 @@ extension TransportNotificationViewController  :UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       // var Tran : [TransportNotificationClass] = []
         if  indexPath.row == 0{
-            print("hi")
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -94,7 +90,6 @@ extension TransportNotificationViewController  :UITableViewDataSource{
             self.navigationController?.popViewController(animated: true)
         }
         else if indexPath.row == 3{
-            print("tOOoooooooooooooz")
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }

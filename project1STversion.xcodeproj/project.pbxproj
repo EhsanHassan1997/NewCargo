@@ -65,6 +65,7 @@
 		C4D7BB6822B59C28005A03F5 /* payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6722B59C28005A03F5 /* payment.swift */; };
 		C4D7BB6A22B59CFE005A03F5 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6922B59CFE005A03F5 /* paymentViewController.swift */; };
 		C4D7BB6C22B59D17005A03F5 /* paymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D7BB6B22B59D17005A03F5 /* paymentTableViewCell.swift */; };
+		C4F7255E22B6363A00756144 /* addNewPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7255D22B6363A00756144 /* addNewPaymentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,7 @@
 		C4D7BB6722B59C28005A03F5 /* payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payment.swift; sourceTree = "<group>"; };
 		C4D7BB6922B59CFE005A03F5 /* paymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		C4D7BB6B22B59D17005A03F5 /* paymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentTableViewCell.swift; sourceTree = "<group>"; };
+		C4F7255D22B6363A00756144 /* addNewPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewPaymentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 				183C959D22B590F500898170 /* SearchTransportViewController.swift */,
 				C4CFBDDF22B2BC4700C5C276 /* assignTruckToDriverViewController.swift */,
 				C4CFBDE122B2C1DD00C5C276 /* MapPathViewController.swift */,
+				C4F7255D22B6363A00756144 /* addNewPaymentViewController.swift */,
 				18C2D5D622B3DE140093154E /* RequestReviewViewController.swift */,
 				18C2D5D822B432810093154E /* WarningViewController.swift */,
 				C4D7BB5722B54269005A03F5 /* AssignTruckViewController.swift */,
@@ -495,6 +498,7 @@
 				C447F60222A92C300083420A /* Request.swift in Sources */,
 				1802CEF622A81300000193B7 /* ImportExportHomeViewController.swift in Sources */,
 				C4C265242260B40900C0211F /* SecondRegisterViewController.swift in Sources */,
+				C4F7255E22B6363A00756144 /* addNewPaymentViewController.swift in Sources */,
 				18EAA2E8227336940054919D /* Constants.swift in Sources */,
 				18EAA2F0227358A70054919D /* TransportMenuViewController.swift in Sources */,
 				C4D7BB6822B59C28005A03F5 /* payment.swift in Sources */,

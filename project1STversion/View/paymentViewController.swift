@@ -6,38 +6,12 @@
 //  Copyright © 2019 Omar Kelany. All rights reserved.
 //
 
-//import UIKit
-//
-//class paymentViewController: UIViewController {
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
-//
-//    @IBAction func AddPaymentMethod(_ sender: UIButton){
-//    }
-//
-//    /*
-//    // MARK: - Navigation
-//
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destination.
-//        // Pass the selected object to the new view controller.
-//    }
-//    */
-//
-//}
-
-
-
 import UIKit
 
 class paymentViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    fileprivate let cellHeight :CGFloat = 120.0
+    fileprivate let cellHeight :CGFloat = 20.0
+    
     var paymentcell : [payment] = []
 
     override func viewDidLoad() {
@@ -53,8 +27,12 @@ class paymentViewController: UIViewController {
 
 
     }
-
-
+    
+    @IBAction func addNewPaymnetAction(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "addNewPaymentMethod") as! addNewPaymentViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     func createNotifications()-> [payment] {
         var Temp : [payment] = []
 
@@ -62,7 +40,7 @@ class paymentViewController: UIViewController {
         let not1 = payment( "Card Number : 4916 4376 6394 9708 ", "CVV : 452 ",image1)
 
         let image2 = UIImage(named: "PayPal")!
-        let not2 = payment( " Card Number : 4916 4376 6394 9708 ", "CVV : 452",image2 )
+        let not2 = payment( " Card Number : 9001 4376 4010 4010 ", "CVV : 452",image2 )
 
         let image3 = UIImage(named: "visacard")!
         let not3 = payment( "Card Number : 5506 9001 4010 0305 ", "2023",image3 )
@@ -74,8 +52,6 @@ class paymentViewController: UIViewController {
 
         return Temp
     }
-    @IBAction func MenuAction(_ sender: UIButton) {
-    }
     /*
      // MARK: - Navigation
 
@@ -86,7 +62,7 @@ class paymentViewController: UIViewController {
      }
      */
 }
-extension paymentViewController  :UITableViewDataSource{
+extension paymentViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return paymentcell.count
     }
@@ -102,7 +78,6 @@ extension paymentViewController  :UITableViewDataSource{
     }
 
 }
-
 extension paymentViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeight

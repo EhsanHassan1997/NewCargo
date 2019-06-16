@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -6826,10 +6826,10 @@ pay 5% of the shipment price.</string>
             </objects>
             <point key="canvasLocation" x="-9167" y="8024"/>
         </scene>
-        <!--View Controller-->
+        <!--Add New Payment View Controller-->
         <scene sceneID="E99-eo-K1v">
             <objects>
-                <viewController id="c7X-V4-Ruz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addNewPaymentMethod" id="c7X-V4-Ruz" customClass="addNewPaymentViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ACv-3p-lfh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7298,7 +7298,7 @@ pay 5% of the shipment price.</string>
         <!--SelectPayment-->
         <scene sceneID="3wL-GP-6WO">
             <objects>
-                <viewController storyboardIdentifier="payment" id="Qej-6K-d3B" userLabel="SelectPayment" customClass="paymentViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="payment" automaticallyAdjustsScrollViewInsets="NO" id="Qej-6K-d3B" userLabel="SelectPayment" customClass="paymentViewController" customModule="project1STversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eRB-hz-ADp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7409,7 +7409,7 @@ pay 5% of the shipment price.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="AddPaymentMethod:" destination="Qej-6K-d3B" eventType="touchUpInside" id="Jgg-M2-b3a"/>
+                                    <action selector="addNewPaymnetAction:" destination="Qej-6K-d3B" eventType="touchUpInside" id="gQ2-bJ-OgE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -10277,7 +10277,7 @@ pay 5% of the shipment price.</string>
         <segue reference="Fou-Rr-2VC"/>
         <segue reference="E03-wN-ki4"/>
         <segue reference="peZ-WR-XFr"/>
-        <segue reference="qfF-aD-ss1"/>
+        <segue reference="PdS-ky-6Sh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
 </document>

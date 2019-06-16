@@ -69,9 +69,12 @@ class TransportMenuViewController: UIViewController {
     }
 
     @IBAction func PaymentAction(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "payment") as! paymentViewController
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     @IBAction func CurrentShipment(_ sender: UIButton) {
+        
         
     }
     @IBAction func HistoryOfShipment(_ sender: UIButton) {
@@ -85,6 +88,7 @@ class TransportMenuViewController: UIViewController {
     @IBAction func ContactUsAction(_ sender: Any) {
     }
     @IBAction func HelpAction(_ sender: Any) {
+        
     }
     /*
     // MARK: - Navigation
