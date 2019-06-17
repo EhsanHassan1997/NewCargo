@@ -42,7 +42,7 @@ class MapPathViewController: UIViewController,GMSMapViewDelegate , MapPathViewMo
     }
     
     @IBAction func buttonHandlerPlay(_ sender: Any) {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (_) in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { (_) in
             self.playCar()
         })
         buttonPlay.isEnabled = false
