@@ -10,9 +10,6 @@
 		1802CEF622A81300000193B7 /* ImportExportHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802CEF522A81300000193B7 /* ImportExportHomeViewController.swift */; };
 		1802CEF822A81696000193B7 /* ImportExportMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802CEF722A81696000193B7 /* ImportExportMenuViewController.swift */; };
 		1802CEFA22A816FC000193B7 /* ImportExportNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802CEF922A816FC000193B7 /* ImportExportNotificationViewController.swift */; };
-		18341A8422B7A80E000FD439 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 18341A8122B7A80E000FD439 /* Group.png */; };
-		18341A8522B7A80E000FD439 /* Group@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18341A8222B7A80E000FD439 /* Group@3x.png */; };
-		18341A8622B7A80E000FD439 /* Group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18341A8322B7A80E000FD439 /* Group@2x.png */; };
 		183C959822B55D0F00898170 /* ImportExportNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C959722B55D0F00898170 /* ImportExportNotification.swift */; };
 		183C959A22B5727D00898170 /* ImExTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C959922B5727D00898170 /* ImExTableViewCell.swift */; };
 		183C959C22B590B400898170 /* searchTransportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C959B22B590B400898170 /* searchTransportTableViewCell.swift */; };
@@ -75,9 +72,6 @@
 		1802CEF522A81300000193B7 /* ImportExportHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportHomeViewController.swift; sourceTree = "<group>"; };
 		1802CEF722A81696000193B7 /* ImportExportMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportMenuViewController.swift; sourceTree = "<group>"; };
 		1802CEF922A816FC000193B7 /* ImportExportNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportNotificationViewController.swift; sourceTree = "<group>"; };
-		18341A8122B7A80E000FD439 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Group.png; path = ../../../../Downloads/Group.png; sourceTree = "<group>"; };
-		18341A8222B7A80E000FD439 /* Group@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Group@3x.png"; path = "../../../../Downloads/Group@3x.png"; sourceTree = "<group>"; };
-		18341A8322B7A80E000FD439 /* Group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Group@2x.png"; path = "../../../../Downloads/Group@2x.png"; sourceTree = "<group>"; };
 		183C959722B55D0F00898170 /* ImportExportNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportNotification.swift; sourceTree = "<group>"; };
 		183C959922B5727D00898170 /* ImExTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImExTableViewCell.swift; sourceTree = "<group>"; };
 		183C959B22B590B400898170 /* searchTransportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTransportTableViewCell.swift; sourceTree = "<group>"; };
@@ -202,9 +196,6 @@
 				C431C78A2200B3C5001AEDB8 /* Assets.xcassets */,
 				C431C78C2200B3C5001AEDB8 /* LaunchScreen.storyboard */,
 				C431C78F2200B3C5001AEDB8 /* Info.plist */,
-				18341A8122B7A80E000FD439 /* Group.png */,
-				18341A8322B7A80E000FD439 /* Group@2x.png */,
-				18341A8222B7A80E000FD439 /* Group@3x.png */,
 				1887D47022ADD7DA007AB29F /* MySegue.swift */,
 			);
 			path = project1STversion;
@@ -359,12 +350,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18341A8422B7A80E000FD439 /* Group.png in Resources */,
 				C4CFBDEC22B4752700C5C276 /* LocationData.json in Resources */,
 				C431C78E2200B3C5001AEDB8 /* LaunchScreen.storyboard in Resources */,
-				18341A8522B7A80E000FD439 /* Group@3x.png in Resources */,
 				C431C78B2200B3C5001AEDB8 /* Assets.xcassets in Resources */,
-				18341A8622B7A80E000FD439 /* Group@2x.png in Resources */,
 				C431C7892200B3C4001AEDB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
