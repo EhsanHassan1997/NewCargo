@@ -36,16 +36,16 @@ class SearchTransportViewController: UIViewController {
     func createOffers()-> [offer] {
         var Temp : [offer] = []
         
-        let image1 = UIImage(named: "ImportCompany")!
+        let image1 = UIImage(named: "Transport1")!
         let not1 = offer( "Price: 20,000 EGP" , "The Egyption Company for Maritime Transport", "Rate: 4.0",image1)
         
-        let image2 = UIImage(named: "ImAndExIgnored")!
+        let image2 = UIImage(named: "Transport2")!
         let not2 = offer( "Price: 30,000 EGP" , "MovEx Transportation and International Shipping", "Rate: 4.5",image1)
         
-        let image3 = UIImage(named: "imEx")!
+        let image3 = UIImage(named: "Transport3")!
         let not3 = offer( "Price: 15,000 EGP" , "Arab Maritime Petroleum Transport", "Rate: 5.0",image1)
         
-        let image4 = UIImage(named: "Application")!
+        let image4 = UIImage(named: "Transport4")!
         let not4 = offer( "Price: 20,500 EGP" , "Rockit Transport Services and Logistics Solutions", "Rate: 3.9",image1)
         
         Temp.append(not1)
@@ -84,26 +84,16 @@ extension SearchTransportViewController  :UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // var Tran : [TransportNotificationClass] = []
-//        if  indexPath.row == 0{
-//            print("hi")
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-//        else if indexPath.row == 1{
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! AssignTruckViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-//        else if indexPath.row == 2{
-//            self.navigationController?.popViewController(animated: true)
-//        }
-//        else if indexPath.row == 3{
-//            print("tOOoooooooooooooz")
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
+             if  indexPath.row == 0 || indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 3{
+            print("hi")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "payment") as! paymentViewController
+                    self.navigationController?.pushViewController(vc, animated: true)
+                
+        }
+        }
+
     }
-}
+
 
 extension SearchTransportViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
