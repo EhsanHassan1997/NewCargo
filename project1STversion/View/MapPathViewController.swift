@@ -102,6 +102,49 @@ extension MapPathViewController{
             let iTempMapPath = objMapModel.arrayMapPath[iTemp]
             
             let loc : CLLocation = CLLocation(latitude: iTempMapPath.lat!, longitude: iTempMapPath.lon!)
+            print("last lat lon: ",iTempMapPath.lat,",",iTempMapPath.lon)
+            let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(iTempMapPath.lat!),\(iTempMapPath.lon!)&destination=30.397222395881734,30.9846555814147&sensor=false&mode=driving&key=AIzaSyB7kcLWMSUcrIwIwzgccwXzoljlyp0qeHI")!
+            // 30.397222395881734",
+            //"long": "30.9846555814147
+            Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
+                switch response.result{
+                    
+                case .failure(let error):
+                    print("Error: ",error)
+                    break
+                    
+                case .success(let value):
+                    print("json: ",value)
+                    
+                    var Distance :[String?] = []
+                    var Duration :[String?] = []
+                    let json = JSON(value)
+                    print("json",json)
+                    if let Routes = json["routes"].array{
+                        for route in Routes{
+                            
+                            
+                            if let legs = route["legs"].array{
+                                for leg in legs {
+                                    if let distance = leg["distance"].dictionary{
+                                        if let distanceText = distance["text"]?.string{
+                                            if let duration = leg["duration"].dictionary{
+                                                if let durationText = duration["text"]?.string{
+                                                    Distance.append(distanceText)
+                                                    Duration.append(durationText)
+                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        self.Distance.text = Distance[0]
+                        self.timeLabel.text = Duration[0]
+                    }
+                }
+            }
             
             updateMapFrame(newLocation: loc, zoom: self.mapView.camera.zoom)
             marker.position = CLLocationCoordinate2DMake(iTempMapPath.lat!, iTempMapPath.lon!)
