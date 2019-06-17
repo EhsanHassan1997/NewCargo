@@ -36,10 +36,10 @@ class ImportExportNotificationViewController: UIViewController {
         var Temp : [ImportExportNotification] = []
 
         let image1 = UIImage(named: "Application")!
-        let not1 = ImportExportNotification(  "your request has been accepted by ", " companies select one to be your Tranporter",image1)
+        let not1 = ImportExportNotification(  "your transporter has been choosen ", " pay 10% of the total price",image1)
 
         let image2 = UIImage(named: "Application")!
-        let not2 = ImportExportNotification( "View your request  ", "to make sure that your data is accepted to you",image2 )
+        let not2 = ImportExportNotification( "View your cargo ", "current location",image2 )
 
         
 
@@ -83,10 +83,10 @@ extension ImportExportNotificationViewController  :UITableViewDataSource{
         if  indexPath.row == 0{
             //print("hi")
             //to be updater ya omer
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "searchTrans") as! SearchTransportViewController
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ImportExportPayment") as! ImportExportPaymentViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.row == 3{
+        else if indexPath.row == 1 {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
