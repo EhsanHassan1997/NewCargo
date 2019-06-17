@@ -45,8 +45,8 @@ class AssignTruckViewController: UIViewController {
         
         if !(UserDefaults.standard.integer(forKey: "selectedTruck") == -1 ){
             print("y",UserDefaults.standard.string(forKey: "selectedDriver"))
-            Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].drivername = UserDefaults.standard.string(forKey: "selectedDriver")
-            Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].driverEmail = UserDefaults.standard.string(forKey: "selectedDriverEmail")
+            Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].drivername = "Name : " + UserDefaults.standard.string(forKey: "selectedDriver")!
+            Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].driverEmail = "Email : " + UserDefaults.standard.string(forKey: "selectedDriverEmail")!
             removedDriver.append(UserDefaults.standard.integer(forKey: "NselectedDriver"))
             tableView.reloadData()
         }
@@ -55,14 +55,13 @@ class AssignTruckViewController: UIViewController {
     func createTrucks()-> [assignTruck] {
         var Temp : [assignTruck] = []
 
-//        let image1 = UIImage(named: "profileimage")!
-        let not1 = assignTruck("", "Type: i", "Platform Number: 952 ع م ق ","")
+        let not1 = assignTruck("", "Type: Dry Van", "Platform Number: 952 ع م ق ","")
 
-        let not2 = assignTruck("", "Type: a", "Platform Number: 511 ع م ر ","")
+        let not2 = assignTruck("", "Type: Dry Van", "Platform Number: 511 ع م ر ","")
         
-        let not3 = assignTruck("", "Type: w", "Platform Number: 415 ق م ق ","")
+        let not3 = assignTruck("", "Type: Dry Van ", "Platform Number: 415 ق م ق ","")
         
-        let not4 = assignTruck("", "Type: q", "Platform Number: 335 ع ش ق ","")
+        let not4 = assignTruck("", "Type: Tanker", "Platform Number: 335 ع ش ق ","")
         
         Temp.append(not1)
 
@@ -105,24 +104,7 @@ extension AssignTruckViewController  :UITableViewDataSource{
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssigningDriver") as! SelectDriverViewController
         vc.removed = removedDriver
         self.navigationController?.pushViewController(vc, animated: true)
-//        if  indexPath.row == 0{
-//            print("hi")
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-//        else if indexPath.row == 1{
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! assignTruckToDriverViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-//        else if indexPath.row == 2{
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "home") as! TransportHomeViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-//        else if indexPath.row == 3{
-//           // print("tOOoooooooooooooz")
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
+
     }
 }
 
