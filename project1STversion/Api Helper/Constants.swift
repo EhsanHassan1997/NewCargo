@@ -8,7 +8,7 @@
 
 import Foundation
 
-let ServerUrl = "http://52.59.231.58/"
+let ServerUrl = "http://3.19.58.55:5060/"
 
 let MainUrl = ServerUrl + "api/"
 
