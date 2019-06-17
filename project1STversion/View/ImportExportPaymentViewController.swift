@@ -31,22 +31,19 @@ class ImportExportPaymentViewController: UIViewController {
     func createNotifications()-> [payment] {
         var Temp : [payment] = []
         
-        let image1 = UIImage(named: "ImportCompany")!
-        let not1 = payment( "YOU have request from Import-Export Company", "Company name Tahran",image1)
+        let image1 = UIImage(named: "masterCard")!
+        let not1 = payment( "999 8909 6758 9708 ", "452 ",image1)
         
-        let image2 = UIImage(named: "ImAndExIgnored")!
-        let not2 = payment( "YOU have been accepted for Transporting ", "Company name Losy",image2 )
+        let image2 = UIImage(named: "PayPal")!
+        let not2 = payment( "6758 4376 4010 6758 ", "452",image2 )
         
-        let image3 = UIImage(named: "imEx")!
-        let not3 = payment( "YOUr offer has been ignored by  ", "Company name Losy",image3 )
+        let image3 = UIImage(named: "visacard")!
+        let not3 = payment( " 6758 4376 4010 0305 ", "2023",image3 )
         
-        let image4 = UIImage(named: "Application")!
-        let not4 = payment("YOUr driver Current Status ", "Cargo follow up",image4 )
         
         Temp.append(not1)
         Temp.append(not2)
         Temp.append(not3)
-        Temp.append(not4)
         
         return Temp
     }
