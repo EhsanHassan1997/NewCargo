@@ -9861,7 +9861,60 @@ pay 5% of the shipment price.</string>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4o8-1h-JuJ" customClass="GMSMapView">
                                         <rect key="frame" x="0.0" y="33.5" width="375" height="554.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFU-hg-FCS">
+                                                <rect key="frame" x="0.0" y="-1" width="375" height="97"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9qG-St-65J">
+                                                <rect key="frame" x="0.0" y="-1" width="375" height="97"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TRr-j0-f4M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Rest of Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvR-wF-DDw">
+                                                                <rect key="frame" x="0.0" y="16" width="187.5" height="16"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNn-Uw-I8P">
+                                                                <rect key="frame" x="187.5" y="15.5" width="187.5" height="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hbT-p0-A5M">
+                                                        <rect key="frame" x="0.0" y="48.5" width="375" height="48.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-FI-pZO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="48.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="748-RB-yfc">
+                                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="48.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.98206621409999995" green="0.43492507930000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.98206621409999995" green="0.43492507930000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="IFU-hg-FCS" firstAttribute="centerX" secondItem="9qG-St-65J" secondAttribute="centerX" id="4Ro-jj-qoY"/>
+                                            <constraint firstItem="IFU-hg-FCS" firstAttribute="centerY" secondItem="9qG-St-65J" secondAttribute="centerY" id="alo-UE-52B"/>
+                                            <constraint firstItem="IFU-hg-FCS" firstAttribute="width" secondItem="9qG-St-65J" secondAttribute="width" id="cyk-w7-6UC"/>
+                                            <constraint firstItem="IFU-hg-FCS" firstAttribute="height" secondItem="9qG-St-65J" secondAttribute="height" id="rS2-Vb-M8j"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7L-Af-Yeq" userLabel="topParV">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="33.5"/>
@@ -9902,13 +9955,17 @@ pay 5% of the shipment price.</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="4o8-1h-JuJ" secondAttribute="trailing" id="0IB-ae-7Y1"/>
+                                    <constraint firstItem="9qG-St-65J" firstAttribute="centerY" secondItem="Fto-5D-nhu" secondAttribute="centerY" multiplier="0.25" id="1ZK-X2-1gl"/>
                                     <constraint firstItem="GmY-Kg-Bax" firstAttribute="centerX" secondItem="Fto-5D-nhu" secondAttribute="centerX" id="El0-Le-9CO"/>
                                     <constraint firstItem="GmY-Kg-Bax" firstAttribute="centerY" secondItem="Fto-5D-nhu" secondAttribute="centerY" multiplier="1.9" id="Gjr-ji-98Z"/>
+                                    <constraint firstItem="9qG-St-65J" firstAttribute="height" secondItem="Fto-5D-nhu" secondAttribute="height" multiplier="0.15" id="IiL-f1-Xx0"/>
                                     <constraint firstItem="4o8-1h-JuJ" firstAttribute="leading" secondItem="Fto-5D-nhu" secondAttribute="leading" id="TyN-PV-qSO"/>
                                     <constraint firstItem="4o8-1h-JuJ" firstAttribute="top" secondItem="e7L-Af-Yeq" secondAttribute="bottom" id="VFY-qO-tKS"/>
                                     <constraint firstItem="e7L-Af-Yeq" firstAttribute="top" secondItem="Fto-5D-nhu" secondAttribute="top" id="WZg-Na-4Rc"/>
                                     <constraint firstAttribute="bottom" secondItem="4o8-1h-JuJ" secondAttribute="bottom" multiplier="1.1" id="aqh-JH-0X7"/>
+                                    <constraint firstItem="9qG-St-65J" firstAttribute="centerX" secondItem="Fto-5D-nhu" secondAttribute="centerX" id="jCa-H4-lBe"/>
                                     <constraint firstItem="GmY-Kg-Bax" firstAttribute="width" secondItem="Fto-5D-nhu" secondAttribute="width" id="oZn-uS-tnj"/>
+                                    <constraint firstItem="9qG-St-65J" firstAttribute="width" secondItem="Fto-5D-nhu" secondAttribute="width" id="pxW-IF-Enk"/>
                                     <constraint firstItem="GmY-Kg-Bax" firstAttribute="height" secondItem="Fto-5D-nhu" secondAttribute="height" multiplier="0.08" id="yf3-G4-NQH"/>
                                 </constraints>
                             </view>
@@ -9933,7 +9990,7 @@ pay 5% of the shipment price.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkc-7x-BR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2095" y="5422"/>
+            <point key="canvasLocation" x="-2095.1999999999998" y="5420.2398800599703"/>
         </scene>
         <!--SelectPayment-->
         <scene sceneID="66f-01-eph">
