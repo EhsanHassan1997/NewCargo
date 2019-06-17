@@ -9,13 +9,15 @@
 import UIKit
 
 class TruckTableViewCell: UITableViewCell {
-    @IBOutlet weak var driverName: UILabel!
     @IBOutlet weak var truckType: UILabel!
     @IBOutlet weak var platformNumber: UILabel!
+    @IBOutlet weak var driverName: UILabel!
+    @IBOutlet weak var driverEmail: UILabel!
     
         func SetTruckTableViewCell(TrucKChoosed : assignTruck){
              driverName.text = TrucKChoosed.drivername
              truckType.text = TrucKChoosed.trucktype
              platformNumber.text = TrucKChoosed.platformnumber
+            driverEmail.text = TrucKChoosed.driverEmail
     }
 }

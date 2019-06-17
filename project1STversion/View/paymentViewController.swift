@@ -37,13 +37,13 @@ class paymentViewController: UIViewController {
         var Temp : [payment] = []
 
         let image1 = UIImage(named: "masterCard")!
-        let not1 = payment( "Card Number : 4916 4376 6394 9708 ", "CVV : 452 ",image1)
+        let not1 = payment( "4916 4376 6394 9708 ", "452 ",image1)
 
         let image2 = UIImage(named: "PayPal")!
-        let not2 = payment( " Card Number : 9001 4376 4010 4010 ", "CVV : 452",image2 )
+        let not2 = payment( "9001 4376 4010 4010 ", "452",image2 )
 
         let image3 = UIImage(named: "visacard")!
-        let not3 = payment( "Card Number : 5506 9001 4010 0305 ", "2023",image3 )
+        let not3 = payment( "5506 9001 4010 0305 ", "2023",image3 )
 
         
         Temp.append(not1)
@@ -62,6 +62,7 @@ class paymentViewController: UIViewController {
      }
      */
 }
+
 extension paymentViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return paymentcell.count
