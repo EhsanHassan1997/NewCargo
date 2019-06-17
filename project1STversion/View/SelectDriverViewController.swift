@@ -12,19 +12,30 @@ class SelectDriverViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     fileprivate let cellHeight :CGFloat = 120.0
+    var removed : [Int] = []
+    
     var Driver : [assignDriver] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.tableFooterView = UIView()
         tableView.separatorInset = .zero
         tableView.contentInset = .zero
         
+        //tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellidentifier)
         tableView.dataSource = self
         tableView.delegate = self
         
         Driver = createDrivers()
+        
+        
+        
+        
+        if !(UserDefaults.standard.integer(forKey: "NselectedDriver") == -1){
+            for r in removed{
+                Driver.remove(at: r)
+            }
+        }
     }
     
     
@@ -34,10 +45,27 @@ class SelectDriverViewController: UIViewController {
         let image1 = UIImage(named: "profileimage")!
         let not1 = assignDriver(image1, "ahmed", "ahmed@Cargo.com", "01212385611")
         
-        
+        let not2 = assignDriver(image1, "Hassan", "Hassan@Cargo.com", "01212385611")
+
+        let not3 = assignDriver(image1, "Omar", "ahmed@Cargo.com", "01212385611")
+
+        let not4 = assignDriver(image1, "Jamal", "ahmed@Cargo.com", "01212385611")
+
+        let not5 = assignDriver(image1, "Ali", "ahmed@Cargo.com", "01212385611")
+
         Temp.append(not1)
         
-        
+        Temp.append(not2)
+
+        Temp.append(not3)
+
+        Temp.append(not4)
+
+        Temp.append(not5
+            
+            
+        )
+
         return Temp
     }
     
@@ -70,6 +98,8 @@ extension SelectDriverViewController  :UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         UserDefaults.standard.set(Driver[indexPath.row].driverName, forKey: "selectedDriver")
+        UserDefaults.standard.set(indexPath.row, forKey: "NselectedDriver")
+        UserDefaults.standard.set(Driver[indexPath.row].driverEmail, forKey: "selectedDriverEmail")
         self.navigationController?.popViewController(animated: true)
         
     }

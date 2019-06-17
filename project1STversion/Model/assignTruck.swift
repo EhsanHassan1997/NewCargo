@@ -14,13 +14,15 @@ class assignTruck {
     var drivername : String!
     var trucktype : String!
     var platformnumber : String!
-    
-    init(_ d : String ,  _ t : String , _ p : String) {
+    var driverEmail : String!
+
+    init(_ d : String ,  _ t : String , _ p : String, _ e : String) {
         //self.select = s
 //        self.image = i
         self.drivername = d
         self.trucktype = t
         self.platformnumber = p
+        self.driverEmail = e
     }
     
 }
