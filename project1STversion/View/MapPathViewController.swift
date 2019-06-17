@@ -12,6 +12,8 @@ import GoogleMaps
 import SwiftyJSON
 import Alamofire
 class MapPathViewController: UIViewController,GMSMapViewDelegate , MapPathViewModelDelegate{
+    @IBOutlet weak var Distance: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var buttonPlay: UIButton!
@@ -42,7 +44,7 @@ class MapPathViewController: UIViewController,GMSMapViewDelegate , MapPathViewMo
     }
     
     @IBAction func buttonHandlerPlay(_ sender: Any) {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { (_) in
+        timer = Timer.scheduledTimer(withTimeInterval: 1.4, repeats: true, block: { (_) in
             self.playCar()
         })
         buttonPlay.isEnabled = false
