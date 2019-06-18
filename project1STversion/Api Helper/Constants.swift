@@ -56,3 +56,6 @@ let ShowContractUrl = MainUrl + "imex/shipment/"
 func GetUserToken()->String{
     return UserDefaults.standard.string(forKey: "token")!
 }
+
+
+var CompanyInTechnical : [Company] = []

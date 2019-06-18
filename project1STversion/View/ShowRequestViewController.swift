@@ -68,7 +68,7 @@ class ShowRequestViewController: UIViewController {
         if (price != nil ){
             ApiMethods.CreateOffer(RequestId: 60, Price: Double(self.PriceTextField.text!)!)
             print("notification button is clicked")
-            
+            self.performSegue(withIdentifier: "offerAdde", sender: nil)
         }else if (price == nil){
             
             EnterPriceLable.text = "Plese enter your price"
