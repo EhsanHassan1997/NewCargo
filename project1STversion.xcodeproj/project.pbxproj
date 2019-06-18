@@ -19,6 +19,7 @@
 		183C95A022B59AFF00898170 /* offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C959F22B59AFF00898170 /* offer.swift */; };
 		185B4ED722B62A45000685A2 /* ImportExportPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B4ED622B62A45000685A2 /* ImportExportPaymentViewController.swift */; };
 		185B4ED922B62FB0000685A2 /* ImportExportPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B4ED822B62FB0000685A2 /* ImportExportPaymentTableViewCell.swift */; };
+		1868396C22B8AD240051CE51 /* ImportExportFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868396B22B8AD240051CE51 /* ImportExportFeedbackViewController.swift */; };
 		1869D84822B2A2910033E4D9 /* SetLocationOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */; };
 		1869D84A22B2A2CE0033E4D9 /* ConfirmLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */; };
 		1887D46F22ADB8FC007AB29F /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */; };
@@ -83,6 +84,7 @@
 		183C959F22B59AFF00898170 /* offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offer.swift; sourceTree = "<group>"; };
 		185B4ED622B62A45000685A2 /* ImportExportPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportPaymentViewController.swift; sourceTree = "<group>"; };
 		185B4ED822B62FB0000685A2 /* ImportExportPaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportPaymentTableViewCell.swift; sourceTree = "<group>"; };
+		1868396B22B8AD240051CE51 /* ImportExportFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportFeedbackViewController.swift; sourceTree = "<group>"; };
 		1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationOnMapViewController.swift; sourceTree = "<group>"; };
 		1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmLocationViewController.swift; sourceTree = "<group>"; };
 		1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				185B4ED822B62FB0000685A2 /* ImportExportPaymentTableViewCell.swift */,
 				1823BCF722B8688400FDBCD2 /* TrPaymentViewController.swift */,
 				1823BCFA22B86CEB00FDBCD2 /* TrPaymentTableViewCell.swift */,
+				1868396B22B8AD240051CE51 /* ImportExportFeedbackViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				C431C7842200B3C4001AEDB8 /* AppDelegate.swift in Sources */,
 				C4D7BB6C22B59D17005A03F5 /* paymentTableViewCell.swift in Sources */,
 				C419C8A022AD0D560043EBC9 /* TransportProfileViewController.swift in Sources */,
+				1868396C22B8AD240051CE51 /* ImportExportFeedbackViewController.swift in Sources */,
 				C4CFBDE222B2C1DD00C5C276 /* MapPathViewController.swift in Sources */,
 				18C2D5D922B432810093154E /* WarningViewController.swift in Sources */,
 				C4C265262260C07F00C0211F /* SetPasswordViewController.swift in Sources */,
