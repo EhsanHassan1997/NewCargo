@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import LGButton
 class AssignTruckViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
@@ -31,18 +31,10 @@ class AssignTruckViewController: UIViewController {
         print("did load")
         
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("did Appear")
-//
-    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("will Appear")
-
-//        Truck = createTrucks()
-        
         if !(UserDefaults.standard.integer(forKey: "selectedTruck") == -1 ){
             print("y",UserDefaults.standard.string(forKey: "selectedDriver"))
             Truck[UserDefaults.standard.integer(forKey: "selectedTruck")].drivername = "Name : " + UserDefaults.standard.string(forKey: "selectedDriver")!
@@ -72,6 +64,13 @@ class AssignTruckViewController: UIViewController {
         Temp.append(not4)
 
         return Temp
+    }
+    
+    @IBAction func DoneAction(_ sender: LGButton) {
+        if !(UserDefaults.standard.string(forKey: "selectedDriver") == ""){
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "TrPay") as! TrPaymentViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     /*
      // MARK: - Navigation

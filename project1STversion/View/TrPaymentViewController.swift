@@ -1,21 +1,24 @@
 //
-//  ImportExportPaymentViewController.swift
+//  TrPaymentViewController.swift
 //  project1STversion
 //
-//  Created by Apple on 6/16/19.
+//  Created by Apple on 6/18/19.
 //  Copyright © 2019 Omar Kelany. All rights reserved.
 //
 
 import UIKit
 
-class ImportExportPaymentViewController: UIViewController {
+class TrPaymentViewController: UIViewController {
+
     @IBOutlet weak var tableView: UITableView!
     
     fileprivate let cellHeight :CGFloat = 120.0
+    
     var paymentcell : [payment] = []
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+
         tableView.tableFooterView = UIView()
         tableView.separatorInset = .zero
         tableView.contentInset = .zero
@@ -23,23 +26,24 @@ class ImportExportPaymentViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        paymentcell = createNotifications()
-        
-        
-    }
+        paymentcell = createNotifications()    }
     
+    @IBAction func AddAction(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "addNewPaymentMethod") as! addNewPaymentViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     func createNotifications()-> [payment] {
         var Temp : [payment] = []
         
         let image1 = UIImage(named: "masterCard")!
-        let not1 = payment( "999 8909 6758 9708 ", "452 ",image1)
+        let not1 = payment( "4916 4376 6394 9708 ", "452 ",image1)
         
         let image2 = UIImage(named: "PayPal")!
-        let not2 = payment( "6758 4376 4010 6758 ", "452",image2 )
+        let not2 = payment( "9001 4376 4010 4010 ", "452",image2 )
         
         let image3 = UIImage(named: "visacard")!
-        let not3 = payment( " 6758 4376 4010 0305 ", "2023",image3 )
+        let not3 = payment( "5506 9001 4010 0305 ", "2023",image3 )
         
         
         Temp.append(not1)
@@ -48,19 +52,20 @@ class ImportExportPaymentViewController: UIViewController {
         
         return Temp
     }
-    @IBAction func MenuAction(_ sender: UIButton) {
-    }
+    
     /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
-extension ImportExportPaymentViewController  :UITableViewDataSource{
+
+extension TrPaymentViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return paymentcell.count
     }
@@ -70,17 +75,13 @@ extension ImportExportPaymentViewController  :UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celldata = paymentcell[indexPath.row]
-        let cell : ImportExportPaymentTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ImExpaymentCell", for: indexPath) as! ImportExportPaymentTableViewCell
+        let cell : TrPaymentTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TrPaymentCell", for: indexPath) as! TrPaymentTableViewCell
         cell.SetpaymentTableViewCell(Payment : celldata )
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
 }
-
-extension ImportExportPaymentViewController: UITableViewDelegate{
+extension TrPaymentViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeight
     }
