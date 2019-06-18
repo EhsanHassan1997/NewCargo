@@ -37,6 +37,11 @@ class RequestReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(UserDefaults.standard.integer(forKey: "reqID") == nil){
+            UserDefaults.standard.set(10, forKey: "reqID")
+        }
+        
         CargoTypeLabel.text = "Cargo Type: " + request.cargoType
         
         QuantityLabel.text = "Quantity: " + String(request.Quantity!)
@@ -87,6 +92,8 @@ class RequestReviewViewController: UIViewController {
                 self.view.addSubview(Warning.view)
                 Warning.didMove(toParent: self)
             }else{
+                UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "reqID") + 1, forKey: "reqID")
+                print("req id: ",UserDefaults.standard.integer(forKey: "reqID"))
                 self.performSegue(withIdentifier: "RequestDone", sender: nil)
             }
         }

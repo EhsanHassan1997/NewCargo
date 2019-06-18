@@ -32,16 +32,18 @@ class TransportNotificationViewController: UIViewController {
         var Temp : [TransportNotificationClass] = []
         
         let image1 = UIImage(named: "ImportCompany")!
-        let not1 = TransportNotificationClass( 1 , "YOU have request from Import-Export Company", "Company name Tahran",image1)
+        let not1 = TransportNotificationClass( 1 , "YOU have request from Import-Export Company", "Company name: Tahran",image1)
+        
+        let not2 = TransportNotificationClass( 1 , "your technical offer is accepted", "Set your financial offer",image1)
         
         let image2 = UIImage(named: "ImAndExIgnored")!
-        let not2 = TransportNotificationClass( 2 ,"YOU have been accepted for Transporting ", "Company name Losy",image2 )
+        let not3 = TransportNotificationClass( 2 ,"YOU have been accepted for Transporting ", "Company name Losy",image2 )
         
         let image3 = UIImage(named: "imEx")!
-        let not3 = TransportNotificationClass( 3 , "YOUr offer has been ignored by  ", "Company name Losy",image3 )
+        let not4 = TransportNotificationClass( 3 , "YOUr offer has been ignored by  ", "Company name Losy",image3 )
         
         let image4 = UIImage(named: "Application")!
-        let not4 = TransportNotificationClass( 4 , "YOUr driver Current Status ", "Cargo follow up",image4 )
+        let not5 = TransportNotificationClass( 4 , "YOUr driver Current Status ", "Cargo follow up",image4 )
         
         Temp.append(not1)
         Temp.append(not2)
@@ -82,14 +84,14 @@ extension TransportNotificationViewController  :UITableViewDataSource{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.row == 1{
+        else if indexPath.row == 2{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! AssignTruckViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.row == 2{
+        else if indexPath.row == 3{
             self.navigationController?.popViewController(animated: true)
         }
-        else if indexPath.row == 3{
+        else if indexPath.row == 4{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
