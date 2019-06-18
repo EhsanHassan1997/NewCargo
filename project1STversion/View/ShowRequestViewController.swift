@@ -37,7 +37,7 @@ class ShowRequestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\nhi\n")
-        ApiMethods.TransportRequestDetails(requestId : 60) { (ss) in
+        ApiMethods.TransportRequestDetails(requestId : (UserDefaults.standard.integer(forKey: "reqId") + 11)) { (ss) in
             self.CargoType.text = "Cargo Type : " + ss.cargoType
             self.QuantityOfCargo.text = "Quantity : " + String(ss.Quantity!)
             self.WeightOfCargo.text = "Weight : " + String(ss.Weight!)
@@ -66,9 +66,9 @@ class ShowRequestViewController: UIViewController {
         price = Int(PriceTextField.text!)
         
         if (price != nil ){
-            ApiMethods.CreateOffer(RequestId: 60, Price: Double(self.PriceTextField.text!)!)
+            ApiMethods.CreateOffer(RequestId: (UserDefaults.standard.integer(forKey: "reqId") + 11), Price: Double(self.PriceTextField.text!)!)
             print("notification button is clicked")
-            self.performSegue(withIdentifier: "offerAdde", sender: nil)
+            self.performSegue(withIdentifier: "offerAdded", sender: nil)
         }else if (price == nil){
             
             EnterPriceLable.text = "Plese enter your price"

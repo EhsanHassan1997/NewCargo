@@ -38,8 +38,8 @@ class RequestReviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if(UserDefaults.standard.integer(forKey: "reqID") == nil){
-            UserDefaults.standard.set(10, forKey: "reqID")
+        if(UserDefaults.standard.integer(forKey: "reqId") == nil){
+            UserDefaults.standard.set(reqid, forKey: "reqId")
         }
         
         CargoTypeLabel.text = "Cargo Type: " + request.cargoType
@@ -92,8 +92,10 @@ class RequestReviewViewController: UIViewController {
                 self.view.addSubview(Warning.view)
                 Warning.didMove(toParent: self)
             }else{
-                UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "reqID") + 1, forKey: "reqID")
-                print("req id: ",UserDefaults.standard.integer(forKey: "reqID"))
+                UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "reqId") + 1, forKey: "reqId")
+                
+                print("req id: ",UserDefaults.standard.integer(forKey: "reqId"))
+                
                 self.performSegue(withIdentifier: "RequestDone", sender: nil)
             }
         }

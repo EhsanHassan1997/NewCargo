@@ -57,5 +57,6 @@ func GetUserToken()->String{
     return UserDefaults.standard.string(forKey: "token")!
 }
 
+let reqid : Int = 11
 
 var CompanyInTechnical : [Company] = []
