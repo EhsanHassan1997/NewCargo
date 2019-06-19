@@ -80,7 +80,8 @@ class TransportMenuViewController: UIViewController {
     }
     @IBAction func CurrentShipment(_ sender: UIButton) {
         
-        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func HistoryOfShipment(_ sender: UIButton) {
         

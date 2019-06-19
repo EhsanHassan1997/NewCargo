@@ -78,7 +78,7 @@ extension ImportExportPaymentViewController  :UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.performSegue(withIdentifier: "ReturnPayToHome", sender: nil)
     }
 }
 

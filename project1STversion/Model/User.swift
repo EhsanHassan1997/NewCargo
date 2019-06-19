@@ -14,6 +14,7 @@ class User{
     var email : String!
     var password : String!
     var image : UIImage!
+    var imageString : String!
     var type : String!
     var rate : Double!
     

@@ -27,7 +27,7 @@ class SetPasswordViewController: UIViewController {
     @IBAction func DoneAction(_ sender: LGButton) {
         if(passwordTextField.text == confirmPasswordTextField.text){
             myCompany.password = passwordTextField.text
-            myCompany.image = "noImage"
+            myCompany.imageString = "noImage"
             myCompany.type = myCompany.specialization
             ApiMethods.Register(company: myCompany, TaxRegisterNumber: "1", Fax: "1")
             self.performSegue(withIdentifier: "JustRegister", sender: nil)

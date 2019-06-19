@@ -16,6 +16,8 @@ class TransportNotificationViewController: UIViewController {
         
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
 
+        UserDefaults.standard.set(false, forKey: "AcceptedRequest")
+        
         tableView.tableFooterView = UIView()
         tableView.separatorInset = .zero
         tableView.contentInset = .zero
@@ -28,6 +30,14 @@ class TransportNotificationViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if UserDefaults.standard.bool(forKey: "AcceptedRequest"){
+            TranNot.append(TransportNotificationClass( 1 , "your technical offer is accepted", "Set your financial offer",UIImage(named: "ImportCompany")!))
+            UserDefaults.standard.set(false, forKey: "AcceptedRequest")
+            tableView.reloadData()
+        }
+    }
     
     func createNotifications()-> [TransportNotificationClass] {
         var Temp : [TransportNotificationClass] = []
@@ -47,9 +57,10 @@ class TransportNotificationViewController: UIViewController {
         let not5 = TransportNotificationClass( 4 , "YOUr driver Current Status ", "Cargo follow up",image4 )
         
         Temp.append(not1)
-        Temp.append(not2)
+//        Temp.append(not2)
         Temp.append(not3)
         Temp.append(not4)
+        Temp.append(not5)
         
         return Temp
     }
@@ -82,21 +93,21 @@ extension TransportNotificationViewController  :UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if  indexPath.row == 0{
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetailTechnical") as! ShowRequestViewController
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetailTechnical") as! ConfirmationRequestViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.row == 1{
+        else if indexPath.row == 4{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.row == 2{
+        else if indexPath.row == 1{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssignTruckToDriver") as! AssignTruckViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.row == 3{
+        else if indexPath.row == 2{
             self.navigationController?.popViewController(animated: true)
         }
-        else if indexPath.row == 4{
+        else if indexPath.row == 3{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }

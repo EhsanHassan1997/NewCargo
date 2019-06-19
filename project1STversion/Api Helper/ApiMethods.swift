@@ -26,7 +26,7 @@ class ApiMethods {
             "tax_file_number" : company.TaxFileNumber,
             "tax_register_number" : TaxRegisterNumber,
             "fax" : Fax,
-            "image" : company.image,
+            "image" : company.imageString,
             "address" : company.Address,
             "cargo_specialization" : company.specialization,
         ]

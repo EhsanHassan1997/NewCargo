@@ -25,7 +25,7 @@ class MapPathViewController: UIViewController,GMSMapViewDelegate , MapPathViewMo
     
     
     //inially load location on map
-    let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 30.39509105362621, longitude: 30.98486144095659, zoom: 10)
+    let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 30.39509105362621, longitude: 30.98486144095659, zoom: 20)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +94,7 @@ extension MapPathViewController{
         
         //Zoom map with path area
         let loc : CLLocation = CLLocation(latitude: inialLat, longitude: inialLong)
-        updateMapFrame(newLocation: loc, zoom: 12.0)
+        updateMapFrame(newLocation: loc, zoom: 20.0)
     }
     
     //marker move on map view

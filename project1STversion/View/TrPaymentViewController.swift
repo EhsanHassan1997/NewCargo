@@ -82,6 +82,10 @@ extension TrPaymentViewController: UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ReturnHomeFromPay", sender: nil)
+    }
+    
 }
 extension TrPaymentViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

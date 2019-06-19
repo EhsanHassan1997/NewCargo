@@ -62,8 +62,7 @@ class ShowRequestViewController: UIViewController {
 
 
     }
-    
-    @IBAction func AcceptingAction(_ sender: LGButton) {
+    @IBAction func AcceptAction(_ sender: UIButton) {
         var price : Int!
         //let cost = Double(textField.text!)
         price = Int(PriceTextField.text!)
@@ -83,11 +82,14 @@ class ShowRequestViewController: UIViewController {
         }
         print("price = ", price)
     }
-    @IBAction func IgnoreActoin(_ sender: LGButton) {
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransportNotificationViewController
-                self.navigationController?.pushViewController(vc, animated: true)
-                print("notification button is clicked")
+    
+    @IBAction func IgnoreButton(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransportNotification") as! TransportNotificationViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        print("notification button is clicked")
     }
+    
+   
     
     @IBAction func TermsConditions(_ sender: UIButton) {
         let image : UIImage! = sender.image(for:.normal)

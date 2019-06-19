@@ -58,7 +58,7 @@ class SecondRegisterViewController: UIViewController {
             myCompany.TaxCard = TaxCardTextField.text
             myCompany.TaxFileNumber = TaxCardTextField.text
             myCompany.specialization = SpecializationTextField.text
-            if SpecializationTextField.text == "import-export"{
+            if SpecializationTextField.text == "import_export"{
                 ImExImage = myCompany.image
             }else if SpecializationTextField.text == "transport"{
                 TrImage = myCompany.image

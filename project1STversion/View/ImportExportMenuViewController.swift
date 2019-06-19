@@ -41,9 +41,13 @@ class ImportExportMenuViewController: UIViewController {
     }
     
     @IBAction func PaymentAction(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "payment") as! paymentViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func CurrentShipmentAction(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func HistoryOfShipmentAction(_ sender: UIButton) {

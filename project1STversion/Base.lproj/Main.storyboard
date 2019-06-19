@@ -869,7 +869,7 @@
                                                                     <constraint firstAttribute="width" secondItem="7Hm-vh-vHq" secondAttribute="height" multiplier="1:1" id="i9H-7z-2oo"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import-Export Company name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zhr-f2-xkO" userLabel="import-ExportCompanyNameL">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al Shahbaa Advanced Trading" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zhr-f2-xkO" userLabel="import-ExportCompanyNameL">
                                                                 <rect key="frame" x="118.5" y="0.0" width="202.5" height="56"/>
                                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                                                 <color key="textColor" red="0.33333333333333331" green="0.396078431372549" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
@@ -1276,69 +1276,22 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="K1I-bP-BoA">
                                                                 <rect key="frame" x="0.0" y="0.0" width="270" height="51.5"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vd-14-iyM" userLabel="acceptBD" customClass="LGButton" customModule="LGButton">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9y-vF-r8c">
                                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="51.5"/>
-                                                                        <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c20-qZ-OSg">
-                                                                                <rect key="frame" x="38.5" y="16.5" width="48.5" height="18"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                                <color key="textColor" red="0.015686274510000001" green="0.33725490200000002" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="125" id="5Dw-pk-9M7"/>
-                                                                            <constraint firstItem="c20-qZ-OSg" firstAttribute="centerX" secondItem="8vd-14-iyM" secondAttribute="centerX" id="E8o-qJ-uDM"/>
-                                                                            <constraint firstItem="c20-qZ-OSg" firstAttribute="centerY" secondItem="8vd-14-iyM" secondAttribute="centerY" id="Huq-Zm-1hp"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                                <color key="value" red="1" green="0.43529411759999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                                <real key="value" value="3"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
+                                                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Accepte"/>
                                                                         <connections>
-                                                                            <action selector="AcceptingAction:" destination="vjt-v6-IwJ" eventType="touchUpInside" id="DYo-gI-JxL"/>
+                                                                            <action selector="AcceptAction:" destination="vjt-v6-IwJ" eventType="touchUpInside" id="acA-iF-sHE"/>
                                                                         </connections>
-                                                                    </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L29-V6-uc0" userLabel="ignoreBD" customClass="LGButton" customModule="LGButton">
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxP-0T-z5g">
                                                                         <rect key="frame" x="145" y="0.0" width="125" height="51.5"/>
-                                                                        <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ignore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5K-gA-hxU">
-                                                                                <rect key="frame" x="38.5" y="15.5" width="48.5" height="20.5"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                <color key="textColor" red="0.015686274510000001" green="0.33725490200000002" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstItem="R5K-gA-hxU" firstAttribute="centerX" secondItem="L29-V6-uc0" secondAttribute="centerX" id="7Vn-As-k2G"/>
-                                                                            <constraint firstItem="R5K-gA-hxU" firstAttribute="centerY" secondItem="L29-V6-uc0" secondAttribute="centerY" id="S5P-B1-33Z"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                                <real key="value" value="3"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                                <color key="value" red="1" green="0.43529411759999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
+                                                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Ignorre"/>
                                                                         <connections>
-                                                                            <action selector="IgnoreActoin:" destination="vjt-v6-IwJ" eventType="touchUpInside" id="UQY-kO-zGX"/>
+                                                                            <action selector="IgnoreButton:" destination="vjt-v6-IwJ" eventType="touchUpInside" id="CaG-Gb-mtp"/>
                                                                         </connections>
-                                                                    </view>
+                                                                    </button>
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
@@ -1478,13 +1431,11 @@ pay 5% of the shipment price.</string>
                     </view>
                     <size key="freeformSize" width="375" height="924"/>
                     <connections>
-                        <outlet property="AcceptButton" destination="8vd-14-iyM" id="qcL-Aq-Fhe"/>
                         <outlet property="CargoType" destination="3oS-pz-r8q" id="pqH-J7-TQX"/>
                         <outlet property="DestinationLocation" destination="3Y3-Q2-ch3" id="gwV-Fk-Utc"/>
                         <outlet property="EndDate" destination="xa3-Ar-qgc" id="4WY-Pf-S1G"/>
                         <outlet property="EnterPriceLable" destination="G1W-CR-3gd" id="EeV-t4-rI0"/>
                         <outlet property="HeightOfCargo" destination="Q3z-SP-fhF" id="9b4-eo-ogR"/>
-                        <outlet property="IgnoreButton" destination="L29-V6-uc0" id="VcT-xD-FKr"/>
                         <outlet property="ImportExportLogoImage" destination="7Hm-vh-vHq" id="xl3-KG-6vE"/>
                         <outlet property="ImportExportNameLable" destination="Zhr-f2-xkO" id="eax-hT-6mO"/>
                         <outlet property="LenghtOfCargo" destination="buy-C8-dOq" id="6PJ-gp-xsS"/>
@@ -9969,20 +9920,42 @@ pay 5% of the shipment price.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwd-tz-A9r">
-                                <rect key="frame" x="0.0" y="48" width="375" height="33.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Choose Payment Method ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="ArialRoundedMTBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZu-le-KwH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwd-tz-A9r">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Choose Payment Method ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="ArialRoundedMTBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need to pay 10 % of price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ane-Zv-38O">
+                                        <rect key="frame" x="0.0" y="52" width="375" height="51.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ane-Zv-38O" firstAttribute="top" secondItem="dwd-tz-A9r" secondAttribute="bottom" id="0pg-iX-DOn"/>
+                                    <constraint firstItem="Ane-Zv-38O" firstAttribute="height" secondItem="HZu-le-KwH" secondAttribute="height" multiplier="0.08" id="787-wY-LMZ"/>
+                                    <constraint firstItem="dwd-tz-A9r" firstAttribute="centerX" secondItem="HZu-le-KwH" secondAttribute="centerX" id="7vq-fj-tL0"/>
+                                    <constraint firstItem="dwd-tz-A9r" firstAttribute="height" secondItem="HZu-le-KwH" secondAttribute="height" multiplier="0.08" id="Kfj-cF-txR"/>
+                                    <constraint firstItem="dwd-tz-A9r" firstAttribute="top" secondItem="HZu-le-KwH" secondAttribute="top" id="NhN-dN-Dgi"/>
+                                    <constraint firstItem="Ane-Zv-38O" firstAttribute="centerX" secondItem="HZu-le-KwH" secondAttribute="centerX" id="lvY-b6-Iho"/>
+                                    <constraint firstItem="Ane-Zv-38O" firstAttribute="width" secondItem="HZu-le-KwH" secondAttribute="width" id="mdZ-FJ-SGz"/>
+                                    <constraint firstItem="dwd-tz-A9r" firstAttribute="width" secondItem="HZu-le-KwH" secondAttribute="width" id="suU-3f-s9u"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qT0-he-E2B">
                                 <rect key="frame" x="0.0" y="116.5" width="375" height="400.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -10075,36 +10048,27 @@ pay 5% of the shipment price.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need to pay 10 % of price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ane-Zv-38O">
-                                <rect key="frame" x="19" y="77.5" width="337.5" height="33.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="qT0-he-E2B" firstAttribute="top" secondItem="Ane-Zv-38O" secondAttribute="bottom" multiplier="1.05" id="6cY-CO-ucM"/>
+                            <constraint firstItem="HZu-le-KwH" firstAttribute="width" secondItem="maD-ae-Sde" secondAttribute="width" id="23I-Cn-rLM"/>
+                            <constraint firstItem="HZu-le-KwH" firstAttribute="centerX" secondItem="437-m8-cLs" secondAttribute="centerX" id="3tc-qD-i1B"/>
                             <constraint firstItem="gJh-8I-OPx" firstAttribute="top" secondItem="qT0-he-E2B" secondAttribute="bottom" multiplier="1.1" id="82x-eX-FXx"/>
-                            <constraint firstItem="dwd-tz-A9r" firstAttribute="width" secondItem="maD-ae-Sde" secondAttribute="width" id="CnJ-jl-a8U"/>
                             <constraint firstItem="qT0-he-E2B" firstAttribute="centerX" secondItem="437-m8-cLs" secondAttribute="centerX" id="DFh-DE-X05"/>
                             <constraint firstItem="gJh-8I-OPx" firstAttribute="height" secondItem="maD-ae-Sde" secondAttribute="height" multiplier="0.1" id="JRA-BD-dMq"/>
-                            <constraint firstItem="dwd-tz-A9r" firstAttribute="top" secondItem="437-m8-cLs" secondAttribute="top" constant="28" id="Lpa-ej-RGk"/>
                             <constraint firstItem="gJh-8I-OPx" firstAttribute="width" secondItem="maD-ae-Sde" secondAttribute="width" id="N1e-FN-W1O"/>
-                            <constraint firstItem="dwd-tz-A9r" firstAttribute="centerX" secondItem="437-m8-cLs" secondAttribute="centerX" id="XXj-Dq-Tuw"/>
                             <constraint firstItem="qT0-he-E2B" firstAttribute="width" secondItem="maD-ae-Sde" secondAttribute="width" id="Y1v-sq-dsr"/>
                             <constraint firstItem="gJh-8I-OPx" firstAttribute="centerX" secondItem="437-m8-cLs" secondAttribute="centerX" id="ad0-gp-vm0"/>
-                            <constraint firstItem="Ane-Zv-38O" firstAttribute="centerX" secondItem="437-m8-cLs" secondAttribute="centerX" id="efb-85-SwC"/>
+                            <constraint firstItem="HZu-le-KwH" firstAttribute="centerY" secondItem="437-m8-cLs" secondAttribute="centerY" id="faV-XD-3ny"/>
                             <constraint firstItem="qT0-he-E2B" firstAttribute="height" secondItem="maD-ae-Sde" secondAttribute="height" multiplier="0.6" id="h58-Wu-F0r"/>
-                            <constraint firstItem="Ane-Zv-38O" firstAttribute="width" secondItem="maD-ae-Sde" secondAttribute="width" multiplier="0.9" id="jOe-Z9-FUZ"/>
-                            <constraint firstItem="Ane-Zv-38O" firstAttribute="height" secondItem="dwd-tz-A9r" secondAttribute="height" id="kJV-Qo-lN2"/>
-                            <constraint firstItem="dwd-tz-A9r" firstAttribute="height" secondItem="maD-ae-Sde" secondAttribute="height" multiplier="0.05" id="tAT-Fb-mpS"/>
+                            <constraint firstItem="HZu-le-KwH" firstAttribute="height" secondItem="437-m8-cLs" secondAttribute="height" id="kZG-xQ-XLO"/>
                             <constraint firstItem="437-m8-cLs" firstAttribute="bottom" secondItem="gJh-8I-OPx" secondAttribute="bottom" multiplier="1.05" id="vl1-IL-0D8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="437-m8-cLs"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="qT0-he-E2B" id="JQ3-FR-chs"/>
+                        <segue destination="1un-fv-fbC" kind="show" identifier="ReturnPayToHome" id="BKL-rx-N0H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVw-3y-cCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -10541,6 +10505,7 @@ pay 5% of the shipment price.</string>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="znP-sS-M2D" id="Wfo-fT-Qkz"/>
+                        <segue destination="JaQ-dJ-ncf" kind="show" id="MZG-IL-Thl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wkw-1f-N4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -10573,7 +10538,7 @@ pay 5% of the shipment price.</string>
                                                                     <constraint firstAttribute="width" secondItem="sbl-7p-kKA" secondAttribute="height" multiplier="1:1" id="lKe-mQ-uvT"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import-Export Company name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MLz-G1-R1S" userLabel="import-ExportCompanyNameL">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al Shahbaa Advanced Trading" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MLz-G1-R1S" userLabel="import-ExportCompanyNameL">
                                                                 <rect key="frame" x="118.5" y="0.0" width="202.5" height="56"/>
                                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                                                 <color key="textColor" red="0.33333333329999998" green="0.39607843139999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -10949,69 +10914,22 @@ pay 5% of the shipment price.</string>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VF6-ly-0yD">
                                                                 <rect key="frame" x="0.0" y="0.0" width="270" height="51.5"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8e9-wT-rMM" userLabel="acceptBD" customClass="LGButton" customModule="LGButton">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfp-vc-rQw">
                                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="51.5"/>
-                                                                        <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNp-n6-mPO">
-                                                                                <rect key="frame" x="38.5" y="16.5" width="48.5" height="18"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                                <color key="textColor" red="0.015686274510000001" green="0.33725490200000002" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="125" id="WFl-sb-SDU"/>
-                                                                            <constraint firstItem="JNp-n6-mPO" firstAttribute="centerX" secondItem="8e9-wT-rMM" secondAttribute="centerX" id="mJH-x2-pCI"/>
-                                                                            <constraint firstItem="JNp-n6-mPO" firstAttribute="centerY" secondItem="8e9-wT-rMM" secondAttribute="centerY" id="tuv-RN-lMD"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                                <color key="value" red="1" green="0.43529411759999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                                <real key="value" value="3"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
+                                                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Accepte"/>
                                                                         <connections>
-                                                                            <action selector="AcceptButton:" destination="y7w-bq-MOg" eventType="valueChanged" id="JnL-0B-GBV"/>
+                                                                            <action selector="AcceppteAction:" destination="y7w-bq-MOg" eventType="touchUpInside" id="3kL-Ke-ETy"/>
                                                                         </connections>
-                                                                    </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcA-GY-XyH" userLabel="ignoreBD" customClass="LGButton" customModule="LGButton">
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHp-TO-Rym">
                                                                         <rect key="frame" x="145" y="0.0" width="125" height="51.5"/>
-                                                                        <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ignore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR5-P1-eVK">
-                                                                                <rect key="frame" x="38.5" y="15.5" width="48.5" height="20.5"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                <color key="textColor" red="0.015686274510000001" green="0.33725490200000002" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstItem="RR5-P1-eVK" firstAttribute="centerX" secondItem="AcA-GY-XyH" secondAttribute="centerX" id="G5D-dU-Hj7"/>
-                                                                            <constraint firstItem="RR5-P1-eVK" firstAttribute="centerY" secondItem="AcA-GY-XyH" secondAttribute="centerY" id="RDb-de-DQI"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                                <real key="value" value="3"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                                <color key="value" red="1" green="0.43529411759999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
+                                                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Ignorre"/>
                                                                         <connections>
-                                                                            <action selector="IgnoreAction:" destination="y7w-bq-MOg" eventType="valueChanged" id="0N6-QD-zbV"/>
+                                                                            <action selector="IgnorreAction:" destination="y7w-bq-MOg" eventType="touchUpInside" id="x87-NI-4ap"/>
                                                                         </connections>
-                                                                    </view>
+                                                                    </button>
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
@@ -11205,9 +11123,9 @@ pay 5% of the shipment price.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dHU-mz-6Hd"/>
-        <segue reference="qjQ-Yy-70q"/>
-        <segue reference="peZ-WR-XFr"/>
-        <segue reference="qfF-aD-ss1"/>
+        <segue reference="WWG-ss-jhx"/>
+        <segue reference="nqM-Wc-dh1"/>
+        <segue reference="Pyv-5Z-bOz"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
 </document>

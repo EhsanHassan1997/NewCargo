@@ -42,18 +42,22 @@ class ConfirmationRequestViewController: UIViewController {
             self.StartDate.text = "Start Date: " + ss.StartDate
             self.EndDate.text = "End Date: " + ss.EndDate
             ApiMethods.GetUser(UserId: Int(ss.comIm_Ex)! , Usser: { (User) in
+                
                 self.ImExlable.text = User.name
             })
         // Do any additional setup after loading the view.
     }
     }
-    @IBAction func AcceptButton(_ sender: LGButton) {
+    @IBAction func AcceppteAction(_ sender: UIButton) {
+        print("clicked")
+//        self.performSegue(withIdentifier: "companyAcceptRequest", sender: nil)
+        UserDefaults.standard.set(true, forKey: "AcceptedRequest")
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func IgnorreAction(_ sender: UIButton) {
         self.performSegue(withIdentifier: "companyAcceptRequest", sender: nil)
     }
     
-    @IBAction func IgnoreAction(_ sender: LGButton) {
-        self.performSegue(withIdentifier: "companyAcceptRequest", sender: nil)
-    }
     /*
     // MARK: - Navigation
 
