@@ -20,6 +20,8 @@ class ImportExportMenuViewController: UIViewController {
         
         CompanyNameLabel.text = UserDefaults.standard.string(forKey: "UserName")
         
+        PrfileImageView.image = ImExImage 
+        
         MenuView.transform = CGAffineTransform(translationX: MenuView.center.x - view.bounds.width, y: 0.5)
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
             self.MenuView.transform = .identity

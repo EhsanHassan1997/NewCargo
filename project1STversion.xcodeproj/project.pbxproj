@@ -45,6 +45,9 @@
 		C431C78B2200B3C5001AEDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C431C78A2200B3C5001AEDB8 /* Assets.xcassets */; };
 		C431C78E2200B3C5001AEDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C431C78C2200B3C5001AEDB8 /* LaunchScreen.storyboard */; };
 		C447F60222A92C300083420A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447F60122A92C300083420A /* Request.swift */; };
+		C4534FBC22B9D12500FA96B5 /* Group@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4534FBA22B9D12400FA96B5 /* Group@3x.png */; };
+		C4534FBD22B9D12500FA96B5 /* Group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4534FBB22B9D12500FA96B5 /* Group@2x.png */; };
+		C4534FBF22B9D13400FA96B5 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = C4534FBE22B9D13400FA96B5 /* Group.png */; };
 		C45E9AF822B069FA00A28200 /* TransportNotificationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E9AF722B069FA00A28200 /* TransportNotificationClass.swift */; };
 		C49B09D9225DFD6100E3C771 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B09D8225DFD6100E3C771 /* Company.swift */; };
 		C4BB07F222493EB5008C0671 /* ConfirmNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB07F122493EB5008C0671 /* ConfirmNewPasswordViewController.swift */; };
@@ -115,6 +118,9 @@
 		C431C78D2200B3C5001AEDB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C431C78F2200B3C5001AEDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C447F60122A92C300083420A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C4534FBA22B9D12400FA96B5 /* Group@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Group@3x.png"; path = "../../../untitled folder/Group@3x.png"; sourceTree = "<group>"; };
+		C4534FBB22B9D12500FA96B5 /* Group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Group@2x.png"; path = "../../../Project/Project Design /ios /AppIcon/Group@2x.png"; sourceTree = "<group>"; };
+		C4534FBE22B9D13400FA96B5 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Group.png; path = "../../../untitled folder/Group.png"; sourceTree = "<group>"; };
 		C45E9AF722B069FA00A28200 /* TransportNotificationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportNotificationClass.swift; sourceTree = "<group>"; };
 		C49B09D8225DFD6100E3C771 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		C4BB07F122493EB5008C0671 /* ConfirmNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmNewPasswordViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +210,9 @@
 				C431C78A2200B3C5001AEDB8 /* Assets.xcassets */,
 				C431C78C2200B3C5001AEDB8 /* LaunchScreen.storyboard */,
 				C431C78F2200B3C5001AEDB8 /* Info.plist */,
+				C4534FBE22B9D13400FA96B5 /* Group.png */,
+				C4534FBB22B9D12500FA96B5 /* Group@2x.png */,
+				C4534FBA22B9D12400FA96B5 /* Group@3x.png */,
 				1887D47022ADD7DA007AB29F /* MySegue.swift */,
 			);
 			path = project1STversion;
@@ -362,8 +371,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4534FBF22B9D13400FA96B5 /* Group.png in Resources */,
+				C4534FBD22B9D12500FA96B5 /* Group@2x.png in Resources */,
 				C4CFBDEC22B4752700C5C276 /* LocationData.json in Resources */,
 				C431C78E2200B3C5001AEDB8 /* LaunchScreen.storyboard in Resources */,
+				C4534FBC22B9D12500FA96B5 /* Group@3x.png in Resources */,
 				C431C78B2200B3C5001AEDB8 /* Assets.xcassets in Resources */,
 				C431C7892200B3C4001AEDB8 /* Main.storyboard in Resources */,
 			);
@@ -668,14 +680,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S7G7V84698;
+				DEVELOPMENT_TEAM = TMLKMYRNJX;
 				INFOPLIST_FILE = project1STversion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testomar.project1STversion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testehsan.project1STversion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "project1STversion/View/project1STversion-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -691,14 +703,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S7G7V84698;
+				DEVELOPMENT_TEAM = TMLKMYRNJX;
 				INFOPLIST_FILE = project1STversion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testomar.project1STversion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testehsan.project1STversion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "project1STversion/View/project1STversion-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

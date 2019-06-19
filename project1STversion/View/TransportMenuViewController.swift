@@ -23,6 +23,8 @@ class TransportMenuViewController: UIViewController {
         super.viewDidLoad()
         
         CompanyNameLabel.text = UserDefaults.standard.string(forKey: "UserName")
+        
+        profileImage.image = TrImage
 
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         

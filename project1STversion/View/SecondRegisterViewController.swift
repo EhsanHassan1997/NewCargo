@@ -18,7 +18,7 @@ class SecondRegisterViewController: UIViewController {
     
     var myCompany : Company!
     override func viewDidLoad() {
-        errorMessageLable.text = myCompany.name
+//        errorMessageLable.text = myCompany.name
 
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -58,6 +58,11 @@ class SecondRegisterViewController: UIViewController {
             myCompany.TaxCard = TaxCardTextField.text
             myCompany.TaxFileNumber = TaxCardTextField.text
             myCompany.specialization = SpecializationTextField.text
+            if SpecializationTextField.text == "import-export"{
+                ImExImage = myCompany.image
+            }else if SpecializationTextField.text == "transport"{
+                TrImage = myCompany.image
+            }
             performSegue(withIdentifier: "ThirdRegister", sender: myCompany)
         }
     }

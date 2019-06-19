@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import UIKit
 class User{
     var userID : Int!
     var name : String!
     var email : String!
     var password : String!
-    var image : String!
+    var image : UIImage!
     var type : String!
     var rate : Double!
     

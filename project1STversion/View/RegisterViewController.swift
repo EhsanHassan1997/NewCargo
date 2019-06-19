@@ -26,11 +26,11 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageBorder.layer.borderColor = UIColor.white.cgColor
-       
-        imageBorder.layer.borderWidth = 2
-        
-        imageBorder.layer.cornerRadius = imageBorder.bounds.width / 2
+//        imageBorder.layer.borderColor = UIColor.white.cgColor
+//       
+//        imageBorder.layer.borderWidth = 2
+//        
+//        imageBorder.layer.cornerRadius = imageBorder.bounds.width / 2
         
         profileImageView.layer.cornerRadius = profileImageView.bounds.width / 2
         profileImageView.clipsToBounds = true
@@ -109,6 +109,7 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
                 company.email = emailTextField.text
                 company.Phone = phoneTextField.text
                 company.Address = addressTextField.text
+                company.image = profileImageView.image
                 performSegue(withIdentifier: "secondRegister", sender: company)
 
 //        company.image = profileImageView

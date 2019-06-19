@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zEG-X2-c1n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -584,7 +584,7 @@
                                                         <rect key="frame" x="113.5" y="42.5" width="148.5" height="148.5"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vvw-3y-UtX">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileimage" translatesAutoresizingMaskIntoConstraints="NO" id="Vvw-3y-UtX">
                                                         <rect key="frame" x="120" y="49" width="135" height="135"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Vvw-3y-UtX" secondAttribute="height" multiplier="1:1" id="jtj-0m-6Kg"/>
@@ -2224,7 +2224,6 @@ pay 5% of the shipment price.</string>
                         <viewLayoutGuide key="safeArea" id="Ezq-71-dKY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Vuf-Af-P0N"/>
-                    <navigationItem key="navigationItem" title="Register" id="Ltp-kO-8zu"/>
                     <connections>
                         <outlet property="NextActionButton" destination="YPd-yZ-0eb" id="RLs-Fc-WK4"/>
                         <outlet property="SpecializationTextField" destination="daa-Oe-17l" id="DU0-Mq-zbp"/>
@@ -6391,7 +6390,7 @@ pay 5% of the shipment price.</string>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" textContentType="password"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w1-t3-cw8">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
@@ -6420,7 +6419,7 @@ pay 5% of the shipment price.</string>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhd-LF-pZ6">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
@@ -6522,7 +6521,6 @@ pay 5% of the shipment price.</string>
                         <viewLayoutGuide key="safeArea" id="a7u-gC-Kbv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="emQ-y3-esT"/>
-                    <navigationItem key="navigationItem" title="Register" id="mf9-1W-X5i"/>
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="QPS-b4-c0b" id="XSP-DA-Vju"/>
                         <outlet property="doneButton" destination="0gO-Kc-h5L" id="UhI-JP-m5k"/>
@@ -11206,10 +11204,10 @@ pay 5% of the shipment price.</string>
         <image name="startDate" width="24" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fou-Rr-2VC"/>
+        <segue reference="dHU-mz-6Hd"/>
         <segue reference="qjQ-Yy-70q"/>
         <segue reference="peZ-WR-XFr"/>
-        <segue reference="PdS-ky-6Sh"/>
+        <segue reference="qfF-aD-ss1"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.33725490196078434" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
 </document>

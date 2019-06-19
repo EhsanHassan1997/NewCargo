@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 let ServerUrl = "http://3.19.58.55:5060/"
 
 let MainUrl = ServerUrl + "api/"
@@ -58,5 +58,9 @@ func GetUserToken()->String{
 }
 
 let reqid : Int = 11
+
+var TrImage : UIImage = UIImage(named : "profileimage")!
+
+var ImExImage : UIImage = UIImage(named : "profileimage")!
 
 var CompanyInTechnical : [Company] = []
