@@ -14,6 +14,8 @@ class TransportNotificationViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+
         tableView.tableFooterView = UIView()
         tableView.separatorInset = .zero
         tableView.contentInset = .zero
@@ -23,7 +25,6 @@ class TransportNotificationViewController: UIViewController {
         tableView.delegate = self
         
         TranNot = createNotifications()
-        
         
     }
     
@@ -81,6 +82,10 @@ extension TransportNotificationViewController  :UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if  indexPath.row == 0{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetailTechnical") as! ShowRequestViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if indexPath.row == 1{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "RequestDetail") as! ShowRequestViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }

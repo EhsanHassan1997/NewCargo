@@ -16,6 +16,8 @@ class ImportExportPaymentViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+        
         tableView.tableFooterView = UIView()
         tableView.separatorInset = .zero
         tableView.contentInset = .zero

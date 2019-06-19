@@ -29,6 +29,9 @@ class MapPathViewController: UIViewController,GMSMapViewDelegate , MapPathViewMo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+
         pageSetUp()
     }
     

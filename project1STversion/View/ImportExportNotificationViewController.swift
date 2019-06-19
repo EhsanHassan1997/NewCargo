@@ -18,6 +18,8 @@ class ImportExportNotificationViewController: UIViewController {
 
     override func viewDidLoad() {
 
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+
         tableView.tableFooterView = UIView()
         tableView.separatorInset = .zero
         tableView.contentInset = .zero
@@ -91,8 +93,8 @@ extension ImportExportNotificationViewController  :UITableViewDataSource{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }else if indexPath.row == 2 {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DriverCurrentLocation") as! MapPathViewController
-            self.navigationController?.pushViewController(vc, animated: true)
+            UserDefaults.standard.set(true, forKey: "Feedback")
+            self.navigationController?.popViewController(animated: true)
         }
        
     }

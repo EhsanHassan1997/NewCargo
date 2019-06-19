@@ -22,6 +22,7 @@
 		1868396C22B8AD240051CE51 /* ImportExportFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868396B22B8AD240051CE51 /* ImportExportFeedbackViewController.swift */; };
 		1869D84822B2A2910033E4D9 /* SetLocationOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */; };
 		1869D84A22B2A2CE0033E4D9 /* ConfirmLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */; };
+		18721DAF22B99BD600F2C460 /* ConfirmationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18721DAE22B99BD500F2C460 /* ConfirmationRequestViewController.swift */; };
 		1887D46F22ADB8FC007AB29F /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */; };
 		1887D47122ADD7DA007AB29F /* MySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887D47022ADD7DA007AB29F /* MySegue.swift */; };
 		18C2D5D722B3DE140093154E /* RequestReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2D5D622B3DE140093154E /* RequestReviewViewController.swift */; };
@@ -87,6 +88,7 @@
 		1868396B22B8AD240051CE51 /* ImportExportFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportFeedbackViewController.swift; sourceTree = "<group>"; };
 		1869D84722B2A2910033E4D9 /* SetLocationOnMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationOnMapViewController.swift; sourceTree = "<group>"; };
 		1869D84922B2A2CE0033E4D9 /* ConfirmLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmLocationViewController.swift; sourceTree = "<group>"; };
+		18721DAE22B99BD500F2C460 /* ConfirmationRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationRequestViewController.swift; sourceTree = "<group>"; };
 		1887D46E22ADB8FC007AB29F /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		1887D47022ADD7DA007AB29F /* MySegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySegue.swift; sourceTree = "<group>"; };
 		18BA528538B1FAB48A7BF2AB /* Pods-project1STversion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project1STversion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project1STversion/Pods-project1STversion.debug.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		C454D85B22455D39001856ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18721DAE22B99BD500F2C460 /* ConfirmationRequestViewController.swift */,
 				18E8F64022AAAAB700168594 /* CreateRequestViewController.swift */,
 				C431C7852200B3C4001AEDB8 /* SignInViewController.swift */,
 				C4C265232260B40900C0211F /* SecondRegisterViewController.swift */,
@@ -460,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18721DAF22B99BD600F2C460 /* ConfirmationRequestViewController.swift in Sources */,
 				1802CEFA22A816FC000193B7 /* ImportExportNotificationViewController.swift in Sources */,
 				C4CB9261223D28B30020172C /* User.swift in Sources */,
 				18EAA2E7227336940054919D /* ApiMethods.swift in Sources */,
@@ -664,14 +668,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TMLKMYRNJX;
+				DEVELOPMENT_TEAM = S7G7V84698;
 				INFOPLIST_FILE = project1STversion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testehsan.project1STversion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testomar.project1STversion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "project1STversion/View/project1STversion-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -687,14 +691,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TMLKMYRNJX;
+				DEVELOPMENT_TEAM = S7G7V84698;
 				INFOPLIST_FILE = project1STversion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testehsan.project1STversion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testomar.project1STversion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "project1STversion/View/project1STversion-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

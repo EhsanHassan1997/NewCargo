@@ -18,6 +18,9 @@ class ConfirmLocationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+
         DoneButton.layer.cornerRadius = 10
         BackButton.layer.cornerRadius = 10
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0)

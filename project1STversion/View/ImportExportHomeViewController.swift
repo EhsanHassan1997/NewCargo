@@ -32,7 +32,19 @@ class ImportExportHomeViewController: UIViewController, CLLocationManagerDelegat
         locationManager.startUpdatingLocation()
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if UserDefaults.standard.bool(forKey: "Feedback") {
+            UserDefaults.standard.set(false, forKey: "Feedback")
+            let Feedback = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "feedback") as! ImportExportFeedbackViewController
+            self.addChild(Feedback)
+            Feedback.view.frame = self.view.frame
+            self.view.addSubview(Feedback.view)
+            Feedback.didMove(toParent: self)
+        }
+        
+    }
     @IBAction func NotificationAction(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ImportExportNotification") as! ImportExportNotificationViewController
         self.navigationController?.pushViewController(vc, animated: true)

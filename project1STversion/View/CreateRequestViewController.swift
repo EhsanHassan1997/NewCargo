@@ -92,6 +92,8 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -268,9 +270,54 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
             self.view.addSubview(Warning.view)
             Warning.didMove(toParent: self)
             
-        }else if WieghtTextField.text == "" {
+        }else if Int(QuantityTextField.text!) == 0 {
+            
+            UserDefaults.standard.set("Quantity could not equal zero", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        } else if WieghtTextField.text == "" {
             
             UserDefaults.standard.set("Enter Wieght", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(WieghtTextField.text!) == 0{
+            
+            UserDefaults.standard.set("Wieght could not equal zero", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(WieghtTextField.text!)! > 300 && WieghtMeasureTextField.text == "Ton"{
+            
+            UserDefaults.standard.set("Wieght could not be more than 300 Ton", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(WieghtTextField.text!)! > 300000 && WieghtMeasureTextField.text == "KG"{
+            
+            UserDefaults.standard.set("Wieght could not be more than 300,000 KG", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(WieghtTextField.text!)! > 300000000 && WieghtMeasureTextField.text == "G"{
+            
+            UserDefaults.standard.set("Wieght could not be more than 300,000,000 G", forKey: "warning")
             let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
             self.addChild(Warning)
             Warning.view.frame = self.view.frame
@@ -286,6 +333,33 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
             self.view.addSubview(Warning.view)
             Warning.didMove(toParent: self)
             
+        }else if Int(LengthTextField.text!)! == 0{
+            
+            UserDefaults.standard.set("Length could not equal zero", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(LengthTextField.text!)! > 50 && WieghtMeasureTextField.text == "Meter"{
+            
+            UserDefaults.standard.set("Length could not be more than 50 Meter", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(LengthTextField.text!)! > 5000 && WieghtMeasureTextField.text == "cm"{
+            
+            UserDefaults.standard.set("Length could not be more than 5000 cm", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
         }else if HieghtTextField.text == "" {
             
             UserDefaults.standard.set("Enter Hieght", forKey: "warning")
@@ -295,9 +369,63 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
             self.view.addSubview(Warning.view)
             Warning.didMove(toParent: self)
             
+        }else if Int(HieghtTextField.text!)! == 0{
+            
+            UserDefaults.standard.set("Hieght could not equal zero", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(HieghtTextField.text!)! > 50 && WieghtMeasureTextField.text == "Meter"{
+            
+            UserDefaults.standard.set("Hieght could not be more than 50 Meter", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(HieghtTextField.text!)! > 5000 && WieghtMeasureTextField.text == "cm"{
+            
+            UserDefaults.standard.set("Hieght could not be more than 5000 cm", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
         }else if WidthTextField.text == "" {
             
             UserDefaults.standard.set("Enter Width", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(WidthTextField.text!)! == 0{
+            
+            UserDefaults.standard.set("Width could not equal zero", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(WidthTextField.text!)! > 50 && WieghtMeasureTextField.text == "Meter"{
+            
+            UserDefaults.standard.set("Width could not be more than 50 Meter", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if Int(WidthTextField.text!)! > 5000 && WieghtMeasureTextField.text == "cm"{
+            
+            UserDefaults.standard.set("Width could not be more than 5000 cm", forKey: "warning")
             let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
             self.addChild(Warning)
             Warning.view.frame = self.view.frame
@@ -316,6 +444,15 @@ class CreateRequestViewController: UIViewController, CLLocationManagerDelegate {
         }else if DestinationTextField.text == "" {
             
             UserDefaults.standard.set("Enter Destination", forKey: "warning")
+            let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
+            self.addChild(Warning)
+            Warning.view.frame = self.view.frame
+            self.view.addSubview(Warning.view)
+            Warning.didMove(toParent: self)
+            
+        }else if DestinationTextField.text == PickUpLocationTextField.text{
+            
+            UserDefaults.standard.set("Destination and Pick Up Locations is the same", forKey: "warning")
             let Warning = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Warning") as! WarningViewController
             self.addChild(Warning)
             Warning.view.frame = self.view.frame

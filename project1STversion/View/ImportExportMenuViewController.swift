@@ -18,6 +18,8 @@ class ImportExportMenuViewController: UIViewController {
 
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         
+        CompanyNameLabel.text = UserDefaults.standard.string(forKey: "UserName")
+        
         MenuView.transform = CGAffineTransform(translationX: MenuView.center.x - view.bounds.width, y: 0.5)
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
             self.MenuView.transform = .identity

@@ -38,6 +38,8 @@ class RequestReviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+        
         if(UserDefaults.standard.integer(forKey: "reqId") == nil){
             UserDefaults.standard.set(reqid, forKey: "reqId")
         }

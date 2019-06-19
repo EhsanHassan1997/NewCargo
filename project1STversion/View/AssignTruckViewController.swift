@@ -17,6 +17,8 @@ class AssignTruckViewController: UIViewController {
 
     override func viewDidLoad() {
         
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+        
         UserDefaults.standard.set(-1,forKey: "selectedTruck")
         UserDefaults.standard.set("",forKey: "selectedDriver")
         UserDefaults.standard.set(-1, forKey: "NselectedDriver")

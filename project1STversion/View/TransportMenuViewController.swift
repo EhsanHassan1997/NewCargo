@@ -18,9 +18,12 @@ class TransportMenuViewController: UIViewController {
     @IBOutlet weak var LogoutCutton: UIButton!
     @IBOutlet weak var CurrentShipment: UIButton!
     
+    @IBOutlet weak var CompanyNameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        CompanyNameLabel.text = UserDefaults.standard.string(forKey: "UserName")
+
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         
         MenuView.transform = CGAffineTransform(translationX: MenuView.center.x - view.bounds.width, y: 0.5)

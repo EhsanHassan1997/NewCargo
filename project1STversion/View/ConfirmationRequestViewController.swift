@@ -8,6 +8,7 @@
 
 import UIKit
 import LGButton
+
 class ConfirmationRequestViewController: UIViewController {
     @IBOutlet weak var ImExlable: UILabel!
     @IBOutlet weak var QuantityLabel: UILabel!
@@ -25,7 +26,10 @@ class ConfirmationRequestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ApiMethods.TransportRequestDetails(requestId : 60) { (ss) in
+        
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+        
+        ApiMethods.TransportRequestDetails(requestId : (UserDefaults.standard.integer(forKey: "reqId") + 11)) { (ss) in
             self.CargoTypeLabel.text = "Cargo Type : " + ss.cargoType
             self.QuantityLabel.text = "Quantity : " + String(ss.Quantity!)
             self.WeightLabel.text = "Weight : " + String(ss.Weight!)
@@ -44,11 +48,11 @@ class ConfirmationRequestViewController: UIViewController {
     }
     }
     @IBAction func AcceptButton(_ sender: LGButton) {
-        self.performSegue(withIdentifier: "offerAdde", sender: nil)
+        self.performSegue(withIdentifier: "companyAcceptRequest", sender: nil)
     }
     
     @IBAction func IgnoreAction(_ sender: LGButton) {
-        self.performSegue(withIdentifier: "offerAdde", sender: nil)
+        self.performSegue(withIdentifier: "companyAcceptRequest", sender: nil)
     }
     /*
     // MARK: - Navigation

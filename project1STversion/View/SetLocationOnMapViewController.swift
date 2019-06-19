@@ -23,6 +23,7 @@ class SetLocationOnMapViewController: UIViewController, GMSMapViewDelegate, CLLo
     override func viewDidLoad() {
         super.viewDidLoad()
 //        camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 17)
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()

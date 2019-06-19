@@ -36,6 +36,9 @@ class ShowRequestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "appLogo-1"))
+
         print("\nhi\n")
         ApiMethods.TransportRequestDetails(requestId : (UserDefaults.standard.integer(forKey: "reqId") + 11)) { (ss) in
             self.CargoType.text = "Cargo Type : " + ss.cargoType
